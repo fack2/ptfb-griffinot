@@ -8,7 +8,7 @@ The programme is broken into six different sections. There are four levels that 
 Parents who have recently discovered that their child has SEN need a way to feel in control of their child’s journey because at the moment the information and support provided is too fragmented and therefore hard to access.
 
 ## Solution
-Making this website to best support parents in supporting their children , they can use the videos provided in the app to improve their child’s motor skills,and they know what activites to do to help their child improve, and how to do them correctly.
+Making this website to best support parents in supporting their children, they can use the videos provided in the app to improve their child’s motor skills, and they know what activites to do to help their child improve, and how to do them correctly.
 
 ## user journey
 - As a parent of a child with SEN, I can use the app to find the best place to start helping my child by myself (using the GriffinOT programs)
