@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './CommonComponents/Header';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LandingPage from './Layout/LandingPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-
-    </div>
+    <Router>
+      <>
+        <Route exact path="/" component={LandingPage} />
+      </>
+    </Router>
   );
 }
 
