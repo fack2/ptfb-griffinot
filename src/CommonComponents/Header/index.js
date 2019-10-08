@@ -5,12 +5,12 @@ import menu from '../../assets/menu.png';
 
 
 const Header = () => (
-  <div>
+  <>
     <NavBar>
       <Logo alt="logo" src={logo} />
       <Menu alt="menu" src={menu} />
     </NavBar>
-  </div>
+  </>
 );
 
 export default Header;
