@@ -12,7 +12,6 @@ width: 40rem;
 `;
 
 export const Menu = styled.img`
-color : red;
 width: 7.2rem;
 height: 7rem;
 margin: 7rem 0rem 0rem 47rem;
