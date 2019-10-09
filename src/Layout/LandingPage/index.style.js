@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../../index.css';
 
 
 export const Title = styled.h1`
@@ -25,7 +26,7 @@ export const Button = styled.button`
 display: block;
 margin-left: auto;
 margin-right: auto;
-background-color: #205C8B;
+background-color:var(--main-component-color);
 border: 1px solid #205C8B;
 color: white;
 border-radius: 20rem;
@@ -44,5 +45,5 @@ margin-left: 23rem;
 `;
 
 export const Link = styled.span`
-  color: #205c88;
+  color:var(--main-component-color);
 `;
