@@ -1,16 +1,21 @@
 import React from 'react'
-import next from '../../assets/next.svg'
-import { PrevButton, para } from './index.style'
+import prev from '../../assets/prevButton.png'
+import next from '../../assets/nextButton.png'
+import { PrevButton, PrevWord, NextButton, NextWord } from './index.style'
 import './index.style'
 
 export const NextPrevButton = () => {
   return (
     <>
-      {/* <section className='prev-section'> */}
-      <PrevButton alt='PreviousButton' src={next}></PrevButton>
+      <section>
+        <PrevButton alt='PreviousButton' src={prev} />
+        <PrevWord>Prev</PrevWord>
+      </section>
 
-      <para>Prev</para>
-      {/* </section> */}
+      <section>
+        <NextButton alt='NextButton' src={next} />
+        <NextWord>Next</NextWord>
+      </section>
     </>
   )
 }
