@@ -1,19 +1,34 @@
 import React from 'react';
 import popuplogo from '../../assets/popup-logo.png';
-import {
-  PopUPCard, PopUpPox, Logo, LogoImage, BodyPage,
-} from './index.style';
+import { PopUPCard, PopUpPox, Logo, LogoImage, BodyPage ,PopUpDiv,LeftButtonPopUp,RightButtonPopUp,TitleP } from './index.style';
+import popUpdata from '../../Data/popupdata'
+class PopUp extends React.Component {
+  state = {
+    title: '',
+    descraption: '',
+    leftButton: '',
+    rightButton: ''
+  };
+  render() {
+    return (
+      popUpdata.map(({title,descraption,leftButton,rightButton})=>(
+      <BodyPage>
+        <PopUPCard>
+          <PopUpPox Height='80rem'>
+            <Logo>
+              <LogoImage src={popuplogo} alt='mainlogo' />
+            </Logo>
+            <TitleP>{title}</TitleP>
+            <PopUpDiv >
+            {descraption}
+            </PopUpDiv>
+            <LeftButtonPopUp>{leftButton}</LeftButtonPopUp>
+            <RightButtonPopUp>{rightButton}</RightButtonPopUp>
 
-const PopUp = () => (
-  <BodyPage>
-    <PopUPCard>
-      <PopUpPox>
-        <Logo>
-          <LogoImage src={popuplogo} alt="mainlogo" />
-        </Logo>
-      </PopUpPox>
-    </PopUPCard>
-  </BodyPage>
-);
-
+          </PopUpPox>
+        </PopUPCard>
+      </BodyPage>
+    )));
+  }
+}
 export default PopUp;
