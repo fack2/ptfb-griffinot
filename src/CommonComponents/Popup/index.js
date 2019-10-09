@@ -16,7 +16,7 @@ class PopUp extends React.Component {
         <PopUPCard>
           <PopUpPox Height='80rem'>
             <Logo>
-              <LogoImage src={popuplogo} alt='mainlogo' />
+              <LogoImage src={popuplogo} alt='a kid holding a kite logo' />
             </Logo>
             <TitleP>{title}</TitleP>
             <PopUpDiv >
