@@ -33,8 +33,6 @@ border-radius: 20rem;
 width: 61rem;
 height: 11rem;
 margin-top: 7rem;
-
-
 font-size: 4.8rem;
 font-weight: bolder;
 `;
