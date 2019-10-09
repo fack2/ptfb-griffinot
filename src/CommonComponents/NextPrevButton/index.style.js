@@ -20,6 +20,9 @@ export const NextWord = styled.span`
   color: var(--next-prev-button-color);
 `
 
-// export const Container = styled.div`
-//   display: relative;
-// `
+export const SectionN = styled.div`
+  margin: -4rem 0 0 74rem;
+`
+export const SectionP = styled.div`
+  margin: 135rem 0 0 10rem;
+`
