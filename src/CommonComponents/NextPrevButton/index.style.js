@@ -31,3 +31,6 @@ export const NextWord = styled.span`
   font-size: 3.5rem;
   color: var(--next-prev-button-color);
 `
+
+// export const ToLink = styled.Link`
+// `
