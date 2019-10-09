@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import '../../index.css';
-
 
 export const Title = styled.h1`
 text-align: center;
@@ -39,8 +37,6 @@ margin-top: 4rem;
 margin-left: 77rem;
 color:#0F3654;
 font-weight: 900;
-
-
 `;
 
 export const NextArrow = styled.img`
