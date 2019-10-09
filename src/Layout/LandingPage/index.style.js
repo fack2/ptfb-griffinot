@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import '../../index.css';
 
 
+export const Container = styled.div`
+overflow: scroll;
+`;
+
+
 export const Title = styled.h1`
   text-align: center;
   margin-bottom: 5rem;
