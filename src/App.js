@@ -12,7 +12,6 @@ function App() {
         <>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/schema" component={Schema} />
-
         </>
       </Router>
     </>
