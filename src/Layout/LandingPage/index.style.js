@@ -12,7 +12,7 @@ export const LandingImg = styled.img`
   margin-right: auto;
   width: 88rem;
   height: 72rem;
-  border-radius: 7rem;
+  border-radius: 4rem;
 `;
 
 export const Paragraph = styled.p`
@@ -40,7 +40,7 @@ font-weight: bolder;
 
 export const ResourceLink = styled.p`
 font-size: 3.3rem;
-margin-left: 20rem;
+margin-left: 23rem;
 `;
 
 export const Link = styled.span`
