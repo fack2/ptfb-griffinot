@@ -7,18 +7,18 @@ import Header from '../../CommonComponents/Header';
 class LandingPage extends React.Component {
 
   state = {
-    redirect: false,
-    render: false
+    redirectBtn: false,
+    renderLink: false
   }
 
   setRedirect = () => {
     this.setState({
-      redirect: true
+      redirectBtn: true
     })
   }
 
   renderBtn = () => {
-    if (this.state.redirect) {
+    if (this.state.redirectBtn) {
       return <Redirect to='/scheme' />
     }
   }
@@ -27,12 +27,12 @@ class LandingPage extends React.Component {
 
   setRender = () => {
     this.setState({
-      render: true
+      renderLink: true
     })
   }
 
   renderLink = () => {
-    if (this.state.render) {
+    if (this.state.renderLink) {
       return <Redirect to='/resource' />
     }
   }
