@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import '../../index.css';
 
 
-// eslint-disable-next-line import/prefer-default-export
 export const Title = styled.h1`
 text-align: center;
 font-size: 3.5rem;
