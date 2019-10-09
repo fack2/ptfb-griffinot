@@ -1,14 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './CommonComponents/Header';
-import PopUp from './CommonComponents/Popup';
+import LandingPage from './Layout/LandingPage';
+
 
 function App() {
   return (
-    <div className="App">
-
+    <>
       <Header />
-      <PopUp />
-    </div>
+      <Router>
+        <>
+          <Route exact path="/" component={LandingPage} />
+        </>
+      </Router>
+    </>
   );
 }
 
