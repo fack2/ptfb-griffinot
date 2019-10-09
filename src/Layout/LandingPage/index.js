@@ -2,7 +2,6 @@ import React from 'react';
 import { Redirect } from 'react-router-dom'
 import { Title, LandingImg, Paragraph, Button, ResourceLink, Link, Container } from './index.style';
 import landing from '../../assets/landing-img.jpeg';
-import Header from '../../CommonComponents/Header';
 
 class LandingPage extends React.Component {
 
@@ -19,7 +18,7 @@ class LandingPage extends React.Component {
 
   renderBtn = () => {
     if (this.state.redirectBtn) {
-      return <Redirect to='/scheme' />
+      return <Redirect to='/schema' />
     }
   }
 
@@ -33,7 +32,7 @@ class LandingPage extends React.Component {
 
   renderLink = () => {
     if (this.state.renderLink) {
-      return <Redirect to='/resource' />
+      return <Redirect to='/resources' />
     }
   }
 
@@ -41,7 +40,6 @@ class LandingPage extends React.Component {
     return (
       <>
         <Container>
-          <Header />
           <Title>Supporting you with your child’s journey </Title>
           <LandingImg alt="landing" src={landing} />
           <Paragraph>
