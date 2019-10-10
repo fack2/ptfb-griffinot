@@ -3,6 +3,9 @@ import '../../index.css';
 
 
 export const Container = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
 overflow: scroll;
 `;
 
@@ -13,7 +16,6 @@ export const Title = styled.h1`
 `;
 
 export const LandingImg = styled.img`
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 88rem;
@@ -28,7 +30,6 @@ margin: 6rem 7rem 0rem 7rem;
 `;
 
 export const Button = styled.button`
-display: block;
 margin-left: auto;
 margin-right: auto;
 background-color:var(--main-component-color);
@@ -43,8 +44,9 @@ font-weight: bolder;
 `;
 
 export const ResourceLink = styled.p`
-font-size: 3.3rem;
-margin-left: 23rem;
+font-size: 3rem;
+margin-left: auto;
+margin-right: auto;
 `;
 
 export const Link = styled.span`
