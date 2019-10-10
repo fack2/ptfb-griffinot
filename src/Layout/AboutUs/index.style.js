@@ -25,7 +25,7 @@ box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.25);
 
 export const KimImg = styled.img`
 width: 30rem;
-margin-left: 30rem;
+margin-left: 29rem;
 margin-top: -15rem;
 `;
 
