@@ -9,7 +9,7 @@ overflow: scroll;
 `;
 
 export const Title = styled.h1`
-margin-left: 3rem;
+margin-left: 4rem;
 `;
 
 export const Box = styled.div`
@@ -36,8 +36,10 @@ margin-top: 6rem;
 `;
 
 export const Para = styled.p`
-font-size: 3rem;
+font-size: 3.1rem;
 margin: 6rem 7rem 2rem 5rem;
 line-height: 5.5rem;
-color: #4F4F4F;
+color: #5b5a5a;
+text-align: justify;
+font-weight: bolder;
 `;

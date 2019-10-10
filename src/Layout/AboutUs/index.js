@@ -15,7 +15,6 @@ const AboutUs = () => (
         <Para>
           Kim is an occupational therapist striving to make the occupational therapy knowledge accessible to everyone! Hailing from Australia but now based in London, she splits her time between creating online resources and working in schools.
           <br />
-          {' '}
           <br />
           Kim has completed her post graduate sensory integration training through the University of Ulster and her Masters of Health Science through the University of Sydney. She has an interest in sensory processing, motor skills, autism and attachment.
 
