@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './CommonComponents/Header';
 import LandingPage from './Layout/LandingPage';
 import Schema from './Layout/Schema';
+import NextPrevButton from './CommonComponents/NextPrevButton';
 
 function App() {
   return (
