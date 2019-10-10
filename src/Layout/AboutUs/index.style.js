@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-import '../../index.css';
 
 export const Container = styled.div`
 display:flex;
 flex-direction:column;
 justify-content:center;
-overflow: scroll;
 `;
 
 export const Title = styled.h1`
