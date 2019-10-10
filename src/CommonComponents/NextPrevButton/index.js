@@ -1,22 +1,30 @@
-import React from 'react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
-import prev from '../../assets/prevButton.png'
-import next from '../../assets/nextButton.png'
-import { PrevButton, PrevWord, NextButton, NextWord } from './index.style'
-import './index.style'
+import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import prev from '../../assets/prevButton.png';
+import next from '../../assets/nextButton.png';
+import {
+  PrevNextButton,
+  PrevNextText,
+  Container,
+  PrevNextItem,
+} from './index.style';
 
-const NextPrevButton = ({ prevLink, nextLink }) => {
-  return (
-    <Router>
-      <Link to={prevLink}>
-        <PrevButton alt='PreviousButton' src={prev} />
-        <PrevWord>Prev</PrevWord>
+const NextPrevButton = ({ prevLink, nextLink }) => (
+  <Router>
+    <Container>
+      <Link to={prevLink} style={{ textDecoration: 'none' }}>
+        <PrevNextItem>
+          <PrevNextButton alt="PreviousButton" src={prev} />
+          <PrevNextText>Prev</PrevNextText>
+        </PrevNextItem>
       </Link>
-      <Link to={nextLink}>
-        <NextWord>Next</NextWord>
-        <NextButton alt='NextButton' src={next} />
+      <Link to={nextLink} style={{ textDecoration: 'none' }}>
+        <PrevNextItem>
+          <PrevNextText>Next</PrevNextText>
+          <PrevNextButton alt="NextButton" src={next} />
+        </PrevNextItem>
       </Link>
-    </Router>
-  )
-}
-export default NextPrevButton
+    </Container>
+  </Router>
+);
+export default NextPrevButton;
