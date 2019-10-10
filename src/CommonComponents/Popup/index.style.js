@@ -5,7 +5,7 @@ export const BodyPage = styled.body`
   background: #cfcfcf;
   margin:auto; 
   height: -webkit-fill-available;
-`;
+text-align:center`;
 
 export const PopUPCard = styled.div`
   width: 100rem;
