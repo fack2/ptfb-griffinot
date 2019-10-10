@@ -1,12 +1,21 @@
 import styled from 'styled-components';
 import '../../index.css';
 
+export const Container = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+overflow: scroll;
+`;
+
 export const Title = styled.h1`
 margin-left: 3rem;
 `;
 
 export const Box = styled.div`
 border: 0.1rem solid #2D2323;
+display:flex;
+flex-direction:column;
 margin-top: 20rem;
 margin-left: 4rem;
 width: 88rem;
