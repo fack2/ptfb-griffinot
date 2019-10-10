@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
 	display: flex;
@@ -24,4 +25,10 @@ export const Item = styled.span`
 export const Image = styled.img`
 	width: ${(props) => props.width || '12.6rem'};
 	height: ${(props) => props.height || '12.6rem'};
+`;
+
+export const StyledLink = styled(Link)`
+	text-decoration: none;
+	margin: ${(props) => props.margin || '4rem 7rem 0rem 1rem'};
+	color: var(--main-font-color);
 `;
