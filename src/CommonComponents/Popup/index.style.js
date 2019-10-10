@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
-export const BodyPage = styled.body`
-  display: flex;
+export const BodyPage = styled.html`
   background: #cfcfcf;
-  margin:auto; 
-  height: -webkit-fill-available;
-text-align:center`;
+  justify-content: center;
+`;
 
-export const PopUPCard = styled.div`
-  width: 100rem;
- 
+export const PopUPCard = styled.body`
+  text-align: center;
+  display: flex;
+  height: 154.6rem;
 `;
 
 export const PopUpBox = styled.div`
@@ -17,10 +16,8 @@ export const PopUpBox = styled.div`
   height: ${(props) => props.Height || '100rem'};
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
-  margin-left: 6rem;
-  margin-top: 62rem;
   margin-left: 8rem;
-
+  margin-top: 32.7rem;
 `;
 
 export const Logo = styled.div`
@@ -28,7 +25,6 @@ export const Logo = styled.div`
   height: 28rem;
   border: 0.1rem solid #c4c4c4;
   background: #205c8b;
-  
 `;
 
 export const LogoImage = styled.img`
@@ -42,24 +38,16 @@ export const PopUpDiv = styled.p`
   text-align: left;
 `;
 
-export const TitleP = styled.p``;
-
-export const LeftButtonPopUp = styled.button`
-  width: 15rem;
-  height: 7.2rem;
-  background: #ffffff;
-  border: 0.1rem solid #c4c4c4;
-  border-radius: 4rem;
-  font-size: 3.1rem;
-  margin-left: 8rem;
+export const TitleP = styled.p`
+  margin-top: 4rem;
+  font-size: 4.8rem;
+  margin-left: -10rem;
+  color: #e8425c;
 `;
 
-export const RightButtonPopUp = styled.button`
-width: 15rem;
-height: 7.2rem;
-background: #ffffff;
-border: 0.1rem solid #c4c4c4;
-border-radius: 4rem;
-font-size: 3.1rem;
-margin-left: 26rem;
+export const UndersandWord = styled.p`
+  font-size: 4.2rem;
+  margin-left: 43.9rem;
+  margin-top: 5.5rem;
+  color: #205c88;
 `;
