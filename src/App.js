@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './CommonComponents/Header';
-import Question from './CommonComponents/Question';
 import LandingPage from './Layout/LandingPage';
 import Menu from './Layout/Menu';
+import Schema from './Layout/Schema';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/menu" component={Menu} />
+          <Route exact path="/schema" component={Schema} />
         </>
       </Router>
     </>
