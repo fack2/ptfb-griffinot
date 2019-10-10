@@ -35,7 +35,7 @@ margin-top: 6rem;
 
 export const Para = styled.p`
 font-size: 3.1rem;
-margin: 6rem 7rem 2rem 5rem;
+margin: 3rem 7rem 2rem 5rem;
 line-height: 5.5rem;
 color: #5b5a5a;
 text-align: justify;
