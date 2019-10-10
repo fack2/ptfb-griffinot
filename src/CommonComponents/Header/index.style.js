@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 
-export const NavBar = styled.nav`
-  display: flex;
-  flex-direction: row;
+export const NavBar = styled.div`
+display: flex;
+justify-content:center;
 `;
 
 
