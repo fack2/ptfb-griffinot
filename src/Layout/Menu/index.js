@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Container, Item, Image, MenuItem, StyledLink,
 } from './index.style';
@@ -35,7 +34,7 @@ const Menu = () => (
         <Image alt="level icon" src={levels} />
         <StyledLink to="/levels">
           <Item margin="3.7rem 0rem 4rem 7rem" fontSize="3.9rem">
-						Levels
+            Levels
           </Item>
         </StyledLink>
       </MenuItem>

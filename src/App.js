@@ -9,10 +9,10 @@ import AboutUs from './Layout/AboutUs';
 function App() {
   return (
     <>
-      <Header />
 
       <Router>
         <>
+          <Header />
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
