@@ -1,36 +1,37 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const PrevButton = styled.img`
-  position: fixed;
-  bottom: 10.2rem;
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+export const PrevNextItem = styled.div`
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 4rem;
+`;
+
+export const PrevNextButton = styled.img`
+  margin-bottom: -0.5rem;
   height: 3rem;
   width: 3rem;
-  left: 6rem;
-`
-export const PrevWord = styled.span`
-  position: fixed;
-  left: 10rem;
-  bottom: 9.7rem;
+`;
+export const PrevNextText = styled.span`
+  text-decoration: 'none';
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: Lato;
   font-size: 3.5rem;
   color: var(--next-prev-button-color);
-`
-export const NextButton = styled.img`
-  position: fixed;
-  bottom: 10.2rem;
-  height: 3rem;
-  width: 3rem;
-  right: 6rem;
-`
+`;
 
-export const NextWord = styled.span`
-  position: fixed;
-  right: 10rem;
-  bottom: 9.7rem;
-  font-family: Lato;
-  font-size: 3.5rem;
-  color: var(--next-prev-button-color);
-`
-
-// export const ToLink = styled.Link`
-// `
+export const LinkButton = styled(Link)`
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
