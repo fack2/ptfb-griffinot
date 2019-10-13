@@ -7,6 +7,7 @@ export const LevelDiv = styled.div`
   margin-top: 5rem;
   margin-bottom: 4.9rem;
 `;
+
 export const CircleLevel = styled.div`
   width: 20rem;
   height: 20rem;
@@ -14,12 +15,14 @@ export const CircleLevel = styled.div`
   border-radius: 11rem;
   z-index: 1;
 `;
+
 export const ParagraphLevel = styled.p`
   font-size: 3.6rem;
   margin-top: 7.6rem;
-font-weight:bolder;
+  font-weight: bolder;
   color: #e8425c;
 `;
+
 export const TitleLevel = styled.div`
   width: 68rem;
   height: 12.9rem;
