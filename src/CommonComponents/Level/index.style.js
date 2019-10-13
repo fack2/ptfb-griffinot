@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const LevelDiv = styled.div`
   display: flex;
   justify-content: center;
-  text-align:center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 4.9rem;
 `;
 export const CircleLevel = styled.div`
   width: 20rem;
@@ -30,6 +32,6 @@ export const TitleLevel = styled.div`
 
 export const TitleParagraph = styled.p`
   font-size: 3.7rem;
-  margin-left:3.9rem;
+  margin-left: 3.9rem;
   color: #ffffff;
 `;
