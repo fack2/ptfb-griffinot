@@ -8,3 +8,7 @@ export const Bodypage = styled.div`
 export const Title = styled.h1`
   margin-left: 18rem;
 `;
+
+export const Link = styled.a`
+text-decoration:none;
+`;
