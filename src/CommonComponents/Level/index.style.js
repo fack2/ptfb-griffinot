@@ -15,14 +15,15 @@ export const CircleLevel = styled.div`
   z-index: 1;
 `;
 export const ParagraphLevel = styled.p`
-  font-size: 4rem;
+  font-size: 3.6rem;
   margin-top: 7.6rem;
+font-weight:bolder;
   color: #e8425c;
 `;
 export const TitleLevel = styled.div`
   width: 68rem;
   height: 12.9rem;
-  background: #175d8c;
+  background: #205c8b;
   border: 1px solid #a0a0a0;
   box-sizing: border-box;
   border-radius: 82px;
