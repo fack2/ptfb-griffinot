@@ -1,6 +1,7 @@
 import React from 'react';
+
 import {
-  Container, Item, Image, MenuItem,
+  Container, Item, Image, MenuItem, StyledLink,
 } from './index.style';
 import home from '../../assets/home.png';
 import aboutUs from '../../assets/aboutus.png';
@@ -11,28 +12,38 @@ import contactUS from '../../assets/contactus.png';
 const Menu = () => (
   <>
     <Container>
-      {/* The orde attribute so I can order each MenuItem underneath the next because I'm using flexbox(go to its styling file to know more), the height and width are for some of the images because they have a different size form the rest */}
-      <MenuItem order="1">
+      {/* The height and width are for some of the images because they have a different size form the rest */}
+      <MenuItem>
         <Image alt="home icon" src={home} />
-        <Item>Home</Item>
+        <StyledLink to="/">
+          <Item>Home</Item>
+        </StyledLink>
       </MenuItem>
-      <MenuItem marginTop="12rem" order="2">
+      <MenuItem marginTop="12rem">
         <Image width="7.4rem" height="7.4rem" alt="about us icon" src={aboutUs} />
-        <Item margin="2rem 0rem 4rem 7rem">About Us</Item>
+        <StyledLink to="/about-us" margin="2rem">
+          <Item margin="2rem 0rem 4rem 7rem">About Us</Item>
+        </StyledLink>
       </MenuItem>
-      <MenuItem order="3">
+      <MenuItem>
         <Image width="10rem" height="10rem" alt="resources icon" src={resources} />
-        <Item margin="3rem 0rem 4rem 7rem">Resources</Item>
+        <StyledLink to="/resources" margin="3rem 2rem 0rem 1rem">
+          <Item margin="3rem 0rem 4rem 7rem">Resources</Item>
+        </StyledLink>
       </MenuItem>
-      <MenuItem order="4">
+      <MenuItem>
         <Image alt="level icon" src={levels} />
-        <Item margin="3.7rem 0rem 4rem 7rem" fontSize="3.9rem">
-					Levels
-        </Item>
+        <StyledLink to="/levels">
+          <Item margin="3.7rem 0rem 4rem 7rem" fontSize="3.9rem">
+						Levels
+          </Item>
+        </StyledLink>
       </MenuItem>
-      <MenuItem order="5">
+      <MenuItem>
         <Image alt="contact us icon " src={contactUS} />
-        <Item>Contact Us</Item>
+        <StyledLink margin="5rem -1rem 0rem 2rem" to="/contact-us">
+          <Item>Contact Us</Item>
+        </StyledLink>
       </MenuItem>
     </Container>
   </>
