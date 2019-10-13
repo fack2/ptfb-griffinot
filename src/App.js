@@ -16,8 +16,8 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
-          <Route exact path="/about-us" component={AboutUs} />
-          <Route exact PATH="/level" component={Levels} />
+          <Route path="/about-us" component={AboutUs} />
+          <Route path="/levels" component={Levels} />
         </>
       </Router>
     </>
