@@ -30,6 +30,6 @@ export const TitleLevel = styled.div`
 
 export const TitleParagraph = styled.p`
   font-size: 3.7rem;
- margin-left:3.9rem;
+  margin-left:3.9rem;
   color: #ffffff;
 `;
