@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Title, Box, KimImg, Name, Para, Container, LogoImg, GriffinPara,
+  Title, Box, KimImg, Name, Para, Container, LogoImg, GriffinPara, SecBox,
 } from './index.style';
 
 import KimG from '../../assets/KimG.png';
@@ -22,7 +22,7 @@ const AboutUs = () => (
         </Para>
       </Box>
 
-      <Box>
+      <SecBox>
         <LogoImg alt="griffin-logo" src={Logo} />
         <GriffinPara>
           Griffin OT is on a social mission to make sensory processing disorder training and motor skills development programmes affordable and accessible to all.  Our packages are designed to help teachers and parents understand and support their children’s sensory processing and/or motor skill challenges.
@@ -32,7 +32,7 @@ const AboutUs = () => (
           You can learn more about us
           <a href="https://www.griffinot.com/griffin-occupational-therapy/"> here.</a>
         </GriffinPara>
-      </Box>
+      </SecBox>
     </Container>
 
   </>

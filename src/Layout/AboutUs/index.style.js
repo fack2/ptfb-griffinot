@@ -45,6 +45,18 @@ export const Para = styled.p`
   font-weight: bolder;
 `;
 
+export const SecBox = styled.div`
+  border: 0.1rem solid #2D2323;
+  display:flex;
+  flex-direction:column;
+  margin-top: 20rem;
+  margin-left: 4rem;
+  margin-bottom: 5rem;
+  width: 88rem;
+  height: 100rem;
+  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.25);
+`;
+
 
 export const LogoImg = styled.img` 
   background-color:white
