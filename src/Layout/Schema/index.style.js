@@ -19,7 +19,7 @@ transform: rotate(180deg);
 `;
 
 export const Para1 = styled.p`
-font-size: 1.7rem;
+font-size: 1.4rem;
 color: #5C5B5B;
 margin: 5rem 1rem 4rem 2rem;
 `;
@@ -32,7 +32,7 @@ border: 0.1rem solid #2D2323;
 `;
 
 export const Para2 = styled.p`
-font-size: 1.7rem;
+font-size: 1.4rem;
 color: #5C5B5B;
 margin: 5rem 1rem 4rem 2rem;
 `;
@@ -46,5 +46,6 @@ font-weight: 900;
 `;
 
 export const NextArrow = styled.img`
-width: 3rem;
+  width: 3rem;
+  margin-left: 1.3rem;
 `;
