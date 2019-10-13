@@ -5,11 +5,11 @@ import LandingPage from './Layout/LandingPage';
 import Menu from './Layout/Menu';
 import Schema from './Layout/Schema';
 import AboutUs from './Layout/AboutUs';
+import Questionnaire from './Layout/Questionnaire';
 
 function App() {
   return (
     <>
-
       <Router>
         <>
           <Header />
@@ -17,6 +17,7 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
           <Route exact path="/about-us" component={AboutUs} />
+          <Route exact path="/questionnaire" component={Questionnaire} />
         </>
       </Router>
     </>
