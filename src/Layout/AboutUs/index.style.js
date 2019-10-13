@@ -8,7 +8,8 @@ justify-content:center;
 `;
 
 export const Title = styled.h1`
-margin-left: 4rem;
+margin-left: 3.5rem;
+font-size: 4rem;
 `;
 
 export const Box = styled.div`
