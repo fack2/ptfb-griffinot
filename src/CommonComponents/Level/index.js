@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   CircleLevel,
   ParagraphLevel,
@@ -7,15 +8,21 @@ import {
   TitleParagraph,
 } from './index.style';
 
-const Level = () => (
+const Level = ({ levelScore, titleLevel }) => (
   <LevelDiv>
     <CircleLevel>
-      <ParagraphLevel>Level 1</ParagraphLevel>
+      <ParagraphLevel>{levelScore}</ParagraphLevel>
     </CircleLevel>
 
     <TitleLevel>
-      <TitleParagraph>Fine Motor Skills Programme</TitleParagraph>
+      <TitleParagraph>{titleLevel}</TitleParagraph>
     </TitleLevel>
   </LevelDiv>
 );
+
+Level.propTypes = {
+  levelScore: PropTypes.string.isRequired,
+  titleLevel: PropTypes.string.isRequired,
+
+};
 export default Level;
