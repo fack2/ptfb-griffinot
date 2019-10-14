@@ -68,8 +68,7 @@ class Schema extends React.Component {
                     <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                   </Logo>}
                 <Container2>
-                  {this.state.No ? <PopUpDiv> 2. Does your child have a neurological or
-genetic condition?(e.g. CP, Down's Syndrome)</PopUpDiv> : <PopUpDiv>1. Does your child have a degenerative condition?(e.g. MD,  Rhetts)</PopUpDiv>}
+                  {this.state.No ? <PopUpDiv> 2. Does your child have a neurological or genetic condition?(e.g. CP, Down's Syndrome)</PopUpDiv> : <PopUpDiv>1. Does your child have a degenerative condition?(e.g. MD,  Rhetts)</PopUpDiv>}
                   <ContainerBtn>
                     <YesBtn type="button">Yes</YesBtn>
                     <NoBtn onClick={this.DisplayPop} type="button">No</NoBtn>
