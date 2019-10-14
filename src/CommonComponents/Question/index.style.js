@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const QuestionContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 2rem;
 `;
 
 export const QuestionCard = styled.div`
@@ -10,18 +11,19 @@ export const QuestionCard = styled.div`
 	border: 0.5px solid #928e8e;
 	box-sizing: border-box;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	height: 24rem;
+	height: ${(props) => props.height || '24rem'};
 	padding: 4rem 3rem;
-	margin: 7rem 2rem 0;
+	margin: 4rem 2rem 0;
 	display: flex;
 	flex-wrap: wrap;
 `;
+
 export const QuestionNumber = styled.span`
 	font-weight: bold;
-	width: 4rem;
-	height: 3.5rem;
+	width: 4.3rem;
+	height: 3.9rem;
 	padding-top: 0.5rem;
-	font-size: 2.3rem;
+	font-size: 2.5rem;
 	color: #ffffff;
 	background: var(--next-prev-button-color);
 	border-radius: 50%;
@@ -33,12 +35,12 @@ export const QuestionText = styled.p`
 	font-weight: 600;
 	font-size: 3.8rem;
 	color: var(--main-font-color);
-	flex-basis: 87%;
+	flex-basis: 86%;
 `;
 
 export const Checkbox = styled.input`
-	width: 3.2rem;
-	height: 3.2rem;
+	width: 3.8rem;
+	height: 3.8rem;
 	background: #ffffff;
 	border: 1px solid #787878;
 	box-sizing: border-box;
