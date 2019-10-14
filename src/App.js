@@ -6,6 +6,7 @@ import Menu from './Layout/Menu';
 import Schema from './Layout/Schema';
 import AboutUs from './Layout/AboutUs';
 import Levels from './Layout/Levels';
+import Resources from './Layout/Resources';
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
       <Router>
         <>
           <Header />
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/schema" component={Schema} />
-          <Route path="/about-us" component={AboutUs} />
-          <Route path="/levels" component={Levels} />
+          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/menu' component={Menu} />
+          <Route exact path='/schema' component={Schema} />
+          <Route path='/about-us' component={AboutUs} />
+          <Route path='/levels' component={Levels} />
+          <Route exact path='/resources' component={Resources} />
         </>
       </Router>
     </>
