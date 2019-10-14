@@ -32,7 +32,7 @@ margin: 6rem 7rem 0rem 7rem;
 export const Button = styled.button`
 margin-left: auto;
 margin-right: auto;
-background-color:var(--main-component-color);
+background-color:var(--main-title-color);
 border: 1px solid #205C8B;
 color: white;
 border-radius: 20rem;
