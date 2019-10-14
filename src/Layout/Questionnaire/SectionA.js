@@ -17,19 +17,19 @@ const SectionA = () => (
     <Line />
     <QuestionContainer>
       <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
-      <QuestionCard>
+      <QuestionCard height="26rem">
         <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
         <QuestionText>{data[0].question}</QuestionText>
         <Checkbox type="checkbox" id={data[0].questionNumber} />
         <QuestionDescription>{data[0].description}</QuestionDescription>
       </QuestionCard>
-      <QuestionCard height="28rem">
+      <QuestionCard height="30rem">
         <QuestionNumber>{data[1].questionNumber}</QuestionNumber>
         <QuestionText>{data[1].question}</QuestionText>
         <Checkbox type="checkbox" id={data[1].questionNumber} />
         <QuestionDescription>{data[1].description}</QuestionDescription>
       </QuestionCard>
-      <QuestionCard height="18rem">
+      <QuestionCard>
         <QuestionNumber>{data[2].questionNumber}</QuestionNumber>
         <QuestionText>{data[2].question}</QuestionText>
         <Checkbox type="checkbox" id={data[2].questionNumber} />
@@ -41,7 +41,7 @@ const SectionA = () => (
         <Checkbox type="checkbox" id={data[3].questionNumber} />
         <QuestionDescription>{data[3].description}</QuestionDescription>
       </QuestionCard>
-      <QuestionCard height="29rem">
+      <QuestionCard height="31rem">
         <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
         <QuestionText>{data[4].question}</QuestionText>
         <Checkbox type="checkbox" id={data[4].questionNumber} />
