@@ -3,12 +3,10 @@ import '../../index.css';
 
 
 export const Container = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-overflow: scroll;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 `;
-
 
 export const Title = styled.h1`
   text-align: center;
@@ -24,9 +22,9 @@ export const LandingImg = styled.img`
 `;
 
 export const Paragraph = styled.p`
-font-size: 1.7rem;
-color: #5C5B5B;
-margin: 6rem 7rem 0rem 7rem;
+  font-size: 1.7rem;
+  color: #5C5B5B;
+  margin: 6rem 7rem 0rem 7rem;
 `;
 
 export const Button = styled.button`
@@ -44,9 +42,9 @@ font-weight: bolder;
 `;
 
 export const ResourceLink = styled.p`
-font-size: 3rem;
-margin-left: auto;
-margin-right: auto;
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Link = styled.span`

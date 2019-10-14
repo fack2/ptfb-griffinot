@@ -8,7 +8,7 @@ html {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   margin-top: 12rem;
   color: #205c88;
 }
@@ -25,4 +25,22 @@ h2 {
   --next-prev-button-color: #e8425c;
   --option-box-color: #d6edfd;
   --level-circle-color: #ffcd1d;
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
