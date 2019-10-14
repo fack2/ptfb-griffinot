@@ -6,6 +6,7 @@ import Menu from './Layout/Menu';
 import Schema from './Layout/Schema';
 import AboutUs from './Layout/AboutUs';
 import Levels from './Layout/Levels';
+import SectionA from './Layout/Questionnaire/SectionA';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/schema" component={Schema} />
           <Route path="/about-us" component={AboutUs} />
           <Route path="/levels" component={Levels} />
+          <Route exact path="/questionnaire-section-a" component={SectionA} />
         </>
       </Router>
     </>
