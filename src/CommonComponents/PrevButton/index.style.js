@@ -11,15 +11,13 @@ export const PrevItem = styled.div`
 `;
 
 export const Prevbutton = styled.img`
-  margin-bottom: -0.5rem;
   height: 3rem;
   width: 3rem;
 `;
+
 export const PrevText = styled.span`
-  text-decoration: 'none';
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: Lato;
   font-size: 3.5rem;
   color: var(--next-prev-button-color);
 `;
