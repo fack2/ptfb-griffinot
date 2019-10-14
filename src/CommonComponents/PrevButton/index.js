@@ -12,21 +12,18 @@ import {
 } from './index.style';
 
 const PrevButton = ({ prevLink }) => (
-  <Router>
-    <Container>
-      <LinkButton href={prevLink}>
-        <PrevItem>
-          <Prevbutton alt="PreviousButton" src={prev} />
-          <PrevText>Prev</PrevText>
-        </PrevItem>
-      </LinkButton>
-    </Container>
-  </Router>
+  <Container>
+    <LinkButton href={prevLink}>
+      <PrevItem>
+        <Prevbutton alt="PreviousButton" src={prev} />
+        <PrevText>Prev</PrevText>
+      </PrevItem>
+    </LinkButton>
+  </Container>
 );
 
 PrevButton.propTypes = {
   prevLink: PropTypes.bool.isRequired,
-
 };
 
 export default PrevButton;

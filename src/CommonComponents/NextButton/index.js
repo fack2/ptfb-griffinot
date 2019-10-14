@@ -11,16 +11,16 @@ import {
 } from './index.style';
 
 const NextButton = ({ nextLink }) => (
-  <Router>
-    <Container>
-      <LinkButton to={nextLink}>
-        <NextItem>
-          <NextText>Next</NextText>
-          <Nextbutton alt="NextButton" src={next} />
-        </NextItem>
-      </LinkButton>
-    </Container>
-  </Router>
+
+  <Container>
+    <LinkButton to={nextLink}>
+      <NextItem>
+        <NextText>Next</NextText>
+        <Nextbutton alt="NextButton" src={next} />
+      </NextItem>
+    </LinkButton>
+  </Container>
+
 );
 
 NextButton.propTypes = {

@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
 `;
 export const PrevItem = styled.div`
   margin-left: 8rem;
   margin-right: 8rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
 `;
 
 export const Prevbutton = styled.img`

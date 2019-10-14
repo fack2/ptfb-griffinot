@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: flex-end;
 `;
 export const NextItem = styled.div`
-  margin-left: 67rem;
+  margin-left: 50rem;
 `;
 
 export const Nextbutton = styled.img`
