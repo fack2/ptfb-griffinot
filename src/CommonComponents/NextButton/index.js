@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router } from 'react-router-dom';
 import next from '../../assets/nextButton.png';
 import {
   Nextbutton,
