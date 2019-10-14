@@ -5,18 +5,18 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: flex-end;
 `;
-export const PrevNextItem = styled.div`
+export const PrevItem = styled.div`
   margin-left: 8rem;
   margin-right: 8rem;
   margin-top: 4rem;
 `;
 
-export const PrevNextButton = styled.img`
+export const Prevbutton = styled.img`
   margin-bottom: -0.5rem;
   height: 3rem;
   width: 3rem;
 `;
-export const PrevNextText = styled.span`
+export const PrevText = styled.span`
   text-decoration: 'none';
   padding-left: 1rem;
   padding-right: 1rem;

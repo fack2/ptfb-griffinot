@@ -4,10 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import prev from '../../assets/prevButton.png';
 import {
-  PrevNextButton,
-  PrevNextText,
+  Prevbutton,
+  PrevText,
   Container,
-  PrevNextItem,
+  PrevItem,
   LinkButton,
 } from './index.style';
 
@@ -15,10 +15,10 @@ const PrevButton = ({ prevLink }) => (
   <Router>
     <Container>
       <LinkButton href={prevLink}>
-        <PrevNextItem>
-          <PrevNextButton alt="PreviousButton" src={prev} />
-          <PrevNextText>Prev</PrevNextText>
-        </PrevNextItem>
+        <PrevItem>
+          <Prevbutton alt="PreviousButton" src={prev} />
+          <PrevText>Prev</PrevText>
+        </PrevItem>
       </LinkButton>
     </Container>
   </Router>
