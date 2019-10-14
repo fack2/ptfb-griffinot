@@ -23,13 +23,6 @@ export const PrevText = styled.span`
 `;
 
 export const LinkButton = styled.a`
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-    margin-top: 25rem;
-
-  }
+  text-decoration: none;
+  margin-top: 25rem;
 `;
