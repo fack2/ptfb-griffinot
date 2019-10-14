@@ -5,16 +5,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: flex-end;
 `;
-export const PrevNextItem = styled.div`
+export const NextItem = styled.div`
   margin-left: 67rem;
 `;
 
-export const PrevNextButton = styled.img`
-  /* margin-bottom: -0.5rem; */
+export const Nextbutton = styled.img`
   height: 3rem;
   width: 3rem;
 `;
-export const PrevNextText = styled.span`
+export const NextText = styled.span`
   text-decoration: 'none';
   padding-left: 1rem;
   padding-right: 1rem;
