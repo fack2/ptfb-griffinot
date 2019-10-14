@@ -7,7 +7,7 @@ import {
   PrevNextText,
   Container,
   PrevNextItem,
-  LinkButton
+  LinkButton,
 } from './index.style';
 
 const NextButton = ({ nextLink }) => (
@@ -16,7 +16,7 @@ const NextButton = ({ nextLink }) => (
       <LinkButton to={nextLink}>
         <PrevNextItem>
           <PrevNextText>Next</PrevNextText>
-          <PrevNextButton alt='NextButton' src={next} />
+          <PrevNextButton alt="NextButton" src={next} />
         </PrevNextItem>
       </LinkButton>
     </Container>
@@ -24,7 +24,7 @@ const NextButton = ({ nextLink }) => (
 );
 
 NextButton.propTypes = {
-  nextLink: PropTypes.bool.isRequired
+  nextLink: PropTypes.bool.isRequired,
 };
 
 export default NextButton;
