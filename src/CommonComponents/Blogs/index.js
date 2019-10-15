@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  BlogDiv, ImageBlog, Div, TitleBlog,
+  BlogDiv, ImageBlog, Container, TitleBlog,
 } from './index.style';
 
 const Blogs = (Title, Imageblogs) => (
-  <Div>
+  <Container>
     <BlogDiv>
       <ImageBlog src={Imageblogs} />
       <TitleBlog>{Title}</TitleBlog>
 
     </BlogDiv>
-  </Div>
+  </Container>
 
 );
 export default Blogs;
