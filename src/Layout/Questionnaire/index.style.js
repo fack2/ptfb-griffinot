@@ -84,7 +84,7 @@ export const QuestionText = styled.p`
   font-weight: 600;
   font-size: 3.8rem;
   color: var(--main-font-color);
-  flex-basis: 86%;
+  flex-basis: 85%;
 `;
 
 export const Checkbox = styled.input`
