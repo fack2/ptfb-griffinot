@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 import prev from '../../assets/prevButton.png';
 import {
@@ -23,7 +22,7 @@ const PrevButton = ({ prevLink }) => (
 );
 
 PrevButton.propTypes = {
-  prevLink: PropTypes.bool.isRequired,
+  prevLink: PropTypes.string.isRequired,
 };
 
 export default PrevButton;
