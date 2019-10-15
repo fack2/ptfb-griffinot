@@ -5,23 +5,20 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import prev from '../../assets/prevButton.png';
 import next from '../../assets/nextButton.png';
 import {
-  PrevNextButton,
-  PrevNextText,
-  Container,
-  PrevNextItem,
-  LinkButton,
+  PrevNextButton, PrevNextText, Container, PrevNextItem, LinkButton,
 } from './index.style';
 
 const NextPrevButton = ({ prevLink, nextLink }) => (
   <Router>
     <Container>
-      <LinkButton to={prevLink}>
+      <LinkButton href={prevLink}>
         <PrevNextItem>
           <PrevNextButton alt="PreviousButton" src={prev} />
           <PrevNextText>Prev</PrevNextText>
         </PrevNextItem>
       </LinkButton>
-      <LinkButton to={nextLink}>
+      
+      <LinkButton href={nextLink}>
         <PrevNextItem>
           <PrevNextText>Next</PrevNextText>
           <PrevNextButton alt="NextButton" src={next} />

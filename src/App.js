@@ -10,6 +10,7 @@ import Levels from './Layout/Levels';
 import Resources from './Layout/Resources';
 import SectionA from './Layout/Questionnaire/SectionA';
 import SectionB from './Layout/Questionnaire/SectionB';
+import SectionC from './Layout/Questionnaire/SectionC';
 
 function App() {
   return (
@@ -21,11 +22,12 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
           <Route exact path="/about-us" component={AboutUs} />
-          <Route path="/option" component={Option3} />
-          <Route path="/levels" component={Levels} />
+          <Route exact path="/option" component={Option3} />
+          <Route exact path="/levels" component={Levels} />
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/questionnaire-section-a" component={SectionA} />
-          <Route path="/questionnaire-section-b" component={SectionB} />
+          <Route exact path="/questionnaire-section-b" component={SectionB} />
+          <Route exact path="/questionnaire-section-c" component={SectionC} />
         </>
       </Router>
     </>
