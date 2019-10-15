@@ -11,6 +11,7 @@ import Resources from './Layout/Resources';
 import SectionA from './Layout/Questionnaire/SectionA';
 import SectionB from './Layout/Questionnaire/SectionB';
 import SectionC from './Layout/Questionnaire/SectionC';
+import SectionD1 from './Layout/Questionnaire/SectionD1';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/questionnaire-section-a" component={SectionA} />
           <Route exact path="/questionnaire-section-b" component={SectionB} />
           <Route exact path="/questionnaire-section-c" component={SectionC} />
+          <Route exact path="/questionnaire-section-d1" component={SectionD1} />
         </>
       </Router>
     </>
