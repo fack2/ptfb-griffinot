@@ -11,7 +11,6 @@ import {
 } from './index.style';
 
 const NextButton = ({ nextLink }) => (
-
   <Container>
     <LinkButton to={nextLink}>
       <NextItem>
@@ -20,11 +19,10 @@ const NextButton = ({ nextLink }) => (
       </NextItem>
     </LinkButton>
   </Container>
-
 );
 
 NextButton.propTypes = {
-  nextLink: PropTypes.bool.isRequired,
+  nextLink: PropTypes.string.isRequired,
 };
 
 export default NextButton;
