@@ -22,7 +22,7 @@ const PrevButton = ({ prevLink }) => (
 );
 
 PrevButton.propTypes = {
-  prevLink: PropTypes.bool.isRequired,
+  prevLink: PropTypes.string.isRequired,
 };
 
 export default PrevButton;

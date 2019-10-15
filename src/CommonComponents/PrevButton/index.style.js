@@ -24,5 +24,5 @@ export const PrevText = styled.span`
 
 export const LinkButton = styled.a`
   text-decoration: none;
-  margin-top: 25rem;
+  margin: -3.5rem 0 3rem 0;
 `;
