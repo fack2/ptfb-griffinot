@@ -7,5 +7,5 @@ export const TitleH = styled.span`
   padding: 0 0 0 5rem;
   font-size: 4.5rem;
   font-weight: 600;
-  color: #0f3654;
+  color: #205c88;
 `;

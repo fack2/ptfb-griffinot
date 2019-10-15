@@ -18,14 +18,11 @@ export const CardItem = styled.a`
 `;
 
 export const Image = styled.img`
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-top: 2rem;
+  margin: 2rem 8rem 0 8rem;
   height: 23.5rem;
   border-radius: 2.5rem;
 `;
 export const Title = styled.span`
   padding: 13rem 6rem 0 2rem;
-  font-family: Lato;
   font-size: 3.5rem;
 `;
