@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router } from 'react-router-dom';
 import next from '../../assets/nextButton.png';
 import {
   Nextbutton,
@@ -11,7 +10,6 @@ import {
 } from './index.style';
 
 const NextButton = ({ nextLink }) => (
-
   <Container>
     <LinkButton to={nextLink}>
       <NextItem>
@@ -20,11 +18,10 @@ const NextButton = ({ nextLink }) => (
       </NextItem>
     </LinkButton>
   </Container>
-
 );
 
 NextButton.propTypes = {
-  nextLink: PropTypes.bool.isRequired,
+  nextLink: PropTypes.string.isRequired,
 };
 
 export default NextButton;
