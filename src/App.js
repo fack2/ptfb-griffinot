@@ -24,11 +24,6 @@ function App() {
           <Route path="/about-us" component={AboutUs} />
           <Route path="/levels" component={Levels} />
           <Route exact path="/questionnaire-section-a" component={SectionA} />
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/schema" component={Schema} />
-          <Route path="/about-us" component={AboutUs} />
-          <Route path="/levels" component={Levels} />
           <Route exact path="/resources" component={Resources} />
         </>
       </Router>
