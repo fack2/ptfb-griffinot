@@ -37,7 +37,7 @@ export const Para2 = styled.p`
   margin: 5rem 1rem 4rem 2rem;
 `;
 
-export const NextText = styled.p`
+export const NextText = styled.button`
   font-size: 4rem;
   margin-top: 2rem;
   margin-left: 77rem;
