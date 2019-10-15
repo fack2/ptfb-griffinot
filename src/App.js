@@ -21,7 +21,6 @@ function App() {
           <Route exact path="/schema" component={Schema} />
           <Route exact path="/about-us" component={AboutUs} />
           <Route path="/option" component={Option3} />
-          <Route path="/about-us" component={AboutUs} />
           <Route path="/levels" component={Levels} />
           <Route exact path="/questionnaire-section-a" component={SectionA} />
           <Route exact path="/resources" component={Resources} />
