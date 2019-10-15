@@ -9,7 +9,7 @@ import {
   QuestionContainer,
 } from '../../CommonComponents/Question/index.style';
 import { Header, Paragraph, Line } from './index.style';
-import NextPrevButton from '../../CommonComponents/NextPrevButton';
+import NextButton from '../../CommonComponents/NextButton';
 
 const SectionA = () => (
   <>
@@ -48,7 +48,7 @@ const SectionA = () => (
         <QuestionDescription>{data[4].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <NextPrevButton />
+    <NextButton nextLink="/" />
   </>
 );
 
