@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
-	margin-bottom: 3rem;
 `;
 export const PrevNextItem = styled.div`
 	margin: 5rem 4rem;
