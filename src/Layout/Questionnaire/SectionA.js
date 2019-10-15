@@ -46,7 +46,7 @@ const SectionA = () => (
         <Checkbox type="checkbox" id={data[3].questionNumber} />
         <QuestionDescription>{data[3].description}</QuestionDescription>
       </QuestionCard>
-      
+
       <QuestionCard height="31rem">
         <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
         <QuestionText>{data[4].question}</QuestionText>
