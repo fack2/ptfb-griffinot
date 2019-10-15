@@ -28,17 +28,17 @@ export const Paragraph = styled.p`
 `;
 
 export const Button = styled.button`
-margin-left: auto;
-margin-right: auto;
-background-color:var(--main-title-color);
-border: 1px solid #205C8B;
-color: white;
-border-radius: 20rem;
-width: 61rem;
-height: 11rem;
-margin-top: 7rem;
-font-size: 4.8rem;
-font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:var(--main-title-color);
+  border: 1px solid #205C8B;
+  color: white;
+  border-radius: 20rem;
+  width: 61rem;
+  height: 11rem;
+  margin-top: 7rem;
+  font-size: 4.8rem;
+  font-weight: bolder;
 `;
 
 export const ResourceLink = styled.p`
