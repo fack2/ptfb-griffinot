@@ -11,7 +11,7 @@ import {
 } from './index.style';
 import NextPrevButton from '../../CommonComponents/NextPrevButton';
 
-const SectionA = () => (
+const SectionC = () => (
   <>
     <QuestionContainer>
       <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
@@ -54,4 +54,4 @@ const SectionA = () => (
   </>
 );
 
-export default SectionA;
+export default SectionC;
