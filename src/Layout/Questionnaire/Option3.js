@@ -40,7 +40,7 @@ const Option3 = () => (
       </LinkOption>
     </DivData>
 
-    <PrevButton prevLink="/" />
+    <PrevButton prevLink="/questionnaire-section-c" />
   </>
 );
 export default Option3;

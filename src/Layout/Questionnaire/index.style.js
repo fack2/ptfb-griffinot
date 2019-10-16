@@ -12,7 +12,7 @@ export const Line = styled.hr`
 
 export const Paragraph = styled.p`
   font-size: 3.3rem;
-  margin: 8rem 2rem 1rem 3rem;
+  margin: 8rem 2rem 2rem 3rem;
   font-weight: bold;
 `;
 
@@ -84,7 +84,7 @@ export const QuestionText = styled.p`
   font-weight: 600;
   font-size: 3.8rem;
   color: var(--main-font-color);
-  flex-basis: 86%;
+  flex-basis: 85%;
 `;
 
 export const Checkbox = styled.input`
@@ -93,6 +93,7 @@ export const Checkbox = styled.input`
   background: #ffffff;
   border: 1px solid #787878;
   box-sizing: border-box;
+  margin-left: 1.5rem;
 `;
 
 export const QuestionDescription = styled.p`

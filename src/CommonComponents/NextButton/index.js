@@ -11,7 +11,7 @@ import {
 
 const NextButton = ({ nextLink }) => (
   <Container>
-    <LinkButton to={nextLink}>
+    <LinkButton href={nextLink}>
       <NextItem>
         <NextText>Next</NextText>
         <Nextbutton alt="NextButton" src={next} />
