@@ -25,13 +25,8 @@ class Schema extends React.Component {
 
   }
 
-  onChange = event => {
-    this.setState({ [event.target.name]: event.target.value })
-  }
-
   DisplayPop = () => {
     this.setState({ NoBtn: true })
-    console.log(this.state.NoBtn, 'WELL')
   };
 
   setRedirect = () => {
@@ -63,8 +58,10 @@ class Schema extends React.Component {
         </Container>
 
 
-        <Popup modal trigger={(<NextText onClick={this.state.reset} type="button"> Start <NextArrow alt="next-arrow" src={arrow} /> </NextText>)
-        }>
+        <Popup modal trigger={(<NextText type="button"> Start <NextArrow alt="next-arrow" src={arrow} /> </NextText>)
+        } onClose={() => {
+          this.setState({ NoBtn: false })
+        }}>
 
           {() => <BodyPage>
             <PopUPCard>
@@ -87,6 +84,7 @@ class Schema extends React.Component {
 
                     {this.renderBtn()}
                     {this.state.NoBtn ? <OptionBtn onClick={this.setRedirect} type="button">No</OptionBtn> : <OptionBtn onClick={this.DisplayPop} type="button">No</OptionBtn>}
+                    }
 
                   </ContainerBtn>
                 </Container2>
