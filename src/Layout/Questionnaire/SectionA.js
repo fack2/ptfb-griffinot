@@ -54,7 +54,8 @@ const SectionA = () => (
         <QuestionDescription>{data[4].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <NextButton nextLink="/questionnaire-section-b" s />
+
+    <NextButton nextLink="/questionnaire-section-b" />
   </>
 );
 
