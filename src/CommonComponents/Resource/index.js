@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import {
  Container, Image, Title, CardItem 
 } from './index.style';
 
-const Resource = ({ id, picture, title }) => (
-  <Container>
-    <CardItem key={id}>
-      <Image src={picture} />
-      <Title>{title}</Title>
-    </CardItem>
-  </Container>
-);
+const Resource = (props) => {
+  const { id, picture, title } = props;
+  return (
+    <Container>
+      <CardItem key={id}>
+        <Image src={picture} />
+        <Title>{title}</Title>
+      </CardItem>
+    </Container>
+  );
+};
 
 Resource.prototypes = {
   id: PropTypes.integer,
