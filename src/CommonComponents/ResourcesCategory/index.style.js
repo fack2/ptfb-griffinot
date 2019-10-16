@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const BlogDiv = styled.div`
+export const ResourcesCategoryDiv = styled.div`
   width: 89rem;
   height: 16rem;
   border: 0.1rem solid #000000;
@@ -13,12 +13,12 @@ export const BlogDiv = styled.div`
   margin-bottom: 9.9rem;
 `;
 
-export const ImageBlog = styled.img`
+export const ImageResourcesCategory = styled.img`
   margin-top: 4rem;
   margin-left: 4rem;
 `;
-export const TitleBlog = styled.p`
-     margin-left: 14rem;
-    margin-top: -5.4rem;
-    font-size: 3rem;
+export const TitleResourcesCategory = styled.p`
+  margin-left: 14rem;
+  margin-top: -5.4rem;
+  font-size: 3rem;
 `;

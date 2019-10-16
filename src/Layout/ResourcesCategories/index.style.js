@@ -5,11 +5,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const BodyBlogs = styled.div`
+export const BodyCategory = styled.div`
   margin-top:8rem;
 `;
 
-export const TitleBlog = styled.h1`
+export const TitleCategory = styled.h1`
   margin-left: 1rem;
 `;
 
