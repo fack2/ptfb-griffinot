@@ -110,5 +110,5 @@ export const OptionBtn = styled.button`
   height: 7rem;
   font-size: 3.5rem;
   outline: none;
-
+  margin-left: 9rem;
 `;
