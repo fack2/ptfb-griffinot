@@ -1,24 +1,17 @@
 import React from 'react';
+import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
-
-import prev from '../../assets/prevButton.png';
-import {
-  Prevbutton,
-  PrevText,
-  Container,
-  PrevItem,
-  LinkButton,
-} from './index.style';
+import { PrevBtn } from './index.style';
 
 const PrevButton = ({ prevLink }) => (
-  <Container>
-    <LinkButton href={prevLink}>
-      <PrevItem>
-        <Prevbutton alt="PreviousButton" src={prev} />
-        <PrevText>Prev</PrevText>
-      </PrevItem>
-    </LinkButton>
-  </Container>
+  <>
+    <Button.Group>
+      <PrevBtn to={prevLink} type="primary">
+        <Icon type="left" />
+        Prev
+      </PrevBtn>
+    </Button.Group>
+  </>
 );
 
 PrevButton.propTypes = {
