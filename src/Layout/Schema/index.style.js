@@ -37,7 +37,7 @@ export const Para2 = styled.p`
   margin: 5rem 1rem 4rem 2rem;
 `;
 
-export const NextText = styled.button`
+export const NextText = styled.p`
   font-size: 4rem;
   margin-top: 2rem;
   margin-left: 77rem;
@@ -110,5 +110,5 @@ export const OptionBtn = styled.button`
   height: 7rem;
   font-size: 3.5rem;
   outline: none;
-
+  margin-left: 9rem;
 `;
