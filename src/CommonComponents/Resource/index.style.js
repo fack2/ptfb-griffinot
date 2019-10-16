@@ -8,13 +8,13 @@ export const Container = styled.div`
 `;
 
 export const CardItem = styled.a`
+  width: 86rem;
+  height: 14rem;
   border: 0.2rem solid #a7a7a7;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
-  display: flex;
-  padding: 1rem 1rem 3rem 1rem;
-  margin: 3rem 5rem 2rem;
+  margin-top: 19rem;
 `;
 
 export const Image = styled.img`

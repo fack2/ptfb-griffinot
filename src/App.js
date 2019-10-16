@@ -9,6 +9,7 @@ import Option3 from './Layout/Questionnaire/Option3';
 import Levels from './Layout/Levels';
 import SectionA from './Layout/Questionnaire/SectionA';
 import Resources from './Layout/Resources';
+import Blogs from './Layout/Blogs';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <>
           <Header />
+
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
@@ -24,6 +26,7 @@ function App() {
           <Route path="/levels" component={Levels} />
           <Route exact path="/questionnaire-section-a" component={SectionA} />
           <Route exact path="/resources" component={Resources} />
+          <Route path="/blogs" component={Blogs} />
         </>
       </Router>
     </>
