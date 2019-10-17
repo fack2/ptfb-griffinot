@@ -12,12 +12,12 @@ import {
 } from './index.style';
 
 const Resource = ({
- id, picture, title, price, description 
+ id, picture, title, price, description, onClick 
 }) => (
   <Container>
     <CardItem key={id}>
       <Image src={picture} />
-      <TextOne>
+      <TextOne onClick={onClick} name={id}>
         <Title>{title}</Title>
         <Price>{price}</Price>
         <Description>{description}</Description>
