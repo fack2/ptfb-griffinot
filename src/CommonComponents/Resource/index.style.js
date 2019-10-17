@@ -5,10 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 2.5rem;
-  /* padding: 3rem 1rem 3rem 1rem;
-  margin: 3rem 3rem 2rem 3rem; */
 `;
-
 export const CardItem = styled.a`
   border: 0.2rem solid #a7a7a7;
   box-sizing: border-box;
@@ -18,7 +15,6 @@ export const CardItem = styled.a`
   padding: 1rem 1rem 3rem 1rem;
   margin: 3rem 5rem 2rem;
 `;
-
 export const Image = styled.img`
   margin: 2rem 8rem 0 8rem;
   height: 23.5rem;
@@ -30,7 +26,6 @@ export const Title = styled.span`
   color: #205c88;
   font-weight: 700;
 `;
-
 export const Price = styled.span`
   font-weight: 600;
   font-size: 2.5rem;
@@ -47,7 +42,6 @@ export const Description = styled.p`
   padding: 0rem 19rem 0 2rem;
   margin: 8rem -14rem 1rem -25rem;
 `;
-
 export const TextOne = styled.div`
   display: flex;
   flex-direction: column;
