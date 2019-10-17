@@ -10,6 +10,7 @@ import Levels from './Layout/Levels';
 import Resources from './Layout/Resources';
 import SectionA from './Layout/Questionnaire/SectionA';
 import SectionB from './Layout/Questionnaire/SectionB';
+import Books from './Layout/Books';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/questionnaire-section-a" component={SectionA} />
           <Route path="/questionnaire-section-b" component={SectionB} />
+          <Route exact path="/resources-books" component={Books} />
         </>
       </Router>
     </>
