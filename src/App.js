@@ -34,7 +34,7 @@ function App() {
         <Route exact path="/questionnaire-section-c" component={SectionC} />
         <Route exact path="/questionnaire-section-d1" component={SectionD1} />
         <Route exact path="/questionnaire-section-d2" component={SectionD2} />
-        <Route exact path="/resources-books" component={Books} />
+        <Route exact path="/books" component={Books} />
       </Router>
     </>
   );
