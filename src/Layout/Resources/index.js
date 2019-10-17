@@ -7,10 +7,16 @@ import data from '../../Data/resourceDate';
 const Resources = () => (
   <Container>
     <TitleH>Helpful resources</TitleH>
-    {data.map(({ id, picture, title }) => (
-      <Resource key={id} picture={picture} title={title} />
+    {data.map(({ id, picture, title, price, description }) => (
+      <Resource
+        key={id}
+        picture={picture}
+        title={title}
+        price={null}
+        description={null}
+      />
     ))}
-    <PrevButton prevLink="/" />
+    <PrevButton prevLink='/' />
   </Container>
 );
 
