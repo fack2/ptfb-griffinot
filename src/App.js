@@ -18,21 +18,20 @@ function App() {
   return (
     <>
       <Router>
-        <>
-          <Header />
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/menu" component={Menu} />
-          <Route exact path="/schema" component={Schema} />
-          <Route exact path="/about-us" component={AboutUs} />
-          <Route exact path="/option" component={Option3} />
-          <Route exact path="/levels" component={Levels} />
-          <Route exact path="/resources" component={Resources} />
-          <Route exact path="/questionnaire-section-a" component={SectionA} />
-          <Route exact path="/questionnaire-section-b" component={SectionB} />
-          <Route exact path="/questionnaire-section-c" component={SectionC} />
-          <Route exact path="/questionnaire-section-d1" component={SectionD1} />
-          <Route exact path="/questionnaire-section-d2" component={SectionD2} />
-        </>
+        
+        <Route render={() => (window.location.pathname === '/menu' ? null : <Header />)} />
+        <Route exact path="/menu" component={Menu} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/schema" component={Schema} />
+        <Route exact path="/about-us" component={AboutUs} />
+        <Route exact path="/option" component={Option3} />
+        <Route exact path="/levels" component={Levels} />
+        <Route exact path="/resources" component={Resources} />
+        <Route exact path="/questionnaire-section-a" component={SectionA} />
+        <Route exact path="/questionnaire-section-b" component={SectionB} />
+        <Route exact path="/questionnaire-section-c" component={SectionC} />
+        <Route exact path="/questionnaire-section-d1" component={SectionD1} />
+        <Route exact path="/questionnaire-section-d2" component={SectionD2} />
       </Router>
     </>
   );
