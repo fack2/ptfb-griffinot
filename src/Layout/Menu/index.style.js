@@ -42,10 +42,8 @@ export const CloseDiv = styled.div`
 export const ImageClose = styled.img`
   width: 3rem;
   height: 3rem;
-
-  /* margin-left: 88rem;
-  margin-top: 7rem; */
 `;
+
 export const ButtonClose = styled.button`
   border: none;
   background: #fff;
