@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-
 export const NavBar = styled.div`
 display: flex;
 justify-content:center;
 `;
-
 
 export const Logo = styled.img`
 width: 40rem;
