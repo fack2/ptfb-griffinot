@@ -22,24 +22,28 @@ const SectionB = () => (
         <Checkbox type="checkbox" id={data[5].questionNumber} />
         <QuestionDescription>{data[5].description}</QuestionDescription>
       </QuestionCard>
+
       <QuestionCard>
         <QuestionNumber>{data[6].questionNumber}</QuestionNumber>
         <QuestionText>{data[6].question}</QuestionText>
         <Checkbox type="checkbox" id={data[6].questionNumber} />
         <QuestionDescription>{data[6].description}</QuestionDescription>
       </QuestionCard>
+
       <QuestionCard>
         <QuestionNumber>{data[7].questionNumber}</QuestionNumber>
         <QuestionText>{data[7].question}</QuestionText>
         <Checkbox type="checkbox" id={data[7].questionNumber} />
         <QuestionDescription>{data[7].description}</QuestionDescription>
       </QuestionCard>
+
       <QuestionCard>
         <QuestionNumber>{data[8].questionNumber}</QuestionNumber>
         <QuestionText>{data[8].question}</QuestionText>
         <Checkbox type="checkbox" id={data[8].questionNumber} />
         <QuestionDescription>{data[8].description}</QuestionDescription>
       </QuestionCard>
+
       <QuestionCard>
         <QuestionNumber>{data[9].questionNumber}</QuestionNumber>
         <QuestionText>{data[9].question}</QuestionText>
