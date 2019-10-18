@@ -1,34 +1,42 @@
 const resourceData = [
   {
-    picture: 'src/assets/IntroductoryVideos.jpg',
+    id: 1,
+    picture: 'https://i.imgur.com/f09rT1U.jpg',
     title: 'Introductory Videos',
   },
   {
-    picture: 'src/assets/SensoryProcessingTraining.jpg',
+    id: 2,
+    picture: 'https://i.imgur.com/UgSeWt8.jpg',
     title: 'Sensory Training',
   },
   {
-    picture: 'src/assets/SensoryIntroduction.jpg',
+    id: 3,
+    picture: 'https://i.imgur.com/crvX30K.jpg',
     title: 'Sensory Introduction',
   },
   {
-    picture: 'src/assets/SensoryTopics.jpg',
+    id: 4,
+    picture: 'https://i.imgur.com/SZBuweI.jpg',
     title: 'Sensory Topics',
   },
   {
-    picture: 'src/assets/SensoryEquipment.jpg',
+    id: 5,
+    picture: 'https://i.imgur.com/WFGMC1r.jpg',
     title: 'Sensory Equipment',
   },
   {
-    picture: 'src/assets/book.jpg',
+    id: 6,
+    picture: 'https://i.imgur.com/BY7RtzY.png',
     title: 'Books',
   },
   {
-    picture: 'src/assets/PencilGraspTips.jpg',
+    id: 7,
+    picture: 'https://i.imgur.com/UxI7SNK.jpg',
     title: 'Pencil Grasp Tips',
   },
   {
-    picture: 'src/assets/PencilGripReviews.jpg',
+    id: 8,
+    picture: 'https://i.imgur.com/K2ajooI.jpg',
     title: 'Pencil Grip Reviews',
   },
 ];
