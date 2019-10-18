@@ -55,7 +55,7 @@ const SectionA = ({ checkboxChange }) => (
         <QuestionDescription>{data[4].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <NextButton nextLink="/questionnaire-section-b" />
+    <NextButton nextLink="/questionnaire" />
   </>
 );
 
