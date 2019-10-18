@@ -15,7 +15,7 @@ function App() {
     <>
       <Router>
         <>
-          <Header />
+          <Route render={() => (window.location.pathname === '/menu' ? null : <Header />)} />
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/schema" component={Schema} />
