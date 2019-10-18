@@ -1,6 +1,8 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import popUpImg from '../../assets/popup-logo.png';
 import Popup from 'reactjs-popup';
+import PopupPage from '../../CommonComponents/PopupPage'
 import {
   Title, HorizontalLine, Para1, FineMotorImg, Para2, NextText, NextArrow, Container, PopUPCard,
   PopUpBox,
@@ -18,19 +20,26 @@ import arrow from '../../assets/right-arrow.png';
 class Schema extends React.Component {
 
   state = {
-    YesBtn: false,
-    NoBtn: false
-  }
+    NoBtn: false,
+    redirectBtn: false,
 
-  onChange = event => {
-    this.setState({ [event.target.name]: event.target.value })
   }
 
   DisplayPop = () => {
-    this.setState({ NoBtn: true }, () => {
-      setTimeout(() => { this.setState({ NoBtn: false }) }, 2000);
-    })
+    this.setState({ NoBtn: true })
   };
+
+  setRedirect = () => {
+    this.setState({
+      redirectBtn: true
+    })
+  }
+
+  renderBtn = () => {
+    if (this.state.redirectBtn) {
+      return <Redirect to='/questionnaire-section-a' />
+    }
+  }
 
   render() {
     return (
@@ -49,7 +58,10 @@ class Schema extends React.Component {
         </Container>
 
 
-        <Popup modal trigger={(<NextText type="button"> Start <NextArrow alt="next-arrow" src={arrow} /> </NextText>)}>
+        <Popup modal trigger={(<NextText type="button"> Start <NextArrow alt="next-arrow" src={arrow} /> </NextText>)
+        } onClose={() => {
+          this.setState({ NoBtn: false })
+        }}>
 
           {() => <BodyPage>
             <PopUPCard>
@@ -62,14 +74,24 @@ class Schema extends React.Component {
                 <Container2>
                   {this.state.NoBtn ? <PopUpDiv> 2. Does your child have a neurological or genetic condition?(e.g. CP, Down's Syndrome)</PopUpDiv> : <PopUpDiv>1. Does your child have a degenerative condition?(e.g. MD,  Rhetts)</PopUpDiv>}
                   <ContainerBtn>
-                    <OptionBtn type="button">Yes</OptionBtn>
-                    <OptionBtn onClick={this.DisplayPop} type="button">No</OptionBtn>
+
+                    {this.state.NoBtn ? <Popup modal trigger={(<OptionBtn type="button">Yes</OptionBtn>)}>
+                      {() => <PopupPage description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme." NextLink='/questionnaire-section-a' />}
+                    </Popup> :
+                      <Popup modal trigger={(<OptionBtn type="button">Yes</OptionBtn>)}>
+                        {() => <PopupPage description="Sorry, our program is not suitable for your child." NextLink='/' />}
+                      </Popup>}
+
+                    {this.renderBtn()}
+                    {this.state.NoBtn ? <OptionBtn onClick={this.setRedirect} type="button">No</OptionBtn> : <OptionBtn onClick={this.DisplayPop} type="button">No</OptionBtn>}
+                    }
+
                   </ContainerBtn>
                 </Container2>
               </PopUpBox>
             </PopUPCard>
           </BodyPage>}
-        </Popup>
+        </Popup >
       </>
     )
   }
