@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import '../../index.css';
 
-
 export const Container = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Title = styled.h1`
@@ -16,22 +15,21 @@ export const Title = styled.h1`
 export const LandingImg = styled.img`
   margin-left: auto;
   margin-right: auto;
-  width: 88rem;
-  height: 72rem;
-  border-radius: 4rem;
+  height: 47rem;
+  border-radius: 1.5rem;
 `;
 
 export const Paragraph = styled.p`
   font-size: 1.7rem;
-  color: #5C5B5B;
+  color: #5c5b5b;
   margin: 6rem 7rem 0rem 7rem;
 `;
 
 export const Button = styled.button`
   margin-left: auto;
   margin-right: auto;
-  background-color:var(--main-title-color);
-  border: 1px solid #205C8B;
+  background-color: var(--main-title-color);
+  border: 1px solid #205c8b;
   color: white;
   border-radius: 20rem;
   width: 61rem;
@@ -48,5 +46,5 @@ export const ResourceLink = styled.p`
 `;
 
 export const Link = styled.span`
-  color:var(--main-component-color);
+  color: var(--main-component-color);
 `;
