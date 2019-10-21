@@ -46,6 +46,17 @@ export const PopUpDiv = styled.span`
   letter-spacing: 0.1rem;
 `;
 
+export const LinkText = styled(Link)`
+  padding: 4.4rem;
+  font-size: 3.5rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  color: var(--next-prev-button-color);
+  margin-top: -7rem;
+  text-decoration: none;
+  
+`;
+
 export const ContainerBtn = styled.div`
   display: flex;
   justify-content: space-around;
@@ -53,9 +64,9 @@ export const ContainerBtn = styled.div`
 `;
 
 export const TextBtn = styled(Link)`
-  position: fixed;
-  left: 60rem;
-  top: 118rem;
+  position:absolute;
+  top: 32rem;
+  left: 27rem;
   font-size: 4rem;
   font-weight: bold;
   color: var(--main-title-color);

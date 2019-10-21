@@ -1,4 +1,6 @@
 import React from 'react';
+import Popup from 'reactjs-popup';
+import PopupPage from '../../CommonComponents/PopupPage';
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
@@ -55,7 +57,9 @@ const SectionA = () => (
       </QuestionCard>
     </QuestionContainer>
 
-    <NextButton nextLink="/questionnaire-section-b" />
+    <Popup modal trigger={<NextButton />}>
+      <PopupPage description="Sorry, our program is too challenging for your child, you might want to check out these resources to get you started." optionLink="/resources" optionText="Our resources" NextLink="/" />
+    </Popup>
   </>
 );
 
