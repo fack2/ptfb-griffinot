@@ -58,7 +58,7 @@ const SectionA = () => (
     </QuestionContainer>
 
     <Popup modal trigger={<NextButton />}>
-      <PopupPage description="Sorry, our program is too challenging for your child, you might want to check out these resources to get you started." NextLink="/" />
+      <PopupPage description="Sorry, our program is too challenging for your child, you might want to check out these resources to get you started." optionLink="/resources" optionText="Our resources" NextLink="/" />
     </Popup>
   </>
 );
