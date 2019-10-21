@@ -7,10 +7,14 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-player": "^1.13.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "react-youtube": "^7.9.0",
     "reactjs-popup": "^1.5.0",
-    "styled-components": "^4.4.0"
+    "redux": "^4.0.4",
+    "styled-components": "^4.4.0",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
