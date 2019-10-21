@@ -15,7 +15,7 @@ width: 40rem;
 
 export const Menu = styled.img`
 width: 7rem;
-margin: 7rem 4rem 0rem 47rem;
+margin: 7rem 4rem 0rem 46rem;
  @media (min-width: 1281px) {
     width: 5rem;
   }
