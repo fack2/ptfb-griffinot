@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Header = styled.h1`
   text-align: center;
@@ -11,7 +12,7 @@ export const Line = styled.hr`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   margin: 8rem 2rem 2rem 3rem;
   font-weight: bold;
 `;
@@ -29,7 +30,7 @@ export const TitleOption = styled.h1`
   text-align: center;
 `;
 
-export const OptionDiv = styled.div`
+export const Option = styled.button`
   display: flex;
   justify-content: center;
   width: 85rem;
@@ -37,15 +38,12 @@ export const OptionDiv = styled.div`
   background: #d6ebf7;
   border-radius: 2.5rem;
   margin-top: 8rem;
-`;
-
-export const ParagraphObtion = styled.p`
   font-size: 3.7rem;
   color: #000000;
   text-align: center;
 `;
 
-export const LinkOption = styled.a`
+export const LinkOption = styled(Link)`
   text-decoration: none;
 `;
 
