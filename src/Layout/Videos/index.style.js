@@ -11,6 +11,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 `;
+
 export const ImgTitle = styled.div`
   display: flex;
   flex-direction: row;
@@ -19,10 +20,12 @@ export const ImgTitle = styled.div`
     padding: 3rem 0 0 8rem;
   }
 `;
+
 export const Image = styled.img`
   height: 4.5rem;
   margin: 4rem 0 0 1rem;
 `;
+
 export const Title = styled.span`
   margin: 3.2rem 0 0 2rem;
   font-size: 4.5rem;
@@ -33,9 +36,11 @@ export const Title = styled.span`
     padding: 1.5rem 0 0 0;
   }
 `;
+
 export const VideoCard = styled(ReactPlayer)`
   padding: 5.3rem 0 0 8rem;
 `;
+
 export const VideoTitle = styled.span`
   margin: 4.2rem 0 2.8rem 8rem;
   font-size: 3rem;
