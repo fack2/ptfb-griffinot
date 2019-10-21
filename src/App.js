@@ -9,6 +9,7 @@ import Option3 from './Layout/Questionnaire/Option3';
 import Levels from './Layout/Levels';
 import Resources from './Layout/Resources';
 import Questionnaire from './Layout/Questionnaire';
+import Books from './Layout/Books';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/levels" component={Levels} />
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/questionnaire" component={Questionnaire} />
+          <Route exact path="/books" component={Books} />
         </>
       </Router>
     </>
