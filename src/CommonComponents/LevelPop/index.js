@@ -18,10 +18,10 @@ import {
   TitleParagraph,
 } from './index.style';
 
-const PopupPage = ({
+const LevelPop = ({
   description, NextLink, levelScore, titleLevel, button,
 }) => (
-    <>
+  <>
       <BodyPage>
         <PopUPCard>
           <PopUpBox Height="100rem">
@@ -44,8 +44,8 @@ const PopupPage = ({
           </PopUpBox>
         </PopUPCard>
       </BodyPage>
-    </>
-  );
+  </>
+);
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
@@ -55,4 +55,4 @@ PopupPage.propTypes = {
   button: PropTypes.string.isRequired,
 };
 
-export default PopupPage;
+export default LevelPop;
