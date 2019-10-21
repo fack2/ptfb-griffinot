@@ -3,14 +3,16 @@ import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
 import { NextBtn } from './index.style';
 
-const NextButton = ({ nextLink }) => (
+const NextButton = (props) => (
   <>
-    <Button.Group>
-      <NextBtn to={nextLink} type="primary">
+    {/* we use props to have refs for next button so we can show the pop up after we click on it */}
+    <Button.Group {...props}>
+      <NextBtn type="button">
         Next
         <Icon type="right" />
       </NextBtn>
     </Button.Group>
+
   </>
 );
 
