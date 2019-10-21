@@ -8,6 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-size: 4.5rem;
   text-align: center;
   margin-bottom: 5rem;
 `;
@@ -15,14 +16,15 @@ export const Title = styled.h1`
 export const LandingImg = styled.img`
   margin-left: auto;
   margin-right: auto;
-  height: 47rem;
+  margin-top: 2rem;
+  width: 84rem;
   border-radius: 1.5rem;
 `;
 
 export const Paragraph = styled.p`
   font-size: 1.7rem;
   color: #5c5b5b;
-  margin: 6rem 7rem 0rem 7rem;
+  margin: 8rem 7rem 0rem 7rem;
 `;
 
 export const Button = styled.button`
@@ -34,7 +36,7 @@ export const Button = styled.button`
   border-radius: 20rem;
   width: 61rem;
   height: 11rem;
-  margin-top: 7rem;
+  margin-top: 10rem;
   font-size: 4.8rem;
   font-weight: bolder;
 `;
