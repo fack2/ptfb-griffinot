@@ -3,10 +3,10 @@ import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
 import { NextBtn } from './index.style';
 
-const NextButton = ({ nextLink }) => (
+const NextButton = ({ nextLink, nextButtonClickHandler }) => (
   <>
     <Button.Group>
-      <NextBtn to={nextLink} type="primary">
+      <NextBtn to={nextLink} type="primary" name="nextBtn" onClick={nextButtonClickHandler}>
         Next
         <Icon type="right" />
       </NextBtn>
@@ -16,6 +16,7 @@ const NextButton = ({ nextLink }) => (
 
 NextButton.propTypes = {
   nextLink: PropTypes.string.isRequired,
+  nextButtonClickHandler: PropTypes.func.isRequired,
 };
 
 export default NextButton;
