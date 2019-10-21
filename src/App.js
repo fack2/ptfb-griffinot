@@ -14,6 +14,7 @@ import Books from './Layout/Books';
 import SectionC from './Layout/Questionnaire/SectionC';
 import SectionD1 from './Layout/Questionnaire/SectionD1';
 import SectionD2 from './Layout/Questionnaire/SectionD2';
+import Videos from './Layout/Videos';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/questionnaire-section-d1" component={SectionD1} />
         <Route exact path="/questionnaire-section-d2" component={SectionD2} />
         <Route exact path="/books" component={Books} />
+        <Route exact path="/introductory-videos" component={Videos} />
       </Router>
     </>
   );
