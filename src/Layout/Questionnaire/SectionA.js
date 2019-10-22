@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
+import LevelData from './QuestionnaireData';
 import PopupPage from '../../CommonComponents/PopupPage';
 import data from '../../Data/questionnareData';
 import {
@@ -87,7 +88,12 @@ const SectionA = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) 
 
     {/* If User didn't answer all the questions => limit is < 5 */}
     <Popup modal trigger={<NextButton />}>
-      <PopupPage description="Sorry, our program is too challenging for your child, you might want to check out these resources to get you started." optionLink="/resources" optionText="Our resources" NextLink="/" />
+      <PopupPage
+        description={LevelData[0].uncompletedMsg}
+        optionLink="/resources"
+        optionText="Our resources"
+        NextLink={LevelData[0].uncompletedAction}
+      />
     </Popup>
   </>
 );
