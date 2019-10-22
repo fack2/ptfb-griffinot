@@ -3,10 +3,10 @@ import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
 import { NextBtn } from './index.style';
 
-const NextButton = ({ nextLink, nextButtonClickHandler }, props) => (
+const NextButton = (props) => (
   <>
     <Button.Group {...props}>
-      <NextBtn to={nextLink} type="primary" name="nextBtn" onClick={nextButtonClickHandler}>
+      <NextBtn to={props.nextLink} type="primary" name="nextBtn" onClick={props.nextButtonClickHandler}>
         Next
         <Icon type="right" />
       </NextBtn>
