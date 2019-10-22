@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Popup from 'reactjs-popup';
+import LevelPop from '../../CommonComponents/LevelPop';
+import LevelData from './QuestionnaireData';
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
@@ -10,7 +13,8 @@ import {
   QuestionContainer,
   Paragraph,
 } from './index.style';
-import NextPrevButton from '../../CommonComponents/NextPrevButton';
+import NextButton from '../../CommonComponents/NextButton';
+import PrevButton from '../../CommonComponents/PrevButton';
 
 const SectionC = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) => (
   <>
@@ -76,11 +80,17 @@ const SectionC = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) 
         <QuestionDescription>{data[14].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <NextPrevButton
-      prevLink="/questionnaire"
-      nextLink="/questionnaire"
-      nextButtonClickHandler={nextButtonClickHandler}
-    />
+
+    <PrevButton prevLink="/questionnaire" />
+    <NextButton nextLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
+    <Popup modal trigger={<NextButton />}>
+      <LevelPop
+        levelScore={LevelData[2].LevelNo}
+        description={LevelData[2].uncompletedMsg}
+        NextLink={LevelData[2].uncompletedAction}
+        No={LevelData[2].LevelNo}
+      />
+    </Popup>
   </>
 );
 
