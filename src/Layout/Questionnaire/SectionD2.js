@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
 import PopupPage from '../../CommonComponents/PopupPage';
 import data from '../../Data/questionnareData';
+import QuestionnaireData from './QuestionnaireData';
 import {
   QuestionCard,
   QuestionText,
@@ -15,10 +16,17 @@ import {
 import PrevButton from '../../CommonComponents/PrevButton';
 import NextButton from '../../CommonComponents/NextButton';
 
-const SectionD2 = ({ checkboxChange, checkedQuestions }) => (
+const SectionD2 = ({
+  checkboxChange,
+  checkedQuestions,
+  checkedItems,
+  nextButtonClickHandler,
+}) => (
   <>
     <QuestionContainer>
-      <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
+      <Paragraph>
+        Please check the box if your child is able to do the following:
+      </Paragraph>
       <QuestionCard>
         <QuestionNumber>{data[20].questionNumber}</QuestionNumber>
         <QuestionText>{data[20].question}</QuestionText>
@@ -79,20 +87,32 @@ const SectionD2 = ({ checkboxChange, checkedQuestions }) => (
         <QuestionDescription>{data[24].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <PrevButton prevLink="/questionnaire" />
+    <PrevButton
+      prevLink="/questionnaire"
+      nextButtonClickHandler={nextButtonClickHandler}
+    />
 
-    <Popup modal trigger={<NextButton />}>
-      <PopupPage
-        description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
-        NextLink="/"
-      />
-    </Popup>
+    {checkedItems.length === QuestionnaireData[5].limit ? (
+      <Popup modal trigger={<NextButton />}>
+        <PopupPage
+          description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
+          NextLink="/"
+        />
+      </Popup>
+    ) : (
+      <Popup modal trigger={<NextButton />}>
+        <PopupPage description="hi." NextLink="/" />
+      </Popup>
+    )}
   </>
 );
 
 SectionD2.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
-  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool])).isRequired,
+  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
+    .isRequired,
+  checkedItems: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number]))
+    .isRequired,
 };
 
 export default SectionD2;
