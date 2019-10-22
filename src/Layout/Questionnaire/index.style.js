@@ -12,19 +12,18 @@ export const Line = styled.hr`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 3.5rem;
+  font-size: 3.95rem;
   margin: 8rem 2rem 2rem 3rem;
   font-weight: bold;
 `;
 
 export const DivData = styled.div`
   display: flex;
-  /* flex-direction: column; */
   margin-left: 6rem;
   margin-top: 11rem;
   justify-content: center;
   @media screen {
-    flex-direction: column
+    flex-direction: column;
   }
 `;
 

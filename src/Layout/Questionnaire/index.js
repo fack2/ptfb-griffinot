@@ -107,7 +107,6 @@ class Questionnaire extends Component {
         return (
           <SectionD2
             checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
             checkedQuestions={checkedQuestions}
           />
         );

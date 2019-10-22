@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import PropTypes from 'prop-types';
-=======
 import Popup from 'reactjs-popup';
 import PopupPage from '../../CommonComponents/PopupPage';
->>>>>>> master
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
@@ -18,7 +15,7 @@ import {
 import PrevButton from '../../CommonComponents/PrevButton';
 import NextButton from '../../CommonComponents/NextButton';
 
-const SectionD2 = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) => (
+const SectionD2 = ({ checkboxChange, checkedQuestions }) => (
   <>
     <QuestionContainer>
       <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
@@ -82,19 +79,19 @@ const SectionD2 = ({ checkboxChange, nextButtonClickHandler, checkedQuestions })
         <QuestionDescription>{data[24].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <PrevButton prevLink="/questionnaire-section-d1" />
+    <PrevButton prevLink="/questionnaire" />
 
     <Popup modal trigger={<NextButton />}>
-      <PopupPage description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills." NextLink="/" />
+      <PopupPage
+        description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
+        NextLink="/"
+      />
     </Popup>
-
-
   </>
 );
 
 SectionD2.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
-  nextButtonClickHandler: PropTypes.func.isRequired,
   checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool])).isRequired,
 };
 

@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import PropTypes from 'prop-types';
-=======
 import Popup from 'reactjs-popup';
 import PopupPage from '../../CommonComponents/PopupPage';
->>>>>>> master
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
