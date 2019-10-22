@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const LevelDiv = styled.div`
   display: flex;
   justify-content: center;
-  text-align: center;
   margin-top: 5rem;
   margin-bottom: 4.9rem;
 `;
@@ -117,16 +116,17 @@ export const PopUpDiv = styled.span`
   text-align: left;
   margin-left: 5rem;
   margin-top: 3rem;
+  margin-right: 2rem;
   letter-spacing: 0.1rem;
 `;
 
-export const TextBtn = styled(Link)`
-  position:absolute;
-  top: 64rem;
-  left: 20rem;
-  font-size: 3.5rem;
-  font-size: 4rem;
-  font-weight: bold;
+export const ToLink = styled.a`
   color: var(--main-title-color);
   text-decoration: none;
+  font-size: 3.9rem;
+  font-weight: bold;
+  position: fixed;
+  top: 147rem;
+  left: 57rem;
+
 `;
