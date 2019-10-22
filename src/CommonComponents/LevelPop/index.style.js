@@ -88,11 +88,11 @@ export const PopUPCard = styled.div`
 
 export const PopUpBox = styled.div`
   width: ${(props) => props.Width || '82rem'};
-  height: ${(props) => props.Height || '100rem'};
+  height:115rem;
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
   margin-left: -17.4rem;
-  margin-top: -38rem;`;
+  margin-top: -45rem;`;
 
 export const Logo = styled.div`
   width: 82.5rem;
