@@ -11,35 +11,35 @@ class Questionnaire extends Component {
   state = {
     checkedItems: [],
     questionnaireSections: 1,
-    checkedQuestions: new Array(25).fill(false),
+    checkedQuestions: new Array(25).fill(false)
   };
 
-  checkboxChange = (event) => {
+  checkboxChange = event => {
     const { id } = event.target;
     const { checkedQuestions } = this.state; //this array is for preserving the checked items while moving through the questionnaire sections
 
     let checkedItems = this.state.checkedItems; //Created a variable named checkedItems to change the array in the state using push method
 
     //If the number of the question that is checked does't exist in the array push it to it.
-    if (!checkedItems.find((ele) => ele === id)) {
+    if (!checkedItems.find(ele => ele === id)) {
       this.state.checkedItems.push(id);
       checkedQuestions[id - 1] = true; //Array filled with 25 false values that represent the 25 questions' checked status, if the question is checked we set its false value to true.
       this.setState(
-        { checkedItems, checkedQuestions }, //set the checkedItems array in the state to be equal to the variable checkedItems.(We can't push the items directly to the array using push inside the setState because push returns the length of the array not the values in it)
+        { checkedItems, checkedQuestions } //set the checkedItems array in the state to be equal to the variable checkedItems.(We can't push the items directly to the array using push inside the setState because push returns the length of the array not the values in it)
       );
     } else {
       //If the number of the question that is checked exists in the array remove it from it && return the checked state in the checkedQuestions array to false(this is for toggling the checkbox on and off) .
-      checkedItems = checkedItems.filter((ele) => ele !== id);
+      checkedItems = checkedItems.filter(ele => ele !== id);
       checkedQuestions[id - 1] = false;
-      this.setState({ checkedItems, checkedQuestions }, () => {});
+      this.setState({ checkedItems, checkedQuestions }, () => { });
     }
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       checked: !prevState.checked,
-      questionNumber: id,
+      questionNumber: id
     }));
   };
 
-  nextButtonClickHandler = (event) => {
+  nextButtonClickHandler = event => {
     const { name } = event.target;
     const { checkedItems, questionnaireSections } = this.state;
 
@@ -48,19 +48,26 @@ class Questionnaire extends Component {
       const sectionData = QuestionnaireData[questionnaireSections - 1];
       if (checkedItems.length >= sectionData.limit) {
         //if the checked items are equal to the limit of each section or more then move to the next section
-        this.setState({ questionnaireSections: questionnaireSections + 1 }, () => {});
+        this.setState(
+          { questionnaireSections: questionnaireSections + 1 },
+          () => { }
+        );
       } else {
         return <p>{sectionData.uncompletedMsg}</p>;
       }
     } else {
       this.setState({
-        questionnaireSections: questionnaireSections - 1, //if the button clicked is not next button then move to the prev section
+        questionnaireSections: questionnaireSections - 1 //if the button clicked is not next button then move to the prev section
       });
     }
   };
 
   changeQuestionnaireSections = () => {
-    const { questionnaireSections, checkedItems, checkedQuestions } = this.state;
+    const {
+      questionnaireSections,
+      checkedItems,
+      checkedQuestions
+    } = this.state;
     switch (questionnaireSections) {
       case 1:
         return (
@@ -76,6 +83,7 @@ class Questionnaire extends Component {
           <SectionB
             checkboxChange={this.checkboxChange}
             nextButtonClickHandler={this.nextButtonClickHandler}
+            checkedItems={checkedItems}
             checkedQuestions={checkedQuestions}
           />
         );
@@ -84,6 +92,7 @@ class Questionnaire extends Component {
           <SectionC
             checkboxChange={this.checkboxChange}
             nextButtonClickHandler={this.nextButtonClickHandler}
+            checkedItems={checkedItems}
             checkedQuestions={checkedQuestions}
           />
         );
@@ -92,6 +101,7 @@ class Questionnaire extends Component {
           <Option3
             checkboxChange={this.checkboxChange}
             nextButtonClickHandler={this.nextButtonClickHandler}
+            checkedItems={checkedItems}
             checkedQuestions={checkedQuestions}
           />
         );
@@ -100,6 +110,7 @@ class Questionnaire extends Component {
           <SectionD1
             checkboxChange={this.checkboxChange}
             nextButtonClickHandler={this.nextButtonClickHandler}
+            checkedItems={checkedItems}
             checkedQuestions={checkedQuestions}
           />
         );
@@ -107,6 +118,8 @@ class Questionnaire extends Component {
         return (
           <SectionD2
             checkboxChange={this.checkboxChange}
+            nextButtonClickHandler={this.nextButtonClickHandler}
+            checkedItems={checkedItems}
             checkedQuestions={checkedQuestions}
           />
         );

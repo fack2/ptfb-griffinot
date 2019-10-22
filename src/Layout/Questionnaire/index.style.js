@@ -43,6 +43,7 @@ export const Option = styled.button`
   font-size: 3.7rem;
   color: #000000;
   text-align: center;
+  outline:none;
 `;
 
 export const LinkOption = styled(Link)`
