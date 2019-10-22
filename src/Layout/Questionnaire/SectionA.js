@@ -94,7 +94,7 @@ const SectionA = ({
       </QuestionCard>
     </QuestionContainer>
     {/* If User answered all the questions => limit is >= 5 */}
-    {checkedItems.length === QuestionnaireData[0].limit ? (
+    {checkedItems.length >= QuestionnaireData[0].limit ? (
       <NextButton
         nextLink="/questionnaire"
         nextButtonClickHandler={nextButtonClickHandler}
@@ -115,9 +115,10 @@ const SectionA = ({
 SectionA.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
   nextButtonClickHandler: PropTypes.func.isRequired,
-  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool])).isRequired,
-  checkedItems: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool])).isRequired,
-  
+  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
+    .isRequired,
+  checkedItems: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
+    .isRequired,
 };
 
 export default SectionA;
