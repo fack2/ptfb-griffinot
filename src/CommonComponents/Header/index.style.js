@@ -7,11 +7,16 @@ justify-content:center;
 
 export const Logo = styled.img`
 width: 40rem;
+ @media (min-width: 1281px) {
+    width: 30rem;
+  }
+
 `;
 
 export const Menu = styled.img`
-width: 7.2rem;
-height: 7rem;
-margin: 7rem 0rem 0rem 47rem;
+width: 7rem;
+margin: 7rem 4rem 0rem 46rem;
+ @media (min-width: 1281px) {
+    width: 5rem;
+  }
 `;
-

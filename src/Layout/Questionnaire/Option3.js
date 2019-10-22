@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Popup from 'reactjs-popup';
+import PopupPage from '../../CommonComponents/PopupPage';
 import {
   TitleOption, Option, DivData, LinkOption,
 } from './index.style';
@@ -12,19 +14,25 @@ const Option3 = ({ nextButtonClickHandler }) => (
     </TitleOption>
 
     <DivData>
-      <LinkOption to="/questionnaire">
-        <Option>I would like to help them to improve their pencil grasp</Option>
-      </LinkOption>
+      <Option>I would like to help them to improve their pencil grasp</Option>
+
       <LinkOption to="/questionnaire">
         <Option name="nextBtn" onClick={nextButtonClickHandler}>
           I would like to help them to improve their general fine motor skills.
         </Option>
       </LinkOption>
-      <LinkOption to="/questionnaire">
-        <Option>
-            I would like to help them to improve their scissor skills..
-        </Option>
-      </LinkOption>
+
+      <Popup
+        modal
+        trigger={<Option>I would like to help them to improve their scissor skills..</Option>}
+      >
+        <PopupPage
+          description="This programme will be launching in March 2020, please consider joining our mailing list for updates"
+          optionLink="/"
+          optionText="Our Mailing list"
+          NextLink="/"
+        />
+      </Popup>
     </DivData>
 
     <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />

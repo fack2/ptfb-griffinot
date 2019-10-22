@@ -19,10 +19,13 @@ export const Paragraph = styled.p`
 
 export const DivData = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-left: 6rem;
   margin-top: 11rem;
   justify-content: center;
+  @media screen {
+    flex-direction: column
+  }
 `;
 
 export const TitleOption = styled.h1`

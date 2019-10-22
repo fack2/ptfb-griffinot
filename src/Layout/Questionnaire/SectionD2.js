@@ -1,5 +1,10 @@
 import React from 'react';
+<<<<<<< HEAD
 import PropTypes from 'prop-types';
+=======
+import Popup from 'reactjs-popup';
+import PopupPage from '../../CommonComponents/PopupPage';
+>>>>>>> master
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
@@ -10,7 +15,8 @@ import {
   QuestionContainer,
   Paragraph,
 } from './index.style';
-import NextPrevButton from '../../CommonComponents/NextPrevButton';
+import PrevButton from '../../CommonComponents/PrevButton';
+import NextButton from '../../CommonComponents/NextButton';
 
 const SectionD2 = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) => (
   <>
@@ -76,11 +82,13 @@ const SectionD2 = ({ checkboxChange, nextButtonClickHandler, checkedQuestions })
         <QuestionDescription>{data[24].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <NextPrevButton
-      prevLink="/questionnaire"
-      nextLink="/questionnaire"
-      nextButtonClickHandler={nextButtonClickHandler}
-    />
+    <PrevButton prevLink="/questionnaire-section-d1" />
+
+    <Popup modal trigger={<NextButton />}>
+      <PopupPage description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills." NextLink="/" />
+    </Popup>
+
+
   </>
 );
 
