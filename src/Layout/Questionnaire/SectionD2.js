@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
 import PopupPage from '../../CommonComponents/PopupPage';
+import LevelPop from '../../CommonComponents/LevelPop';
+import LevelData from './QuestionnaireData';
 import data from '../../Data/questionnareData';
 import {
   QuestionCard,
@@ -15,7 +17,7 @@ import {
 import PrevButton from '../../CommonComponents/PrevButton';
 import NextButton from '../../CommonComponents/NextButton';
 
-const SectionD2 = ({ checkboxChange, checkedQuestions }) => (
+const SectionD2 = ({ checkboxChange, checkedQuestions, nextButtonClickHandler }) => (
   <>
     <QuestionContainer>
       <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
@@ -79,12 +81,21 @@ const SectionD2 = ({ checkboxChange, checkedQuestions }) => (
         <QuestionDescription>{data[24].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
-    <PrevButton prevLink="/questionnaire" />
+    <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
 
     <Popup modal trigger={<NextButton />}>
       <PopupPage
         description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
         NextLink="/"
+      />
+    </Popup>
+
+    <Popup modal trigger={<NextButton />}>
+      <LevelPop
+        levelScore={LevelData[5].LevelNo}
+        description={LevelData[5].uncompletedMsg}
+        NextLink={LevelData[5].uncompletedAction}
+        No={LevelData[5].LevelNo}
       />
     </Popup>
   </>
