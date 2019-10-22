@@ -82,7 +82,7 @@ const SectionB = ({ checkboxChange, nextButtonClickHandler, checkedQuestions }) 
       </QuestionCard>
     </QuestionContainer>
 
-    <PrevButton prevLink="/questionnaire" />
+    <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
     <NextButton nextLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
 
     <Popup modal trigger={<NextButton />}>
