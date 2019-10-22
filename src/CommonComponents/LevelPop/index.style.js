@@ -58,6 +58,12 @@ export const TitleLevel = styled.div`
   margin-left: -9rem;
 `;
 
+export const LevelIntro = styled.p`
+  font-size: 3.4rem;
+  font-weight: bold;
+  margin-left: -43rem;
+`;
+
 export const TitleParagraph = styled.p`
   @media (min-width: 1281px) {
     font-size: 2rem;
@@ -116,7 +122,7 @@ export const PopUpDiv = styled.span`
 
 export const TextBtn = styled(Link)`
   position:absolute;
-  top: 54rem;
+  top: 64rem;
   left: 20rem;
   font-size: 3.5rem;
   font-size: 4rem;
