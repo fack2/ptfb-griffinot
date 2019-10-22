@@ -25,14 +25,14 @@ const QuestionnaireData = [
   {
     section: 4,
     limit: 15,
-    LevelNo: 3,
+    LevelNo: null,
     uncompletedMsg: '',
-    uncompletedAction: 'sectionD1',
+    uncompletedAction: '',
   },
   {
     section: 5,
     limit: 20,
-    LevelNo: 4,
+    LevelNo: 3,
     uncompletedMsg:
       'Level 3 is the third stage of our programme.  It includes education videos, four warm ups and 32 activities for you to complete with your child.  Some children may be able to start immediately at Level 3 without completing Level 1 or 2.  It just depends on their own ability.\n By the end of Level 3, your child should be able to cut out a circle with scissors, do up medium sized buttons, butter a slice of bread, cut with their knife and fork and successfully trace within zig zag paths.',
     uncompletedAction: 'https://griffinot.teachable.com/p/fine-motor-skill-development-3',
@@ -40,6 +40,7 @@ const QuestionnaireData = [
   {
     section: 6,
     limit: 25,
+    LevelNo: 4,
     uncompletedMsg:
       'Level 4 is the final stage of our programme.  It includes education videos, four warm ups and 32 activities for you to complete with your child.  Some children may be able to start immediately at Level 4 without completing earlier Levels.  It just depends on their own ability.\n By the end of Level 4, your child should be able to cut out a irregular shapes with scissors, do up shirt sized buttons, deal out playing cards, successfully use tape and fold simple origami.',
     uncompletedAction: 'https://griffinot.teachable.com/p/fine-motor-skill-development-4',
