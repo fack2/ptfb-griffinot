@@ -10,6 +10,7 @@ import {
   BodyPage,
   PopUpDiv,
   Container2,
+  LevelIntro,
   TextBtn,
   CircleLevel,
   ParagraphLevel,
@@ -19,16 +20,17 @@ import {
 } from './index.style';
 
 const LevelPop = ({
-  description, NextLink, levelScore, titleLevel, No,
+  description, NextLink, levelScore, No,
 }) => (
-    <>
+  <>
       <BodyPage>
         <PopUPCard>
-          <PopUpBox Height="100rem">
+          <PopUpBox Height="110rem">
             <Logo>
               <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
             </Logo>
             <Container2>
+              <LevelIntro>Your child’s level is:</LevelIntro>
               <LevelDiv>
                 <CircleLevel>
                   <ParagraphLevel>
@@ -38,7 +40,7 @@ const LevelPop = ({
                 </CircleLevel>
 
                 <TitleLevel>
-                  <TitleParagraph>{titleLevel}</TitleParagraph>
+                  <TitleParagraph>Fine Motor Skills Programme </TitleParagraph>
                 </TitleLevel>
               </LevelDiv>
               <PopUpDiv FontSize="2rem">{description}</PopUpDiv>
@@ -50,14 +52,13 @@ const LevelPop = ({
           </PopUpBox>
         </PopUPCard>
       </BodyPage>
-    </>
-  );
+  </>
+);
 
 LevelPop.propTypes = {
   description: PropTypes.string.isRequired,
   NextLink: PropTypes.element.isRequired,
   levelScore: PropTypes.string.isRequired,
-  titleLevel: PropTypes.string.isRequired,
   No: PropTypes.string.isRequired,
 };
 
