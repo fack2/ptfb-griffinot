@@ -21,18 +21,37 @@ export const DivData = styled.div`
   display: flex;
   margin-left: 6rem;
   margin-top: 11rem;
-  justify-content: center;
-  @media screen {
-    flex-direction: column;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+   
+    display: -webkit-flex;
+    text-align: -webkit-center;   
   }
 `;
 
 export const TitleOption = styled.h1`
+ @media (min-width: 1000px){
+  font-size: 2.4rem;
+  text-align: center;
+}
   font-size: 3.8rem;
   text-align: center;
 `;
 
 export const Option = styled.button`
+@media (min-width: 1000px){
+
+  width:50rem;
+  height: 15rem;
+  background: #d6ebf7;
+  border-radius: 2.5rem;
+
+  font-size: 2.4rem;
+  color: #000000;
+  text-align: center;
+
+}
   display: flex;
   justify-content: center;
   width: 85rem;
