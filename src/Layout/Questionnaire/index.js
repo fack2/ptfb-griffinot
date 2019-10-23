@@ -31,7 +31,7 @@ class Questionnaire extends Component {
       //If the number of the question that is checked exists in the array remove it from it && return the checked state in the checkedQuestions array to false(this is for toggling the checkbox on and off) .
       checkedItems = checkedItems.filter(ele => ele !== id);
       checkedQuestions[id - 1] = false;
-      this.setState({ checkedItems, checkedQuestions }, () => {});
+      this.setState({ checkedItems, checkedQuestions }, () => { });
     }
     this.setState(prevState => ({
       checked: !prevState.checked,
@@ -50,7 +50,7 @@ class Questionnaire extends Component {
         //if the checked items are equal to the limit of each section or more then move to the next section
         this.setState(
           { questionnaireSections: questionnaireSections + 1 },
-          () => {}
+          () => { }
         );
       } else {
         return <p>{sectionData.uncompletedMsg}</p>;
