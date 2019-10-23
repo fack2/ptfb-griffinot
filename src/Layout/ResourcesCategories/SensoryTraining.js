@@ -19,7 +19,7 @@ const SensoryTraining = () => (
         </Link>
       ))}
     </BodyCategory>
-    <PrevButton prevLink="/resources" />
+    <PrevButton prevLink="/resources" margin="54rem" />
   </>
 );
 export default SensoryTraining;
