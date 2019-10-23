@@ -11,30 +11,31 @@ import SensoryTraining from './Layout/ResourcesCategories/SensoryTraining';
 import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
+import SensoryIntroduction from './Layout/ResourcesCategories/SensoryIntroduction';
 
 function App() {
   return (
     <>
       <Router>
         <Route
-          render={() =>
-            window.location.pathname === '/menu' ? null : <Header />
-          }
+          render={() => (window.location.pathname === '/menu' ? null : <Header />)}
         />
-        <Route exact path='/menu' component={Menu} />
-        <Route exact path='/' component={LandingPage} />
-        <Route exact path='/schema' component={Schema} />
-        <Route exact path='/about-us' component={AboutUs} />
-        <Route exact path='/levels' component={Levels} />
-        <Route exact path='/resources' component={Resources} />
-        <Route exact path='/questionnaire' component={Questionnaire} />
-        <Route exact path='/books' component={Books} />
-        <Route exact path='/introductory-videos' component={Videos} />
+
+        <Route exact path="/menu" component={Menu} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/schema" component={Schema} />
+        <Route exact path="/about-us" component={AboutUs} />
+        <Route exact path="/levels" component={Levels} />
+        <Route exact path="/resources" component={Resources} />
+        <Route exact path="/questionnaire" component={Questionnaire} />
+        <Route exact path="/books" component={Books} />
+        <Route exact path="/introductory-videos" component={Videos} />
         <Route
           exact
-          path='/sensory-training'
+          path="/sensory-training"
           component={SensoryTraining}
         />
+        <Route exact path="/sensory-introduction" component={SensoryIntroduction} />
       </Router>
     </>
   );
