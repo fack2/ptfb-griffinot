@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const ImgTitle = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 3rem 0 0 5rem;
+  margin-left: 4rem;
   @media (min-width: 1281px) {
     margin: 0 0 0 20rem;
   }
