@@ -19,22 +19,22 @@ const PopupPage = ({
   description, optionText, optionLink, NextLink,
 }) => (
   <>
-    <BodyPage>
-      <PopUPCard>
-        <PopUpBox Height="80rem">
-          <Logo>
-            <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-          </Logo>
-          <Container2>
-            <PopUpDiv>{description}</PopUpDiv>
-            <LinkText to={optionLink}>{optionText}</LinkText>
-            <ContainerBtn>
-              <TextBtn to={NextLink}>I understand</TextBtn>
-            </ContainerBtn>
-          </Container2>
-        </PopUpBox>
-      </PopUPCard>
-    </BodyPage>
+      <BodyPage>
+        <PopUPCard>
+          <PopUpBox Height="80rem">
+            <Logo>
+              <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+            </Logo>
+            <Container2>
+              <PopUpDiv>{description}</PopUpDiv>
+              <LinkText href={optionLink}>{optionText}</LinkText>
+              <ContainerBtn>
+                <TextBtn to={NextLink}>I understand</TextBtn>
+              </ContainerBtn>
+            </Container2>
+          </PopUpBox>
+        </PopUPCard>
+      </BodyPage>
   </>
 );
 
