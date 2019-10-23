@@ -9,7 +9,7 @@ import PrevButton from '../../CommonComponents/PrevButton';
 const SensoryTraining = () => (
   <>
     <Container>
-      <TitleCategory>Here are other resources that can help your child:</TitleCategory>
+      <TitleCategory>Sensory Training</TitleCategory>
     </Container>
     <BodyCategory>
       {categoryData.map(({ Title, ImageCategory, LinkCategory }) => (
