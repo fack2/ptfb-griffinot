@@ -15,6 +15,7 @@ import {
   Checkbox,
   QuestionContainer,
   Paragraph,
+  DivNextPrev,
 } from './index.style';
 import NextButton from '../../CommonComponents/NextButton';
 import PrevButton from '../../CommonComponents/PrevButton';
@@ -85,16 +86,17 @@ const SectionD1 = ({
           <QuestionDescription>{data[19].description}</QuestionDescription>
         </QuestionCard>
       </QuestionContainer>
+      <DivNextPrev>
       <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
 
 
       {checkedItems.length >= QuestionnaireData[4].limit ? (
-        <NextButton
+        <NextButton Margin="60rem"
           nextLink="/questionnaire"
           nextButtonClickHandler={nextButtonClickHandler}
         />
       ) : (
-          <Popup modal trigger={<NextButton />}>
+          <Popup modal trigger={<NextButton Margin="60rem"/>}>
             <LevelPop
               levelScore={LevelData[4].LevelNo}
               description={LevelData[4].uncompletedMsg}
@@ -103,6 +105,7 @@ const SectionD1 = ({
             />
           </Popup>
       )}
+      </DivNextPrev>
   </>
 );
 

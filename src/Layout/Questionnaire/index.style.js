@@ -120,6 +120,10 @@ export const QuestionDescription = styled.p`
   font-size: 3rem;
   color: #2d2323;
 `;
+export const DivNextPrev = styled.div`
+display:flex;
+font-size:3.2rem;
+`;
 
 
 // levle pop up
