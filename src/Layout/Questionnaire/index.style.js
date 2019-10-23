@@ -103,3 +103,113 @@ export const QuestionDescription = styled.p`
   font-size: 3rem;
   color: #2d2323;
 `;
+
+
+// levle pop up
+export const LevelDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 4.9rem;
+`;
+
+export const CircleLevel = styled.div`
+    width: 30rem;
+    height: 30rem;
+    border: 0.8rem #8AC456 solid;
+    border-radius: 54rem;
+    z-index: 1;
+    margin-top: -4rem;
+`;
+
+export const ParagraphLevel = styled.p`
+  @media (min-width: 1281px) {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    font-weight: bolder;
+    color: #e8425c;
+  }
+  font-size: 3.3rem;
+  margin-top: 5.6rem;   
+  font-weight: bolder;
+  color: #e8425c;
+`;
+
+export const LevelIntro = styled.p`
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: -9rem;
+  margin-top: 6rem;
+`;
+
+export const TitleParagraph = styled.p`
+  @media (min-width: 1281px) {
+    font-size: 2rem;
+    margin-left:7.9rem;
+    color: #ffffff;
+  }
+  font-size: 3.5rem;
+  margin-left: 0.9rem;
+  color: #ffffff;
+`;
+
+export const BodyPage = styled.div`
+  background: #cfcfcf;
+  justify-content: center;
+`;
+
+export const PopUPCard = styled.div`
+  text-align: center;
+  display: flex;
+  height: 0.6rem;
+`;
+
+export const PopUpBox = styled.div`
+    width: 82rem;
+    height: 129rem;
+    background: #fffcfc;
+    border: 0.1rem solid #c4c4c4;
+    margin-left: -17.4rem;
+    margin-top: -58rem;
+
+  `;
+
+export const Logo = styled.div`
+  width: 82.5rem;
+  height: 34rem;
+  background: #205c8b;
+  margin-top: -1rem;
+  margin-left: -0.4rem;
+`;
+
+export const LogoImage = styled.img`
+  width: 45rem;
+  height: 41rem;
+`;
+
+export const Container2 = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const PopUpDiv = styled.span`
+  font-size: 2.7rem;
+  text-align: left;
+  margin-left: 5rem;
+  margin-top: -2rem;
+  margin-right: 2rem;
+  letter-spacing: 0.1rem;
+`;
+
+export const ToLink = styled.a`
+  color: var(--main-title-color);
+  text-decoration: none;
+  font-size: 3.9rem;
+  font-weight: bold;
+  margin: 5rem 0rem 0rem 37rem;
+`;
+
+export const Para = styled.p`
+  font-size: 2.5rem;
+  margin-top: 12rem;
+`;
