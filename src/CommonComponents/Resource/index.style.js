@@ -15,6 +15,9 @@ export const CardItem = styled.a`
   @media screen and (min-width: 1024px) and (max-height: 1280px) {
     margin: 3rem 7rem 0rem 7rem;
   }
+  @media screen and (min-width: 1281px) {
+    margin: 3rem 30rem 0rem 30rem;
+  }
 `;
 export const Image = styled.img`
   margin: 5rem 8rem 0 5rem;
