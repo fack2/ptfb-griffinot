@@ -1,28 +1,13 @@
 const ResourcesCategoryData = [
   {
-    Title: 'Help! Why is my Child Chewing on Clothing and Other Things?',
+    Title: 'Introduction to Sensory Processing (Free)',
     ImageCategory: 'https://i.imgur.com/sVtJ64N.png',
-    LinkCategory: 'https://www.griffinot.com/child-chewing-clothing/',
+    LinkCategory: 'https://griffinot.teachable.com/p/sensory-processing-disorder-freeintro',
   },
   {
-    Title: 'Why is my Child Still Putting Things in Their Mouth? A Post on Oral Sensory Seeking.',
+    Title: 'Sensory Processing – What’s the Fuss?',
     ImageCategory: 'https://i.imgur.com/RYIwIj5.png',
-    LinkCategory: 'https://www.griffinot.com/child-oral-sensory-seeking/',
-  },
-  {
-    Title: 'The Mystery of Heavy Work',
-    ImageCategory: 'https://i.imgur.com/sVtJ64N.png',
-    LinkCategory: 'https://www.griffinot.com/the-mystery-of-heavy-work/',
-  },
-  {
-    Title: 'Is my child dyspraxic?',
-    ImageCategory: 'https://i.imgur.com/RYIwIj5.png',
-    LinkCategory: 'https://www.griffinot.com/is-my-child-dyspraxic/',
-  },
-  {
-    Title: 'Dyspraxia Myths Explained – It’s not just being clumsy!',
-    ImageCategory: 'https://i.imgur.com/sVtJ64N.png',
-    LinkCategory: 'https://www.griffinot.com/dyspraxia-myths-explained/',
-  },
+    LinkCategory: 'https://griffinot.teachable.com/p/sensory-processing-whats-the-fuss-2018',
+  }
 ];
 export default ResourcesCategoryData;
