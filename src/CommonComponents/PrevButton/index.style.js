@@ -1,28 +1,19 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
-  display: flex;
-  align-items: flex-end;
-`;
-export const PrevItem = styled.div`
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-top: 10rem;
+export const DivPrev = styled.div`
+  margin-top: 8rem;
 `;
 
-export const Prevbutton = styled.img`
-  height: 3rem;
-  width: 3rem;
-`;
-
-export const PrevText = styled.span`
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 3.5rem;
+export const PrevBtn = styled(Link)`
+  border: none;
+  background-color: white;
+  font-size: 4rem;
   color: var(--next-prev-button-color);
-`;
-
-export const LinkButton = styled.a`
+  margin-left: 5rem;
+  outline: none;
   text-decoration: none;
-  margin: -3.5rem 0 3rem 0;
+  font-family: 'Bitter', serif;
+  padding-bottom: 6rem;
+
 `;

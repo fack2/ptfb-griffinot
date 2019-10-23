@@ -1,28 +1,18 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+export const DivNext = styled.div`
+  margin-top: 8rem;
+  margin-left: ${(props) => props.Margin || '80rem'};
+
 `;
 
-export const NextItem = styled.div`
-	margin-left: 50rem;
-`;
-
-export const Nextbutton = styled.img`
-	height: 3rem;
-	width: 3rem;
-`;
-
-export const NextText = styled.span`
-	padding-left: 1rem;
-	padding-right: 1rem;
-	font-size: 3.5rem;
-	color: var(--next-prev-button-color);
-`;
-
-export const LinkButton = styled.a`
-	text-decoration: none;
-	margin: 0.5rem 0rem 5rem 28rem;
+export const NextBtn = styled(Link)`
+  font-size: 4rem;
+  height: 50rem;
+  color: var(--next-prev-button-color);
+  outline: none;
+  text-decoration: none;
+  font-family: 'Bitter', serif;
+  padding-bottom: 6rem;
 `;

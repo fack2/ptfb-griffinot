@@ -1,27 +1,22 @@
 import React from 'react';
+import { Icon } from 'antd';
 import PropTypes from 'prop-types';
-import next from '../../assets/nextButton.png';
-import {
-  Nextbutton,
-  NextText,
-  Container,
-  NextItem,
-  LinkButton,
-} from './index.style';
+import { NextBtn, DivNext } from './index.style';
 
-const NextButton = ({ nextLink }) => (
-  <Container>
-    <LinkButton href={nextLink}>
-      <NextItem>
-        <NextText>Next</NextText>
-        <Nextbutton alt="NextButton" src={next} />
-      </NextItem>
-    </LinkButton>
-  </Container>
+const NextButton = (props) => (
+  <>
+    <DivNext {...props}>
+      <NextBtn to={props.nextLink} type="primary" name="nextBtn" onClick={props.nextButtonClickHandler}>
+        Next
+        <Icon type="double-right" />
+      </NextBtn>
+    </DivNext>
+  </>
 );
 
 NextButton.propTypes = {
   nextLink: PropTypes.string.isRequired,
+  nextButtonClickHandler: PropTypes.func.isRequired,
 };
 
 export default NextButton;
