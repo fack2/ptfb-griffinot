@@ -2,7 +2,7 @@ import React from 'react';
 import Resource from '../../CommonComponents/Resource';
 import PrevButton from '../../CommonComponents/PrevButton';
 import {
- Container, Imglogo, TitlePage, ImgTitle 
+  Container, Imglogo, TitlePage, ImgTitle,
 } from './index.style';
 import data from '../../Data/bookData';
 import logo from '../../assets/book-logo.png';
@@ -15,8 +15,8 @@ const Books = () => (
     </ImgTitle>
     <Container>
       {data.map(({
- id, img, bookTitle, price, description 
-}) => (
+        id, img, bookTitle, price, description,
+      }) => (
         <Resource
           key={id}
           picture={img}
