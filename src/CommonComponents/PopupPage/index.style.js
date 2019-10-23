@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-
 export const BodyPage = styled.div`
   background: #cfcfcf;
   justify-content: center;
@@ -14,17 +13,18 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-  width: ${(props) => props.Width || '82rem'};
-  height: ${(props) => props.Height || '100rem'};
+  width: ${props => props.Width || '82rem'};
+  height: ${props => props.Height || '100rem'};
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
   margin-left: -17.4rem;
-  margin-top: -38rem;`;
+  margin-top: -38rem;
+`;
 
 export const Logo = styled.div`
   width: 82.5rem;
   height: 34rem;
-  background: ${(props) => props.Background || '#205c8b'};
+  background: ${props => props.Background || '#205c8b'};
   margin-top: -1rem;
   margin-left: -0.4rem;
 `;
@@ -54,7 +54,6 @@ export const LinkText = styled(Link)`
   color: var(--next-prev-button-color);
   margin-top: -7rem;
   text-decoration: none;
-  
 `;
 
 export const ContainerBtn = styled.div`
@@ -65,7 +64,7 @@ export const ContainerBtn = styled.div`
 
 export const TextBtn = styled(Link)`
   position: fixed;
-  top: 122rem;
+  top: 116rem;
   left: 60rem;
   font-size: 4rem;
   font-weight: bold;
