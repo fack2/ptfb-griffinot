@@ -11,7 +11,7 @@ export const Title = styled.h1`
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 5rem;
-`;
+  `;
 
 export const LandingImg = styled.img`
   margin-left: auto;
