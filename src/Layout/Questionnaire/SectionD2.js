@@ -15,6 +15,7 @@ import {
   Checkbox,
   QuestionContainer,
   Paragraph,
+  DivNextPrev,
 } from './index.style';
 import PrevButton from '../../CommonComponents/PrevButton';
 import NextButton from '../../CommonComponents/NextButton';
@@ -90,12 +91,12 @@ const SectionD2 = ({
           <QuestionDescription>{data[24].description}</QuestionDescription>
         </QuestionCard>
       </QuestionContainer>
+      <DivNextPrev>
       <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
 
 
       {checkedItems.length === QuestionnaireData[5].limit ? (
-        // eslint-disable-next-line react/jsx-indent
-        <Popup modal trigger={<NextButton />}>
+        <Popup modal trigger={<NextButton Margin="60rem" />}>
           <PopupPage
             description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
             NextLink="/"
@@ -104,7 +105,7 @@ const SectionD2 = ({
       ) : (
           <Popup
             modal
-            trigger={<NextButton />}
+            trigger={<NextButton Margin="60rem" />}
           >
             <LevelPop
               levelScore={LevelData[5].LevelNo}
@@ -114,6 +115,7 @@ const SectionD2 = ({
             />
           </Popup>
       )}
+      </DivNextPrev>
   </>
 );
 
