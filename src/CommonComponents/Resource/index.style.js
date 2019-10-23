@@ -5,43 +5,63 @@ export const Container = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   border-radius: 2.5rem;
+  margin-bottom: 4rem;
 `;
 export const CardItem = styled.a`
   border: 0.2rem solid #a7a7a7;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   display: flex;
-  padding: 1rem 1rem 3rem 1rem;
-  margin: 3rem 5rem 2rem;
+  margin: 5rem 5rem 2rem 5rem;
+  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+    margin: 3rem 7rem 0rem 7rem;
+  }
 `;
 export const Image = styled.img`
-  margin: 2rem 8rem 0 8rem;
+  margin: 5rem 8rem 0 5rem;
   height: 23.5rem;
   border-radius: 0.5rem;
+  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+    margin: 5rem 8rem 5rem 5rem;
+  }
 `;
 export const Title = styled.span`
-  padding: 5rem 0 3rem 2rem;
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: #205c88;
   font-weight: 700;
+  margin: 10rem -4rem 2rem -11rem;
+  text-align: center;
+  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+    padding: 1rem 1rem 0 1rem;
+    margin: 4rem 0 0 -6.5rem;
+    font-size: 2.4rem;
+  }
 `;
 export const Price = styled.span`
   font-weight: 600;
-  font-size: 2.5rem;
-  margin: 1.3rem 0 2rem 2rem;
+  font-size: 2.8rem;
+  margin: 0.2rem 5rem 2rem -2rem;
+  text-align: center;
+  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+    font-size: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0 0 0 -6.5rem;
+  }
 `;
 export const Description = styled.p`
-  font-size: 2.1rem;
-  line-height: 5.5rem;
-  color: #5b5a5a;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--main-font-color);
   display: flex;
-  padding: 0rem 19rem 0 2rem;
-  margin: 8rem -14rem 1rem -25rem;
+  text-align: justify;
+  margin: 12rem 6rem 5rem -23rem;
+  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    padding: 0rem 2.5rem 0 0;
+    margin: 5rem 3rem 5rem -0.3rem;
+  }
 `;
+
 export const TextOne = styled.div`
   display: flex;
   flex-direction: column;
