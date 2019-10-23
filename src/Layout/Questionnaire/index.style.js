@@ -12,7 +12,7 @@ export const Line = styled.hr`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 3.95rem;
+  font-size: 3.5rem;
   margin: 8rem 2rem 2rem 3rem;
   font-weight: bold;
 `;

@@ -10,7 +10,7 @@ const bookData = [
   {
     id: 2,
     bookTitle: 'Supporting Pencil Grasp Development',
-    price: 'Book £12.99 and Online £24.00 Available Now',
+    price: 'Book £12.99 & Online £24.00 Available Now',
     description:
       'Supporting Pencil Grasp Development is a programme designed by occupational therapist Kim Griffin to help to develop a child’s pencil grasp and pencil control.There are activities and worksheets you can do to help develop and improve a child’s pencil grasp in as little as five minutes a day.It is an excellent resource to use with children who have an awkward or immature pencil grasp.',
     img: 'https://i.imgur.com/vBBS9lR.png'
