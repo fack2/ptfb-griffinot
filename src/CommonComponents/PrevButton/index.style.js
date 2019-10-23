@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const DivPrev = styled.div`
-  margin-top: 8rem;
+  margin-top:${(props) => props.margin || '8rem'};
 `;
 
 export const PrevBtn = styled(Link)`
