@@ -24,34 +24,32 @@ export const DivData = styled.div`
   flex-direction: column;
 
   @media (min-width: 1000px) {
-   
     display: -webkit-flex;
-    text-align: -webkit-center;   
+    text-align: -webkit-center;
   }
 `;
 
 export const TitleOption = styled.h1`
- @media (min-width: 1000px){
-  font-size: 2.4rem;
-  text-align: center;
-}
+  @media (min-width: 1000px) {
+    font-size: 2.4rem;
+    text-align: center;
+  }
   font-size: 3.8rem;
   text-align: center;
 `;
 
 export const Option = styled.button`
-@media (min-width: 1000px){
+  @media (min-width: 1000px) {
+    width: 50rem;
+    height: 15rem;
+    background: #d6ebf7;
+    border-radius: 2.5rem;
 
-  width:50rem;
-  height: 15rem;
-  background: #d6ebf7;
-  border-radius: 2.5rem;
+    font-size: 2.4rem;
+    color: #000000;
+    text-align: center;
+  }
 
-  font-size: 2.4rem;
-  color: #000000;
-  text-align: center;
-
-}
   display: flex;
   justify-content: center;
   width: 85rem;
@@ -62,7 +60,7 @@ export const Option = styled.button`
   font-size: 3.7rem;
   color: #000000;
   text-align: center;
-  outline:none;
+  outline: none;
 `;
 
 export const LinkOption = styled(Link)`
@@ -80,7 +78,7 @@ export const QuestionCard = styled.div`
   border: 0.5px solid #928e8e;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: ${(props) => props.height || '18rem'};
+  height: ${props => props.height || '18rem'};
   padding: 4rem 3rem;
   margin: 4rem 2rem 0;
   display: flex;
