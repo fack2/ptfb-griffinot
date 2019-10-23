@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-// eslint-disable-next-line import/prefer-default-export
+export const DivPrev = styled.div`
+  margin-top: 8rem;
+`;
+
 export const PrevBtn = styled(Link)`
   border: none;
   background-color: white;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: var(--next-prev-button-color);
-  margin-left: 2rem;
+  margin-left: 5rem;
   outline: none;
   text-decoration: none;
+  font-family: 'Bitter', serif;
+  padding-bottom: 6rem;
+
 `;
