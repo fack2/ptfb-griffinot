@@ -20,7 +20,7 @@ import {
   PopUpDiv,
   OptionBtn,
   ContainerBtn,
-  Container2
+  Container2,
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
@@ -28,7 +28,7 @@ import arrow from '../../assets/right-arrow.png';
 class Schema extends React.Component {
   state = {
     NoBtn: false,
-    redirectBtn: false
+    redirectBtn: false,
   };
 
   DisplayPop = () => {
@@ -37,13 +37,13 @@ class Schema extends React.Component {
 
   setRedirect = () => {
     this.setState({
-      redirectBtn: true
+      redirectBtn: true,
     });
   };
 
   renderBtn = () => {
     if (this.state.redirectBtn) {
-      return <Redirect to='/questionnaire-section-a' />;
+      return <Redirect to="/questionnaire" />;
     }
   };
 
@@ -54,29 +54,27 @@ class Schema extends React.Component {
           <Title>Welcome to the GriffinOT Fine Motor Skills programme.</Title>
           <HorizontalLine />
           <Para1>
-            Our fine motor skill programme is designed to teach you how to help
-            your child to improve their fine motor skills.
+            Our fine motor skill programme is designed to teach you how to help your child to
+            improve their fine motor skills.
             <br />
             <br />
-            The programme is broken into six different sections. There are four
-            levels that support fine motor skill development. Then, there are
-            two additional sections designed to specifically help with pencil
-            grasp and scissor skills. Each section of the programme is £24 to
-            purchase. This provides you with 6 months access to the content.
+            The programme is broken into six different sections. There are four levels that support
+            fine motor skill development. Then, there are two additional sections designed to
+            specifically help with pencil grasp and scissor skills. Each section of the programme is
+            £24 to purchase. This provides you with 6 months access to the content.
           </Para1>
-          <FineMotorImg alt='FineMotorSkill' src={FMSimg} />
+          <FineMotorImg alt="FineMotorSkill" src={FMSimg} />
           <Para2>
-            Before we can recommend the best section of our programme for your
-            child to start working at, we need to ask you a few questions.
+            Before we can recommend the best section of our programme for your child to start
+            working at, we need to ask you a few questions.
           </Para2>
         </Container>
 
         <Popup
           modal
           trigger={
-            <NextText type='button'>
-              {' '}
-              Start <NextArrow alt='next-arrow' src={arrow} />{' '}
+            <NextText type="button">
+              Start <NextArrow alt="next-arrow" src={arrow} />
             </NextText>
           }
           onClose={() => {
@@ -86,57 +84,45 @@ class Schema extends React.Component {
           {() => (
             <BodyPage>
               <PopUPCard>
-                <PopUpBox Height='80rem'>
+                <PopUpBox Height="80rem">
                   {this.state.NoBtn ? (
-                    <Logo Background='#ABC1D3'>
-                      <LogoImage
-                        src={popUpImg}
-                        alt='a kid holding a kite logo'
-                      />
+                    <Logo Background="#ABC1D3">
+                      <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                     </Logo>
                   ) : (
                     <Logo>
-                      <LogoImage
-                        src={popUpImg}
-                        alt='a kid holding a kite logo'
-                      />
+                      <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                     </Logo>
                   )}
+
                   <Container2>
                     {this.state.NoBtn ? (
                       <PopUpDiv>
-                        {' '}
-                        2. Does your child have a neurological or genetic
-                        condition?(e.g. CP, Down's Syndrome)
+                        2. Does your child have a neurological or genetic condition?(e.g. CP, Down's
+                        Syndrome)
                       </PopUpDiv>
                     ) : (
                       <PopUpDiv>
-                        1. Does your child have a degenerative condition?(e.g.
-                        MD, Rhetts)
+                        1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
                       </PopUpDiv>
                     )}
+
                     <ContainerBtn>
                       {this.state.NoBtn ? (
-                        <Popup
-                          modal
-                          trigger={<OptionBtn type='button'>Yes</OptionBtn>}
-                        >
+                        <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
                           {() => (
                             <PopupPage
-                              description='Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme.'
-                              NextLink='/questionnaire-section-a'
+                              description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme."
+                              NextLink="/questionnaire"
                             />
                           )}
                         </Popup>
                       ) : (
-                        <Popup
-                          modal
-                          trigger={<OptionBtn type='button'>Yes</OptionBtn>}
-                        >
+                        <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
                           {() => (
                             <PopupPage
-                              description='Sorry, our program is not suitable for your child.'
-                              NextLink='/'
+                              description="Sorry, our program is not suitable for your child."
+                              NextLink="/"
                             />
                           )}
                         </Popup>
@@ -144,11 +130,11 @@ class Schema extends React.Component {
 
                       {this.renderBtn()}
                       {this.state.NoBtn ? (
-                        <OptionBtn onClick={this.setRedirect} type='button'>
+                        <OptionBtn onClick={this.setRedirect} type="button">
                           No
                         </OptionBtn>
                       ) : (
-                        <OptionBtn onClick={this.DisplayPop} type='button'>
+                        <OptionBtn onClick={this.DisplayPop} type="button">
                           No
                         </OptionBtn>
                       )}

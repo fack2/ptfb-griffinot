@@ -5,19 +5,18 @@ import { NextBtn } from './index.style';
 
 const NextButton = (props) => (
   <>
-    {/* we use props to have refs for next button so we can show the pop up after we click on it */}
     <Button.Group {...props}>
-      <NextBtn type="button">
+      <NextBtn to={props.nextLink} type="primary" name="nextBtn" onClick={props.nextButtonClickHandler}>
         Next
         <Icon type="right" />
       </NextBtn>
     </Button.Group>
-
   </>
 );
 
 NextButton.propTypes = {
   nextLink: PropTypes.string.isRequired,
+  nextButtonClickHandler: PropTypes.func.isRequired,
 };
 
 export default NextButton;

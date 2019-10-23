@@ -64,9 +64,9 @@ export const ContainerBtn = styled.div`
 `;
 
 export const TextBtn = styled(Link)`
-  position:absolute;
-  top: 32rem;
-  left: 27rem;
+  position: fixed;
+  top: 122rem;
+  left: 60rem;
   font-size: 4rem;
   font-weight: bold;
   color: var(--main-title-color);
