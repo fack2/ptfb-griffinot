@@ -38,8 +38,8 @@ export const Title = styled.span`
     margin: 4rem 0 0 -6.5rem;
     font-size: 2.4rem;
   }
-  @media screen and (min-width: 1280px){
-    margin: 4rem 0 0   15rem;
+  @media screen and (min-width: 1280px) {
+    margin: 4rem 0 0 15rem;
     font-size: 2.4rem;
   }
 `;
