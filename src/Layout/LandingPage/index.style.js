@@ -4,13 +4,17 @@ import '../../index.css';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 export const Title = styled.h1`
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 5rem;
+  @media (min-width: 1281px) {
+    font-size: 2.5rem;
+    margin: 5.5rem 25rem 1.3rem 0;
+  }
 `;
 
 export const LandingImg = styled.img`
@@ -19,12 +23,20 @@ export const LandingImg = styled.img`
   margin-top: 2rem;
   width: 84rem;
   border-radius: 1.5rem;
+  @media (min-width: 1281px) {
+    border-radius: 0.8rem;
+    width: 70rem;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 1.7rem;
   color: #5c5b5b;
   margin: 8rem 7rem 0rem 7rem;
+  @media (min-width: 1281px) {
+    font-size: 1.4rem;
+    margin: 4rem 15rem 2rem 35rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -39,6 +51,12 @@ export const Button = styled.button`
   margin-top: 10rem;
   font-size: 4.8rem;
   font-weight: bolder;
+  @media (min-width: 1281px) {
+    width: 20rem;
+    border-radius: 5.5rem;
+    margin-top: 10rem;
+    font-size: 4.8rem;
+  }
 `;
 
 export const ResourceLink = styled.p`

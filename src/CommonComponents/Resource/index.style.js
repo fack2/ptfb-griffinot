@@ -12,7 +12,7 @@ export const CardItem = styled.a`
   border-radius: 1rem;
   display: flex;
   margin: 5rem 5rem 2rem 5rem;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     margin: 3rem 7rem 0rem 7rem;
   }
   @media screen and (min-width: 1281px) {
@@ -23,7 +23,7 @@ export const Image = styled.img`
   margin: 5rem 8rem 0 5rem;
   height: 23.5rem;
   border-radius: 0.5rem;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     margin: 5rem 8rem 5rem 5rem;
   }
 `;
@@ -33,7 +33,7 @@ export const Title = styled.span`
   font-weight: 700;
   margin: 10rem -4rem 2rem -11rem;
   text-align: center;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     padding: 1rem 1rem 0 1rem;
     margin: 4rem 0 0 -6.5rem;
     font-size: 2.4rem;
@@ -44,7 +44,7 @@ export const Price = styled.span`
   font-size: 2.8rem;
   margin: 0.2rem 5rem 2rem -2rem;
   text-align: center;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 1.5rem;
     padding: 1rem 1rem 0 1rem;
     margin: 0 0 0 -6.5rem;
@@ -57,7 +57,7 @@ export const Description = styled.p`
   display: flex;
   text-align: justify;
   margin: 12rem 6rem 5rem -23rem;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 1.5rem;
     line-height: 2.3rem;
     padding: 0rem 2.5rem 0 0;
