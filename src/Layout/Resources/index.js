@@ -38,9 +38,7 @@ const Resources = ({ history }) => {
     <>
       <TitleH>Helpful resources</TitleH>
       <Container>
-        {data.map(({
-          id, picture, title, price, description,
-        }) => (
+        {data.map(({ id, picture, title }) => (
           <Resource
             key={id}
             picture={picture}
