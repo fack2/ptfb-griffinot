@@ -1,5 +1,5 @@
 import React from 'react';
-import Resource from '../../CommonComponents/Resource';
+import Book from '../../CommonComponents/Book';
 import PrevButton from '../../CommonComponents/PrevButton';
 import {
   Container, Imglogo, TitlePage, ImgTitle,
@@ -17,13 +17,7 @@ const Books = () => (
       {data.map(({
         id, img, bookTitle, price, description,
       }) => (
-        <Resource
-          key={id}
-          picture={img}
-          title={bookTitle}
-          price={price}
-          description={description}
-        />
+        <Book key={id} picture={img} title={bookTitle} price={price} description={description} />
       ))}
     </Container>
     <PrevButton prevLink="/resources" />

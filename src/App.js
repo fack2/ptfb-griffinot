@@ -7,6 +7,7 @@ import Schema from './Layout/Schema';
 import AboutUs from './Layout/AboutUs';
 import Levels from './Layout/Levels';
 import Resources from './Layout/Resources';
+import SensoryTraining from './Layout/ResourcesCategories/SensoryTraining';
 import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
@@ -16,7 +17,9 @@ function App() {
   return (
     <>
       <Router>
-        <Route render={() => (window.location.pathname === '/menu' ? null : <Header />)} />
+        <Route
+          render={() => (window.location.pathname === '/menu' ? null : <Header />)}
+        />
         <Route exact path="/menu" component={Menu} />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/schema" component={Schema} />
@@ -27,6 +30,11 @@ function App() {
         <Route exact path="/books" component={Books} />
         <Route exact path="/introductory-videos" component={Videos} />
         <Route exact path="/contact" component={ContactUs} />
+        <Route
+          exact
+          path="/sensory-training"
+          component={SensoryTraining}
+        />
       </Router>
     </>
   );
