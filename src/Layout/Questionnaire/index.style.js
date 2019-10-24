@@ -5,10 +5,6 @@ export const Header = styled.h1`
   text-align: center;
   margin: 8rem 4rem 4rem 4rem;
 
-  /* @media screen and (min-width: 768px) and (max-width: 1023px) {
-    font-size: 3.2rem;
-  } */
-
   @media screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 2.5rem;
     margin: 7rem 4rem 4rem 4rem;
