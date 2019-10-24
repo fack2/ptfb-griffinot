@@ -190,7 +190,7 @@ export const QuestionDescription = styled.p`
 `;
 export const DivNextPrev = styled.div`
   display: flex;
-  font-size: 3.2rem;
+  justify-content: space-around;
 `;
 
 export const LevelDiv = styled.div`
