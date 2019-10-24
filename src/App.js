@@ -10,6 +10,7 @@ import Resources from './Layout/Resources';
 import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
+import ContactUs from './Layout/ContactUs';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/questionnaire" component={Questionnaire} />
         <Route exact path="/books" component={Books} />
         <Route exact path="/introductory-videos" component={Videos} />
+        <Route exact path="/contact" component={ContactUs} />
       </Router>
     </>
   );
