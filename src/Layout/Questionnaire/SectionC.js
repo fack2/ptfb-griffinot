@@ -13,22 +13,17 @@ import {
   Checkbox,
   QuestionContainer,
   Paragraph,
-  DivNextPrev
+  DivNextPrev,
 } from './index.style';
 import NextButton from '../../CommonComponents/NextButton';
 import PrevButton from '../../CommonComponents/PrevButton';
 
 const SectionC = ({
-  checkboxChange,
-  nextButtonClickHandler,
-  checkedQuestions,
-  checkedItems
+  checkboxChange, nextButtonClickHandler, checkedQuestions, checkedItems,
 }) => (
   <>
     <QuestionContainer>
-      <Paragraph>
-        Please check the box if your child is able to do the following:
-      </Paragraph>
+      <Paragraph>Please check the box if your child is able to do the following:</Paragraph>
       <QuestionCard>
         <QuestionNumber>{data[10].questionNumber}</QuestionNumber>
         <QuestionText>{data[10].question}</QuestionText>
@@ -89,10 +84,7 @@ const SectionC = ({
         <QuestionDescription>{data[14].description}</QuestionDescription>
       </QuestionCard>
       <DivNextPrev>
-        <PrevButton
-          prevLink="/questionnaire"
-          nextButtonClickHandler={nextButtonClickHandler}
-        />
+        <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
 
         {checkedItems.length >= QuestionnaireData[2].limit ? (
           <NextButton
@@ -118,8 +110,7 @@ const SectionC = ({
 SectionC.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
   nextButtonClickHandler: PropTypes.func.isRequired,
-  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
-    .isRequired,
+  checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool])).isRequired,
 };
 
 export default SectionC;

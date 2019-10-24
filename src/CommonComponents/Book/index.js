@@ -20,8 +20,8 @@ const Resource = ({
   </Container>
 );
 
-Resource.proypes = {
-  id: PropTypes.integer,
+Resource.propTypes = {
+  id: PropTypes.number.isRequired,
   picture: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
