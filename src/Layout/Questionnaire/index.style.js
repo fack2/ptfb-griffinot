@@ -130,10 +130,6 @@ export const QuestionNumber = styled.span`
   border-radius: 50%;
   text-align: center;
   @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    /* height: 2.5rem;
-    width: 2.5rem;
-    line-height: 72%;
-    font-size: 2.1rem; */
     height: 3rem;
     width: 3rem;
     line-height: 91%;
@@ -197,8 +193,8 @@ export const QuestionDescription = styled.p`
   }
 `;
 export const DivNextPrev = styled.div`
-display:flex;
-font-size:3.2rem;
+  display: flex;
+  font-size: 3.2rem;
 `;
 
 export const LevelDiv = styled.div`
