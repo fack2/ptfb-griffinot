@@ -42,11 +42,7 @@ export const Title = styled.span`
   margin-left: 11rem;
   margin: ${(props) => props.margin || '10rem -7rem 1rem - 7rem'};
   align-self: center;
-<<<<<<< HEAD
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
-=======
   @media screen and (min-width: 1024px) and (max-width: 1280px) {
->>>>>>> 099ea8311cce28660394333128e443bc023c76ef
     margin: 4rem 0 0 4.5rem;
     font-size: 2.4rem;
   }
