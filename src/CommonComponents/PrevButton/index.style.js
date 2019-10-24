@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const DivPrev = styled.div`
   margin-top: 8rem;
+  margin-left: ${(props) => props.margin || '-2rem'};
+
 `;
 
 export const PrevBtn = styled(Link)`
@@ -15,5 +17,5 @@ export const PrevBtn = styled(Link)`
   text-decoration: none;
   font-family: 'Bitter', serif;
   padding-bottom: 6rem;
-
+  font-weight: bold;
 `;

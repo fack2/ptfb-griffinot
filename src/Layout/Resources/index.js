@@ -39,8 +39,8 @@ const Resources = ({ history }) => {
       <TitleH>Helpful resources</TitleH>
       <Container>
         {data.map(({
- id, picture, title, price, description 
-}) => (
+          id, picture, title, price, description,
+        }) => (
           <Resource
             key={id}
             picture={picture}
@@ -50,7 +50,7 @@ const Resources = ({ history }) => {
             onClick={() => onClick(id, history)}
           />
         ))}
-        <PrevButton prevLink="/" />
+        <PrevButton prevLink="/" margin="2rem" />
       </Container>
     </>
   );

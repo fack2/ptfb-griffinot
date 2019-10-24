@@ -78,7 +78,7 @@ export const QuestionCard = styled.div`
   border: 0.5px solid #928e8e;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: ${props => props.height || '18rem'};
+  height: ${(props) => props.height || '18rem'};
   padding: 4rem 3rem;
   margin: 4rem 2rem 0;
   display: flex;
@@ -121,8 +121,8 @@ export const QuestionDescription = styled.p`
   color: #2d2323;
 `;
 export const DivNextPrev = styled.div`
-display:flex;
-font-size:3.2rem;
+    display: flex;
+    justify-content: space-around;
 `;
 
 
