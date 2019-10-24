@@ -4,7 +4,6 @@ export const Container = styled.div`
   display:flex;
   flex-direction:column;
   justify-content:center;
-  overflow: scroll;
 `;
 
 export const Title = styled.h1`
@@ -20,8 +19,16 @@ export const HorizontalLine = styled.hr`
 
 export const Para1 = styled.p`
   font-size: 1.4rem;
-  color: #5C5B5B;
+  color: #2e2e2e;
   margin: 5rem 1rem 4rem 2rem;
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 2.5rem;
+    margin: 5rem 13rem 4rem 13rem;
+  }
+  @media (min-width:1281px) {
+    font-size: 2.2rem;
+    margin: 8rem 44rem 3rem 46rem;
+  }
 `;
 
 export const FineMotorImg = styled.img`
@@ -29,12 +36,26 @@ export const FineMotorImg = styled.img`
   margin-right: auto;
   width: 88rem;
   border: 0.1rem solid #2D2323;
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    width: 75rem;
+  }
+    @media (min-width:1281px) {
+      width: 60rem
+  }
 `;
 
 export const Para2 = styled.p`
   font-size: 1.4rem;
-  color: #5C5B5B;
+  color: #2e2e2e;
   margin: 5rem 1rem 4rem 2rem;
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 2.5rem;
+    margin: 5rem 13rem 4rem 13rem;
+  }
+    @media (min-width:1281px) {
+    font-size: 2.2rem;
+    margin: 8rem 44rem 3rem 46rem;
+  }
 `;
 
 export const NextText = styled.p`
@@ -43,11 +64,22 @@ export const NextText = styled.p`
   margin-left: 77rem;
   color: #0F3654;
   font-weight: 900;
+   @media (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 3rem;
+    margin-left: 106rem;
+  }
+    @media (min-width:1281px) {
+    font-size: 2.5rem;
+    margin-left: 125rem;
+    }
 `;
 
 export const NextArrow = styled.img`
   width: 3rem;
   margin-left: 1.3rem;
+  @media (min-width:1281px) {
+    width: 2rem
+  }
 `;
 
 
@@ -111,4 +143,5 @@ export const OptionBtn = styled.button`
   font-size: 3.5rem;
   outline: none;
   margin-left: 9rem;
+  
 `;
