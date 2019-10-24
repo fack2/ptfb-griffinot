@@ -2,36 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Price,
-  Description,
-  Container,
-  Image,
-  Title,
-  CardItem,
-  TextOne,
+  Container, Image, Title, CardItem,
 } from './index.style';
 
 const Resource = ({
- id, picture, title, price, description, onClick 
+  id, picture, title, onClick,
 }) => (
   <Container>
     <CardItem key={id}>
       <Image src={picture} />
-      <TextOne onClick={onClick} name={id}>
-        <Title>{title}</Title>
-        <Price>{price}</Price>
-        <Description>{description}</Description>
-      </TextOne>
+      <Title onClick={onClick} name={id}>
+        {title}
+      </Title>
     </CardItem>
   </Container>
 );
 
-Resource.prototypes = {
-  id: PropTypes.integer,
+Resource.propTypes = {
+  id: PropTypes.number.isRequired,
   picture: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Resource;
