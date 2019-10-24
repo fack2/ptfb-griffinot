@@ -13,7 +13,7 @@ export const CardItem = styled.a`
   width: 85rem;
   height: 34rem;
   align-items: center;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     margin: 3rem 7rem 0rem 7rem;
     width: 75rem;
     height: 27rem;
@@ -27,7 +27,7 @@ export const Image = styled.img`
   height: 23.5rem;
   border-radius: 0.5rem;
   margin-left: 7rem;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     margin: 0 8rem;
     height: 19rem;
   }
@@ -39,7 +39,7 @@ export const Title = styled.span`
   margin-left: 11rem;
   margin: ${(props) => props.margin || '10rem -7rem 1rem - 7rem'};
   align-self: center;
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     margin: 4rem 0 0 4.5rem;
     font-size: 2.4rem;
   }
