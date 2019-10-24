@@ -48,7 +48,7 @@ const Resources = ({ history }) => {
             onClick={() => onClick(id, history)}
           />
         ))}
-        <PrevButton prevLink="/" margin="2rem" />
+        <PrevButton prevLink="/" marginLeft="2rem" marginTop="4rem"/>
       </Container>
     </>
   );

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const DivPrev = styled.div`
-  margin-top: 8rem;
-  margin-left: ${(props) => props.margin || '-2rem'};
+  margin-top:${(props) => props.marginTop || '8rem'};
+  margin-left: ${(props) => props.marginLeft || '-2rem'};
 
 `;
 

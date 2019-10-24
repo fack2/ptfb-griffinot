@@ -7,8 +7,11 @@ export const Container = styled.div`
   align-self: center;
 `;
 export const CardItem = styled.a`
+  width: 86rem;
+  height: 14rem;
   border: 0.2rem solid #a7a7a7;
   border-radius: 1rem;
+  margin-top: 19rem;
   display: flex;
   width: 85rem;
   height: 34rem;
