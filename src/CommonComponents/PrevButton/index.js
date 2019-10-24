@@ -1,16 +1,19 @@
 import React from 'react';
-import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
-import { PrevBtn } from './index.style';
+import { PrevBtn, DivPrev } from './index.style';
 
-const PrevButton = ({ prevLink, nextButtonClickHandler }) => (
+const PrevButton = ({ prevLink, nextButtonClickHandler ,margin}) => (
   <>
-    <Button.Group>
-      <PrevBtn to={prevLink} type="primary" name="prevBtn" onClick={nextButtonClickHandler}>
-        <Icon type="left" />
+    <DivPrev margin={margin}>
+      <PrevBtn
+        to={prevLink}
+        type="primary"
+        name="prevBtn"
+        onClick={nextButtonClickHandler}
+      >
         Prev
       </PrevBtn>
-    </Button.Group>
+    </DivPrev>
   </>
 );
 

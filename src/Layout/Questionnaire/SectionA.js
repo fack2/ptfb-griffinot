@@ -19,7 +19,8 @@ import {
 } from './index.style';
 import NextButton from '../../CommonComponents/NextButton';
 
-const SectionA = ({checkboxChange, nextButtonClickHandler, checkedQuestions, checkedItems,
+const SectionA = ({
+  checkboxChange, nextButtonClickHandler, checkedQuestions, checkedItems,
 }) => (
   <>
       <Header>

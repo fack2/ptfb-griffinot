@@ -1,16 +1,19 @@
 import React from 'react';
-import { Button, Icon } from 'antd';
 import PropTypes from 'prop-types';
-import { NextBtn } from './index.style';
+import { NextBtn, DivNext } from './index.style';
 
 const NextButton = (props) => (
   <>
-    <Button.Group {...props}>
-      <NextBtn to={props.nextLink} type="primary" name="nextBtn" onClick={props.nextButtonClickHandler}>
+    <DivNext {...props}>
+      <NextBtn
+        to={props.nextLink}
+        type="primary"
+        name="nextBtn"
+        onClick={props.nextButtonClickHandler}
+      >
         Next
-        <Icon type="right" />
       </NextBtn>
-    </Button.Group>
+    </DivNext>
   </>
 );
 

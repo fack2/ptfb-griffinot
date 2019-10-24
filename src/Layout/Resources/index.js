@@ -45,10 +45,10 @@ const Resources = ({ history }) => {
             title={title}
             price={null}
             description={null}
-            onClick={ () => onClick(id, history) }
+            onClick={() => onClick(id, history)}
           />
         ))}
-        <PrevButton prevLink="/" />
+        <PrevButton prevLink="/" margin="2rem" />
       </Container>
     </>
   );
