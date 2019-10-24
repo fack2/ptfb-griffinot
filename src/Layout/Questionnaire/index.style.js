@@ -196,6 +196,10 @@ export const QuestionDescription = styled.p`
     margin: 0 8rem 3rem 2rem;
   }
 `;
+export const DivNextPrev = styled.div`
+display:flex;
+font-size:3.2rem;
+`;
 
 export const LevelDiv = styled.div`
   display: flex;
