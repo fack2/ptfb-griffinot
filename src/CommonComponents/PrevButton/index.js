@@ -2,14 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PrevBtn, DivPrev } from './index.style';
 
-const PrevButton = ({ prevLink, nextButtonClickHandler ,margin}) => (
+const PrevButton = ({
+  prevLink,
+  nextButtonClickHandler,
+  marginLeft,
+  marginTop
+}) => (
   <>
-    <DivPrev margin={margin}>
+    <DivPrev marginTop={marginTop} marginLeft={marginLeft}>
       <PrevBtn
         to={prevLink}
-        type="primary"
-        name="prevBtn"
+        type='primary'
+        name='prevBtn'
         onClick={nextButtonClickHandler}
+        margin={marginTop}
       >
         Prev
       </PrevBtn>
@@ -19,7 +25,7 @@ const PrevButton = ({ prevLink, nextButtonClickHandler ,margin}) => (
 
 PrevButton.propTypes = {
   prevLink: PropTypes.string.isRequired,
-  nextButtonClickHandler: PropTypes.func.isRequired,
+  nextButtonClickHandler: PropTypes.func.isRequired
 };
 
 export default PrevButton;
