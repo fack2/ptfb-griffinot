@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 27%;
 `;
 
 export const NotFoundImg = styled.img`
@@ -22,7 +23,7 @@ export const Description = styled.p`
   justify-content: center;
   text-align: center;
   font-size: 0.8rem;
-  margin: -2% 5% 0 0;
+  margin: -2% 5% 0 5;
   @media screen and (min-width: 1024px) and (max-width: 1280px) {
     justify-content: center;
     margin: -2% 4% 6% 5%;
