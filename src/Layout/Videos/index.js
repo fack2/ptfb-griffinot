@@ -3,31 +3,31 @@ import PrevButton from '../../CommonComponents/PrevButton';
 import data from '../../Data/videoData';
 import logo from '../../assets/video-logo.svg';
 import {
-  Container,
-  ImgTitle,
-  Image,
-  Title,
+  VideosContainer,
+  IconTitleContainer,
+  VideoIcon,
+  PageTitle,
   VideoCard,
   VideoTitle,
 } from './index.style';
 
 const Videos = () => (
   <>
-    <Container>
-      <ImgTitle>
-        <Image src={logo} alt="video logo" />
-        <Title>Introductory Videos</Title>
-      </ImgTitle>
-      {data.map(({
- id, video, title, height, width 
-}) => (
-        <>
-          <VideoCard key={id} height={height} width={width} url={video} />
+    <IconTitleContainer>
+      <VideoIcon src={logo} alt="video logo" />
+      <PageTitle>Introductory Videos</PageTitle>
+    </IconTitleContainer>
 
+    <VideosContainer>
+      {data.map(({
+        id, video, title, height, width,
+      }) => (
+        <>
           <VideoTitle>{title}</VideoTitle>
+          <VideoCard key={id} height={height} width={width} url={video} />
         </>
       ))}
-    </Container>
+    </VideosContainer>
     <PrevButton prevLink="/resources" />
   </>
 );
