@@ -2,21 +2,35 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
 `;
-export const NotFound = styled.h1`
-  text-align: center;
-  font-size: 3.9rem;
-  padding: 0 2rem 0 0rem;
-  margin: 0.9rem 0 0 0;
-`;
+
 export const NotFoundImg = styled.img`
-  width: 53.5rem;
-  margin: 6rem 6rem 6rem 6rem;
-  padding: 0 0 0 15rem;
+  width: 85%;
+  margin: 4% 12% 1% 4%;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 42%;
+    margin: 4% 31.5% 4% 29%;
+  }
+  @media screen and (min-width: 1281px) {
+    width: 36%;
+    margin: 4% 30% 4% 30.2%;
+  }
 `;
+
 export const Description = styled.p`
-  font-size: 1.5rem;
+  justify-content: center;
   text-align: center;
+  font-size: 0.8rem;
+  margin: -2% 5% 0 0;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    justify-content: center;
+    margin: -2% 4% 6% 5%;
+    font-size: 1.6rem;
+  }
+  @media screen and (min-width: 1281px) {
+    justify-content: center;
+    margin: -6% 5% 6% 5%;
+    font-size: 2.5rem;
+  }
 `;
