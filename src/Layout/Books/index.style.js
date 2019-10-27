@@ -1,36 +1,27 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const ImgTitle = styled.div`
+export const BooksLogoTitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 5rem 0rem 0rem 5rem;
-
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    margin: 7rem 0rem 2rem 7rem;
-  }
-
-  @media screen and (min-width: 1281px) {
-    margin: 7rem 0rem 2rem 30rem;
-  }
+  align-items: center;
+  margin-left: 4%;
 `;
-export const Imglogo = styled.img`
-  display: flex;
-  height: 8rem;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    height: 7rem;
-  }
+
+export const PageLogo = styled.img`
+  width: 10%;
 `;
-export const TitlePage = styled.span`
-  padding: 1rem 0 0 4rem;
-  font-size: 5rem;
+
+export const PageTitle = styled.span`
+  font-size: 2rem;
   color: #205c8b;
   font-weight: 600;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 4rem;
-  }
+  margin-left: 7%;
+`;
+
+export const BooksContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 7%;
 `;
