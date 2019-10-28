@@ -40,7 +40,7 @@ h2 {
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   body {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -48,7 +48,7 @@ h2 {
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
