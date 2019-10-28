@@ -1,49 +1,49 @@
 import styled from 'styled-components';
 
 export const Para = styled.h1`
- margin-left: 6rem;
 `;
 
 export const Contact = styled.form`
-  margin-top: 10rem;
-  margin-left: 2rem;
   display: flex;
   flex-flow: column wrap;
+  margin-top: 5%;
 `;
 
 export const InputBox = styled.textarea`
-  width: 80rem;
-  height: 4rem;
+  width: 96%;
+  height: 35px;
   border: 0.2rem solid #636363;
   background: #fff;
-  margin: 0rem 3rem 5rem;
-  padding: 3rem;
-  font-size: 3.5rem;
-  border-radius: 2rem;
+  padding: 2.7%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  margin-bottom: 0%;
+  margin-top: 8%;
 `;
 
 export const InputMsg = styled.textarea`
-  width: 86rem;
-  height: 55rem
+  width: 97%;
+  height: 160px;
   border: 0.2rem solid #636363;
   background: #fff;
-  margin: 0rem 3rem 5rem;
-  padding: 3rem;
-  font-size: 3.5rem;
+  padding: 3%;
+  font-weight: bold;
+  font-size: 1.5rem;
   box-sizing: border-box;
   resize: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  margin-top: 9%;
 `;
 
 export const Button = styled.button`
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--main-title-color);
   border: 1px solid #205c8b;
   color: white;
   border-radius: 20rem;
-  width: 30rem;
-  height: 9rem;
-  margin-top: 5rem;
-  font-size: 3.8rem;
+  width: 30%;
+  height: 26px;
+  margin-top: 12%;
+  margin-left: 32%;
+  font-size: 1.5rem;
 `;
