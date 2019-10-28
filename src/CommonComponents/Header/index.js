@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavBar, Logo, Menu } from './index.style';
 import logo from '../../assets/logo.png';
 import menu from '../../assets/menu.png';
 
-const Header = props => {
+const Header = (props) => {
   const {
-    location: { pathname }
+    location: { pathname },
   } = props;
   const paths = [
     '/',
@@ -22,20 +23,24 @@ const Header = props => {
     '/about-us',
     '/introductory-videos',
     '/books',
-    '/contact'
+    '/contact',
   ];
   return paths.includes(pathname) ? (
     <>
       <NavBar>
-        <a href='/'>
-          <Logo alt='logo' src={logo} />
+        <a href="/">
+          <Logo alt="logo" src={logo} />
         </a>
-        <a href='/menu'>
-          <Menu alt='menu' src={menu} {...props} />
+        <a href="/menu">
+          <Menu alt="menu" src={menu} {...props} />
         </a>
       </NavBar>
     </>
   ) : null;
+};
+
+Header.propTypes = {
+  location: PropTypes.string.isRequired,
 };
 
 export default Header;
