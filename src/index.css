@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: Lato;
-  padding: 1rem;
+  padding: 1%;
   box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ h2 {
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   body {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -48,7 +48,7 @@ h2 {
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -67,7 +67,7 @@ h2 {
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   body {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
   h1 {
@@ -78,7 +78,7 @@ h2 {
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
   body {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
   h1 {
