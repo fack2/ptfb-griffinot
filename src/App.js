@@ -13,7 +13,6 @@ import Books from './Layout/Books';
 import Videos from './Layout/Videos';
 import NotPageFound from './Layout/NotPageFound';
 import ContactUs from './Layout/ContactUs';
-import Level from './CommonComponents/Level';
 
 function App() {
   return (
