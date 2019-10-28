@@ -113,12 +113,16 @@ export const TitleParagraph = styled.p`
   margin-top: 5%;
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 1.9rem;
+    margin-top: 4%;
+
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 1.9rem;
   }
   @media (min-width: 1281px) {
     font-size: 1.9rem;
+    margin-top: 3%;
+
   }
   @media (max-width: 480px) {
     font-size: 1.4rem;
