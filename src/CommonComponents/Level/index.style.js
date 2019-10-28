@@ -31,7 +31,7 @@ export const CircleLevel = styled.div`
   text-align: center;
   margin-top: 1%;
   @media (min-width: 768px) and (max-width: 1024px) {
-    width: 17%;
+    width: 20%;
     border-radius: 50%;
     height: 117px;
   }
@@ -46,8 +46,8 @@ export const CircleLevel = styled.div`
     height: 100px;
   }
   @media (max-width: 480px) {
-    width: 27%;
-    height: 72px;
+    width: 20%;
+    height: 75px;
   }
 `;
 
@@ -67,7 +67,7 @@ export const ParagraphLevel = styled.p`
     font-size: 1.9rem;
   }
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -100,7 +100,7 @@ export const TitleLevel = styled.div`
   @media (max-width: 480px) {
     width: 85%;
     height: 47px;
-    margin-top: 7%;
+    margin-top: 5%;
   }
 `;
 
@@ -121,7 +121,7 @@ export const TitleParagraph = styled.p`
     font-size: 1.9rem;
   }
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 `;
 export const DescriptionLevel = styled.p`
@@ -137,6 +137,6 @@ export const DescriptionLevel = styled.p`
     font-size: 1.9rem;
   }
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 `;
