@@ -12,12 +12,13 @@ import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
 import ContactUs from './Layout/ContactUs';
-
+import Level from './CommonComponents/Level'
 function App() {
   return (
     <>
       <Router>
-        <Route
+        <Levels/>
+        {/* <Route
           render={() => (window.location.pathname === '/menu' ? null : <Header />)}
         />
         <Route exact path="/menu" component={Menu} />
@@ -34,7 +35,7 @@ function App() {
           exact
           path="/sensory-training"
           component={SensoryTraining}
-        />
+        /> */}
       </Router>
     </>
   );
