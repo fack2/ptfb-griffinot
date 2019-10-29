@@ -12,7 +12,7 @@ const QuestionnaireData = [
     limit: 10,
     uncompletedMsg:
       'Level 1 is the first stage of our programme.  It includes education videos, four warm ups and 32 activities for you to complete with your child. \n By the end of Level 1, your child should be able to snip with scissors, turn the tap on to wash their hands, pour themselves a drink and play successfully with toys like Duplo, blocks and large beads.',
-    uncompletedAction: 'https://griffinot.teachable.com/courses/enrolled/576431',
+    uncompletedAction: 'https://griffinot.teachable.com/p/education-videos-introduction',
   },
   {
     section: 3,

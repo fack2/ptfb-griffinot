@@ -4,17 +4,38 @@ import { Link } from 'react-router-dom';
 export const Header = styled.h1`
   text-align: center;
   margin: 8rem 4rem 4rem 4rem;
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 2.5rem;
+    margin: 7rem 4rem 4rem 4rem;
+  }
+  @media screen and (min-width: 1281px) {
+    font-size: 2.7rem;
+    margin: 5rem 8rem 5rem 3rem;
+  }
 `;
 
 export const Line = styled.hr`
   border-top: 1px solid var(--main-font-color);
   margin: 0rem 12rem;
+
+  @media screen and (min-width: 1281px) {
+    margin: 1rem 24rem 1rem 19rem;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 3.5rem;
   margin: 8rem 2rem 2rem 3rem;
   font-weight: bold;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 2.5rem;
+    margin: 6rem 0 4rem 13.2rem;
+  }
+  @media screen and (min-width: 1281px) {
+    font-size: 2.3rem;
+    margin: 4rem 0 3rem 20rem;
+  }
 `;
 
 export const DivData = styled.div`
@@ -78,11 +99,20 @@ export const QuestionCard = styled.div`
   border: 0.5px solid #928e8e;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: ${props => props.height || '18rem'};
+  height: ${(props) => props.height || '18rem'};
   padding: 4rem 3rem;
   margin: 4rem 2rem 0;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 75rem;
+    margin: 3rem 0rem 1rem 13rem;
+  }
+  @media screen and (min-width: 1281px) {
+    width: 83rem;
+    height: 18rem;
+    margin: 3rem 0rem 1rem 20rem;
+  }
 `;
 
 export const QuestionNumber = styled.span`
@@ -95,6 +125,19 @@ export const QuestionNumber = styled.span`
   background: var(--next-prev-button-color);
   border-radius: 50%;
   text-align: center;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    height: 3rem;
+    width: 3rem;
+    line-height: 91%;
+    font-size: 2.1rem;
+  }
+  @media screen and (min-width: 1281px) {
+    height: 2rem;
+    width: 2.2rem;
+    line-height: 68%;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+  }
 `;
 
 export const QuestionText = styled.p`
@@ -103,6 +146,15 @@ export const QuestionText = styled.p`
   font-size: 3.8rem;
   color: var(--main-font-color);
   flex-basis: 85%;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1281px) {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: -0.4rem 0 0 2rem;
+    padding: 0.9rem 0 0 0;
+  }
 `;
 
 export const Checkbox = styled.input`
@@ -112,6 +164,12 @@ export const Checkbox = styled.input`
   border: 1px solid #787878;
   box-sizing: border-box;
   margin-left: 1.5rem;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    width: 2.5rem;
+  }
+  @media screen and (min-width: 1281px) {
+    width: 2.5rem;
+  }
 `;
 
 export const QuestionDescription = styled.p`
@@ -119,14 +177,22 @@ export const QuestionDescription = styled.p`
   font-weight: 600;
   font-size: 3rem;
   color: #2d2323;
+  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+    font-size: 1.8rem;
+    margin: 0 0 2rem 2rem;
+    padding: 0 2rem 0 0;
+  }
+  @media screen and (min-width: 1281px) {
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: 0 8rem 3rem 2rem;
+  }
 `;
 export const DivNextPrev = styled.div`
-display:flex;
-font-size:3.2rem;
+  display: flex;
+  justify-content: space-around;
 `;
 
-
-// levle pop up
 export const LevelDiv = styled.div`
   display: flex;
   justify-content: center;
@@ -135,12 +201,12 @@ export const LevelDiv = styled.div`
 `;
 
 export const CircleLevel = styled.div`
-    width: 30rem;
-    height: 30rem;
-    border: 0.8rem #8AC456 solid;
-    border-radius: 54rem;
-    z-index: 1;
-    margin-top: -4rem;
+  width: 30rem;
+  height: 30rem;
+  border: 0.8rem #8ac456 solid;
+  border-radius: 54rem;
+  z-index: 1;
+  margin-top: -4rem;
 `;
 
 export const ParagraphLevel = styled.p`
@@ -151,7 +217,7 @@ export const ParagraphLevel = styled.p`
     color: #e8425c;
   }
   font-size: 3.3rem;
-  margin-top: 5.6rem;   
+  margin-top: 5.6rem;
   font-weight: bolder;
   color: #e8425c;
 `;
@@ -166,7 +232,7 @@ export const LevelIntro = styled.p`
 export const TitleParagraph = styled.p`
   @media (min-width: 1281px) {
     font-size: 2rem;
-    margin-left:7.9rem;
+    margin-left: 7.9rem;
     color: #ffffff;
   }
   font-size: 3.5rem;
@@ -186,14 +252,13 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-    width: 82rem;
-    height: 129rem;
-    background: #fffcfc;
-    border: 0.1rem solid #c4c4c4;
-    margin-left: -17.4rem;
-    margin-top: -58rem;
-
-  `;
+  width: 82rem;
+  height: 129rem;
+  background: #fffcfc;
+  border: 0.1rem solid #c4c4c4;
+  margin-left: -17.4rem;
+  margin-top: -58rem;
+`;
 
 export const Logo = styled.div`
   width: 82.5rem;

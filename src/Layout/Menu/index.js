@@ -7,7 +7,7 @@ import {
   StyledLink,
   ImageClose,
   ButtonClose,
-  CloseDiv
+  CloseDiv,
 } from './index.style';
 import home from '../../assets/home.png';
 import aboutUs from '../../assets/aboutus.png';
@@ -63,13 +63,13 @@ const Menu = ({ history }) => {
           <Image alt="level icon" src={levels} />
           <StyledLink to="/levels">
             <Item margin="3.7rem 0rem 4rem 7rem" fontSize="3.9rem">
-            Levels
+              Levels
             </Item>
           </StyledLink>
         </MenuItem>
         <MenuItem>
           <Image alt="contact us icon " src={contactUS} />
-          <StyledLink margin="5rem -1rem 0rem 2rem" to="/contact-us">
+          <StyledLink margin="5rem -1rem 0rem 2rem" to="/contact">
             <Item>Contact Us</Item>
           </StyledLink>
         </MenuItem>

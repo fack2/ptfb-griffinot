@@ -46,7 +46,7 @@ export const PopUpDiv = styled.span`
   letter-spacing: 0.1rem;
 `;
 
-export const LinkText = styled(Link)`
+export const LinkText = styled.a`
   padding: 4.4rem;
   font-size: 3.5rem;
   text-align: left;

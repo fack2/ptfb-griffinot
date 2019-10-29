@@ -15,4 +15,5 @@ export const NextBtn = styled(Link)`
   text-decoration: none;
   font-family: 'Bitter', serif;
   padding-bottom: 6rem;
+  font-weight: bold;
 `;
