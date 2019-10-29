@@ -6,17 +6,7 @@ export const LevelDiv = styled.div`
   margin-bottom: 7%;
   border: 0.5px solid #a7a7a7;
   border-radius: 6px;
-  margin-left: 4%;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    border: 1.5px solid #a7a7a7;
-    margin-left: 4%;
-  }
   @media (min-width: 1281px) {
-    border: 1.5px solid #a7a7a7;
-    margin-left: 4%;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
     border: 1.5px solid #a7a7a7;
     margin-left: 4%;
   }
@@ -25,82 +15,57 @@ export const DivTitle = styled.div`
   display: flex;
   align-content: center;
   margin-top: 7%;
-  margin-left:7%;
-  @media (min-width: 1281px) {
-    margin-left:4%;
-  }
-  @media (max-width: 480px) {
-  margin-left: 3%;
-  }
-`;
+  margin-left: 1%;
+  padding-right: 8%;
 
-export const CircleLevel = styled.div`
-  width: 24%;
-  border-radius: 50%;
-  height: 79px;
-  background: #ffce1c;
-  z-index: 1;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 11%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: 18%;
+  }
+  @media (min-width: 1281px) {
+    margin-left: 18%;
+  }
+  
+`;
+export const DivCircle = styled.div`
+  position: relative;
   text-align: center;
-  margin-top: 1%;
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 14%;
-    border-radius: 50%;
-    height: 94px;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    width: 15%;
-    border-radius: 50%;
-    height: 100px;
-  }
-  @media (min-width: 1281px) {
-    width: 12%;
-    border-radius: 50%;
-    height: 95px;
-    margin-top: 1%;
-  }
-  @media (max-width: 480px) {
-    height: 60px;
-    width: 19%;
-    margin-top: 2%;
-   }
-   @media (min-width: 481px) and (max-width: 767px){
-    width: 22%;
-    height: 79px;
-
-   }
 `;
 
-export const ParagraphLevel = styled.p`
-  font-size: 1.3rem;
+export const ParagraphLevel = styled.div`
+  font-size: 1.6rem;
   color: #e8425c;
-  margin-top: 35%;
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.9rem;
-    margin-top: 37%;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    font-size: 1.9rem;
-  }
-  @media (min-width: 1281px) {
-    font-size: 1.9rem;
-  }
-  @media (max-width: 480px) {
-    font-size: 1.3rem;
-  }
-  @media (min-width: 481px) and (max-width: 767px){
-    font-size:1.7rem;
-  }
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const TitleLevel = styled.div`
-  width: 90%;
-  height: 52px;
+  width: 93%;
+  height: 49px;
   background: #175d8c;
   border: 1px solid #a0a0a0;
   box-sizing: border-box;
   border-radius: 50px;
-  margin-top: 5%;
-  margin-left: -17%;
+  margin-top: 8%;
+  margin-left: -25%;
+  @media (max-width: 480px) {
+    width: 120%;
+    margin-left: -22%;
+    height: 50px;
+    margin-top: 7%;
+
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 88%;
+    margin-left: -17%;
+    height: 50px;
+    margin-top: 7%;
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 75%;
     height: 62px;
@@ -111,7 +76,7 @@ export const TitleLevel = styled.div`
   @media (min-width: 1025px) and (max-width: 1280px) {
     height: 59px;
     border: 1px solid #a0a0a0;
-    width: 63%;
+    width: 70%;
     margin-top: 4%;
     margin-left: -13%;
   }
@@ -122,61 +87,52 @@ export const TitleLevel = styled.div`
     margin-left: -10%;
     border: 1px solid #a0a0a0;
   }
-  @media (max-width: 480px) {
-    width: 94%;
-    height: 42px;
-    margin-top: 5.5%;
-  }
-  @media (min-width: 481px) and (max-width: 767px){
-    width:92%;
-  }
-
 `;
 
 export const TitleParagraph = styled.p`
-  text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #ffffff;
-  margin-left: 16%;
-  margin-top: 5%;
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.9rem;
+  margin-left: 29%;
+  margin-top: 4.5%;
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.7rem;
     margin-top: 4%;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
-    font-size: 1.9rem;
-    margin-top: 4%;
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-left: 26%;
+    margin-top: 4.5%;
   }
   @media (min-width: 1281px) {
     font-size: 1.9rem;
     margin-top: 4%;
+    margin-left: 20%;
   }
-  @media (max-width: 480px) {
-    font-size: 1.3rem;
-    margin-top: 5%;
-  }
-  @media (min-width: 481px) and (max-width: 767px){
-    margin-top:4%;
-  }
-
 `;
 export const DescriptionLevel = styled.p`
   font-size: 1.4rem;
   padding: 4%;
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.9rem;
+  text-align: justify;
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.7rem;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 1.9rem;
   }
   @media (min-width: 1281px) {
     font-size: 1.9rem;
   }
-  @media (max-width: 480px) {
-    font-size: 1.4rem;
-  }
-  @media (min-width: 481px) and (max-width: 767px){
-    font-size: 1.7rem;
+`;
+export const CircleImage = styled.img`
+ height: 100px;
+  z-index: 1;
+@media (max-width: 480px) {
+  height: 93px;
 
-  }
+  width: 60%;
+}
 `;
