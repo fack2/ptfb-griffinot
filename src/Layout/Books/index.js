@@ -1,31 +1,33 @@
 import React from 'react';
-import Resource from '../../CommonComponents/Resource';
+import Book from '../../CommonComponents/Book';
 import PrevButton from '../../CommonComponents/PrevButton';
 import {
-  Container, Imglogo, TitlePage, ImgTitle,
+  BooksContainer, PageLogo, PageTitle, BooksLogoTitleContainer,
 } from './index.style';
 import data from '../../Data/bookData';
 import logo from '../../assets/book-logo.png';
 
 const Books = () => (
   <>
-    <ImgTitle>
-      <Imglogo src={logo} />
-      <TitlePage>Books</TitlePage>
-    </ImgTitle>
-    <Container>
+    <BooksLogoTitleContainer>
+      <PageLogo src={logo} />
+      <PageTitle>Books</PageTitle>
+    </BooksLogoTitleContainer>
+
+    <BooksContainer>
       {data.map(({
-        id, img, bookTitle, price, description,
+        id, img, bookTitle, price, description, bookLink,
       }) => (
-        <Resource
+        <Book
           key={id}
-          picture={img}
+          bookImg={img}
           title={bookTitle}
           price={price}
           description={description}
+          bookLink={bookLink}
         />
       ))}
-    </Container>
+    </BooksContainer>
     <PrevButton prevLink="/resources" />
   </>
 );
