@@ -19,7 +19,7 @@ const SensoryIntroduction = () => (
         </Link>
       ))}
     </BodyCategory>
-    <PrevButton prevLink="/resources"  />
+    <PrevButton prevLink="/resources" />
   </>
 );
 export default SensoryIntroduction;
