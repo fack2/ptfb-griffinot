@@ -11,6 +11,7 @@ import SensoryTraining from './Layout/ResourcesCategories/SensoryTraining';
 import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
+import PencilGrip from './Layout/ResourcesCategories/PencilGrip'
 import FineMotor from './Layout/ResourcesCategories/FineMotor';
 import SensoryEquiment from './Layout/ResourcesCategories/SensoryEquiment';
 import SensoryTopics from './Layout/ResourcesCategories/SensoryTopics';
@@ -35,6 +36,7 @@ function App() {
           <Route exact path="/introductory-videos" component={Videos} />
           <Route exact path="/contact" component={ContactUs} />
           <Route exact path="/sensory-training" component={SensoryTraining} />
+          <Route exact path="/pencil-grip-reviews" component={PencilGrip} />
           <Route exact path="/fine-motor-skills" component={FineMotor} />
           <Route exact path="/sensory-equipment" component={SensoryEquiment} />
           <Route exact path="/sensory-topics" component={SensoryTopics} />
