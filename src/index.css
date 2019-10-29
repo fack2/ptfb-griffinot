@@ -85,15 +85,3 @@ h2 {
     font-size: 3.5rem;
   }
 }
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-  body {
-    width: 60%;
-    margin: 0 auto;
-  }
-  h1 {
-    font-size: 3.5rem;
-  }
-
-}
