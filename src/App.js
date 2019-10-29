@@ -12,6 +12,10 @@ import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
 import PencilGrip from './Layout/ResourcesCategories/PencilGrip'
+import FineMotor from './Layout/ResourcesCategories/FineMotor';
+import SensoryEquiment from './Layout/ResourcesCategories/SensoryEquiment';
+import SensoryTopics from './Layout/ResourcesCategories/SensoryTopics';
+import SensoryIntroduction from './Layout/ResourcesCategories/SensoryIntroduction';
 import NotPageFound from './Layout/NotPageFound';
 import ContactUs from './Layout/ContactUs';
 
@@ -33,6 +37,14 @@ function App() {
           <Route exact path="/contact" component={ContactUs} />
           <Route exact path="/sensory-training" component={SensoryTraining} />
           <Route exact path="/pencil-grip-reviews" component={PencilGrip} />
+          <Route exact path="/fine-motor-skills" component={FineMotor} />
+          <Route exact path="/sensory-equipment" component={SensoryEquiment} />
+          <Route exact path="/sensory-topics" component={SensoryTopics} />
+          <Route
+            exact
+            path="/sensory-introduction"
+            component={SensoryIntroduction}
+          />
           <Route component={NotPageFound} />
         </Switch>
       </Router>

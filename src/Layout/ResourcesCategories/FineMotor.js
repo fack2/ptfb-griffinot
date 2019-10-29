@@ -1,25 +1,24 @@
 import React from 'react';
-import SensoryTopicsData from '../../Data/SensoryTopicsData';
+import FineMotorData from '../../Data/FineMotorData';
 import {
-  TitleCategory, Container, BodyCategory, Link,
+ TitleCategory, Container, BodyCategory, Link 
 } from './index.style';
 import ResourcesCategory from '../../CommonComponents/ResourcesCategory';
 import PrevButton from '../../CommonComponents/PrevButton';
 
-const SensoryTopics = () => (
+const FineMotor = () => (
   <>
     <Container>
-      <TitleCategory>Sensory Topics</TitleCategory>
+      <TitleCategory>Fine Motor Skill Tips</TitleCategory>
     </Container>
     <BodyCategory>
-      {SensoryTopicsData.map(({ Title, ImageCategory, LinkCategory }) => (
+      {FineMotorData.map(({ Title, ImageCategory, LinkCategory }) => (
         <Link href={LinkCategory}>
-
           <ResourcesCategory Title={Title} ImageCategory={ImageCategory} />
         </Link>
       ))}
     </BodyCategory>
-    <PrevButton prevLink="/resources" margin="-1rem" />
+    <PrevButton prevLink="/resources" margin="29rem" />
   </>
 );
-export default SensoryTopics;
+export default FineMotor;
