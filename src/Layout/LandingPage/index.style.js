@@ -43,9 +43,9 @@ export const Button = styled.button`
 `;
 
 export const ResourceLink = styled.p`
-  font-size: 1.1rem;
-  margin-left: 28%;
-  margin-top: 3%;
+  font-size: 1.3rem;
+  margin-left: 26%;
+  margin-top: 2%;
   @media (min-width: 1025px) and (max-width: 1280px){
     font-size: 1.5rem;
     margin-left: 31%;
