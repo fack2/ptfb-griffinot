@@ -1,25 +1,25 @@
 import React from 'react';
-import SensoryTopicsData from '../../Data/SensoryTopicsData';
+import PencilGripData from '../../Data/PencilGripData';
 import {
   TitleCategory, Container, BodyCategory, Link,
 } from './index.style';
 import ResourcesCategory from '../../CommonComponents/ResourcesCategory';
 import PrevButton from '../../CommonComponents/PrevButton';
 
-const SensoryTopics = () => (
+const PencilGrip = () => (
   <>
     <Container>
-      <TitleCategory>Sensory Topics</TitleCategory>
+      <TitleCategory>Pencil Grip Reviews</TitleCategory>
     </Container>
     <BodyCategory>
-      {SensoryTopicsData.map(({ Title, ImageCategory, LinkCategory }) => (
+      {PencilGripData.map(({ Title, ImageCategory, LinkCategory }) => (
         <Link href={LinkCategory}>
 
           <ResourcesCategory Title={Title} ImageCategory={ImageCategory} />
         </Link>
       ))}
     </BodyCategory>
-    <PrevButton prevLink="/resources" margin="-1rem" />
+    <PrevButton prevLink="/resources" margin="0rem" />
   </>
 );
-export default SensoryTopics;
+export default PencilGrip;
