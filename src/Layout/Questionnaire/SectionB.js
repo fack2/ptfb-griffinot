@@ -13,7 +13,7 @@ import {
   Checkbox,
   QuestionContainer,
   Paragraph,
-  DivNextPrev
+  DivNextPrev,
 } from './index.style';
 
 import NextButton from '../../CommonComponents/NextButton';
@@ -23,7 +23,7 @@ const SectionB = ({
   checkboxChange,
   nextButtonClickHandler,
   checkedQuestions,
-  checkedItems
+  checkedItems,
 }) => (
   <>
     <QuestionContainer>
@@ -34,7 +34,7 @@ const SectionB = ({
         <QuestionNumber>{data[5].questionNumber}</QuestionNumber>
         <QuestionText>{data[5].question}</QuestionText>
         <Checkbox
-          type='checkbox'
+          type="checkbox"
           id={data[5].questionNumber}
           onChange={checkboxChange}
           checked={checkedQuestions[data[5].questionNumber - 1]}
@@ -46,7 +46,7 @@ const SectionB = ({
         <QuestionNumber>{data[6].questionNumber}</QuestionNumber>
         <QuestionText>{data[6].question}</QuestionText>
         <Checkbox
-          type='checkbox'
+          type="checkbox"
           id={data[6].questionNumber}
           onChange={checkboxChange}
           checked={checkedQuestions[data[6].questionNumber - 1]}
@@ -58,7 +58,7 @@ const SectionB = ({
         <QuestionNumber>{data[7].questionNumber}</QuestionNumber>
         <QuestionText>{data[7].question}</QuestionText>
         <Checkbox
-          type='checkbox'
+          type="checkbox"
           id={data[7].questionNumber}
           onChange={checkboxChange}
           checked={checkedQuestions[data[7].questionNumber - 1]}
@@ -70,7 +70,7 @@ const SectionB = ({
         <QuestionNumber>{data[8].questionNumber}</QuestionNumber>
         <QuestionText>{data[8].question}</QuestionText>
         <Checkbox
-          type='checkbox'
+          type="checkbox"
           id={data[8].questionNumber}
           onChange={checkboxChange}
           checked={checkedQuestions[data[8].questionNumber - 1]}
@@ -82,37 +82,37 @@ const SectionB = ({
         <QuestionNumber>{data[9].questionNumber}</QuestionNumber>
         <QuestionText>{data[9].question}</QuestionText>
         <Checkbox
-          type='checkbox'
+          type="checkbox"
           id={data[9].questionNumber}
           onChange={checkboxChange}
           checked={checkedQuestions[data[9].questionNumber - 1]}
         />
         <QuestionDescription>{data[9].description}</QuestionDescription>
       </QuestionCard>
-    </QuestionContainer>
-    <DivNextPrev>
-      <PrevButton
-        prevLink='/questionnaire'
-        nextButtonClickHandler={nextButtonClickHandler}
-      />
-
-      {checkedItems.length >= QuestionnaireData[1].limit ? (
-        <NextButton
-          Margin='60rem'
-          nextLink='/questionnaire'
+      <DivNextPrev>
+        <PrevButton
+          prevLink="/questionnaire"
           nextButtonClickHandler={nextButtonClickHandler}
         />
-      ) : (
-        <Popup modal trigger={<NextButton Margin='60rem' />}>
-          <LevelPop
-            levelScore={LevelData[1].LevelNo}
-            description={LevelData[1].uncompletedMsg}
-            NextLink={LevelData[1].uncompletedAction}
-            No={LevelData[1].LevelNo}
+
+        {checkedItems.length >= QuestionnaireData[1].limit ? (
+          <NextButton
+            Margin="55rem"
+            nextLink="/questionnaire"
+            nextButtonClickHandler={nextButtonClickHandler}
           />
-        </Popup>
-      )}
-    </DivNextPrev>
+        ) : (
+          <Popup modal trigger={<NextButton Margin="55rem" />}>
+            <LevelPop
+              levelScore={LevelData[1].LevelNo}
+              description={LevelData[1].uncompletedMsg}
+              NextLink={LevelData[1].uncompletedAction}
+              No={LevelData[1].LevelNo}
+            />
+          </Popup>
+        )}
+      </DivNextPrev>
+    </QuestionContainer>
   </>
 );
 
@@ -120,7 +120,7 @@ SectionB.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
   nextButtonClickHandler: PropTypes.func.isRequired,
   checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
-    .isRequired
+    .isRequired,
 };
 
 export default SectionB;

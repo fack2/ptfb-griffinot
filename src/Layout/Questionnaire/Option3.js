@@ -80,7 +80,7 @@ const Option3 = ({ nextButtonClickHandler }) => (
       >
         <PopupPage
           description="This programme will be launching in March 2020, please consider joining our mailing list for updates"
-          optionLink="/"
+          optionLink="https://www.griffinot.com/mailing-list-sign-up/"
           optionText="Our Mailing list"
           NextLink="/"
         />
