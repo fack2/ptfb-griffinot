@@ -12,15 +12,13 @@ import {
   NextText,
   NextArrow,
   Container,
-  PopUPCard,
-  PopUpBox,
   Logo,
   LogoImage,
-  BodyPage,
   PopUpDiv,
   OptionBtn,
-  ContainerBtn,
-  Container2,
+  Text,
+  BigDiv,
+  BtnDiv
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
@@ -70,79 +68,71 @@ class Schema extends React.Component {
           </Para2>
         </Container>
 
-        <Popup
-          modal
-          trigger={
-            <NextText type="button">
-              <NextArrow alt="next-arrow" src={arrow} />
-            </NextText>
-          }
+        <Popup trigger={
+          <NextText type="button">
+            <NextArrow alt="next-arrow" src={arrow} />
+          </NextText>}
           onClose={() => {
             this.setState({ NoBtn: false });
-          }}
-        >
+          }} modal>
           {() => (
-            <BodyPage>
-              <PopUPCard>
-                <PopUpBox Height="80rem">
-                  {this.state.NoBtn ? (
-                    <Logo Background="#ABC1D3">
-                      <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-                    </Logo>
-                  ) : (
-                      <Logo>
-                        <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-                      </Logo>
+            <BigDiv >
+              {this.state.NoBtn ? (
+                <Logo Background="#ABC1D3">
+                  <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+                </Logo>
+              ) : (
+                  <Logo>
+                    <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+                  </Logo>
+                )}
+
+              <Text>
+                {this.state.NoBtn ? (
+                  <PopUpDiv>
+                    2. Does your child have a neurological or genetic condition?(e.g. CP, Down's
+                    Syndrome)
+                      </PopUpDiv>
+                ) : (
+                    <PopUpDiv>
+                      1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
+                      </PopUpDiv>
+                  )}
+              </Text>
+              <BtnDiv>
+                {this.state.NoBtn ? (
+                  <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
+                    {() => (
+                      <PopupPage
+                        description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme."
+                        NextLink="/questionnaire"
+                      />
                     )}
-
-                  <Container2>
-                    {this.state.NoBtn ? (
-                      <PopUpDiv>
-                        2. Does your child have a neurological or genetic condition?(e.g. CP, Down's
-                        Syndrome)
-                      </PopUpDiv>
-                    ) : (
-                        <PopUpDiv>
-                          1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
-                      </PopUpDiv>
+                  </Popup>
+                ) : (
+                    <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
+                      {() => (
+                        <PopupPage
+                          description="Sorry, our program is not suitable for your child."
+                          NextLink="/"
+                        />
                       )}
+                    </Popup>
+                  )}
 
-                    <ContainerBtn>
-                      {this.state.NoBtn ? (
-                        <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                          {() => (
-                            <PopupPage
-                              description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme."
-                              NextLink="/questionnaire"
-                            />
-                          )}
-                        </Popup>
-                      ) : (
-                          <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                            {() => (
-                              <PopupPage
-                                description="Sorry, our program is not suitable for your child."
-                                NextLink="/"
-                              />
-                            )}
-                          </Popup>
-                        )}
 
-                      {this.renderBtn()}
-                      {this.state.NoBtn ? (
-                        <OptionBtn onClick={this.setRedirect} type="button">
-                          No
+                {this.renderBtn()}
+                {this.state.NoBtn ? (
+                  <OptionBtn onClick={this.setRedirect} type="button">
+                    No
                         </OptionBtn>
-                      ) : (
-                          <OptionBtn onClick={this.DisplayPop} type="button">
-                            No
+                ) : (
+                    <OptionBtn onClick={this.DisplayPop} type="button">
+                      No
                         </OptionBtn>
-                        )}
-                    </ContainerBtn>
-                  </Container2>
-                </PopUpBox>
-              </PopUPCard>
-            </BodyPage>
+                  )}
+              </BtnDiv>
+            </BigDiv>
           )}
         </Popup>
       </>
