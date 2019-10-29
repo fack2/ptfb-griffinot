@@ -46,4 +46,21 @@ export const Button = styled.button`
   margin-top: 12%;
   margin-left: 32%;
   font-size: 1.5rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  width: 27%;
+  height: 33px;
+  font-size: 2rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  width: 24%;
+  height: 32px;
+  font-size: 2rem;
+}
+
+@media (min-width: 1281px) {
+  width: 25%;
+  height: 34px;
+  font-size: 2rem;
+  }
 `;
