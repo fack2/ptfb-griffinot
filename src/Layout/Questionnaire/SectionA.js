@@ -20,94 +20,103 @@ import {
 import NextButton from '../../CommonComponents/NextButton';
 
 const SectionA = ({
-  checkboxChange, nextButtonClickHandler, checkedQuestions, checkedItems,
+  checkboxChange,
+  nextButtonClickHandler,
+  checkedQuestions,
+  checkedItems,
 }) => (
   <>
-      <Header>
-        We just need you to answer some questions to determine where to start:
-      </Header>
-      <Line />
-      <QuestionContainer>
-        <Paragraph>
-          Please check the box if your child is able to do the following:
-        </Paragraph>
-        <QuestionCard height="24rem">
-          <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
-          <QuestionText>{data[0].question}</QuestionText>
-          <Checkbox
-            type="checkbox"
-            id={data[0].questionNumber}
-            onChange={checkboxChange}
-            checked={checkedQuestions[data[0].questionNumber - 1]}
-          />
-          <QuestionDescription>{data[0].description}</QuestionDescription>
-        </QuestionCard>
-
-        <QuestionCard height="30rem">
-          <QuestionNumber>{data[1].questionNumber}</QuestionNumber>
-          <QuestionText>{data[1].question}</QuestionText>
-          <Checkbox
-            type="checkbox"
-            id={data[1].questionNumber}
-            onChange={checkboxChange}
-            checked={checkedQuestions[data[1].questionNumber - 1]}
-          />
-          <QuestionDescription>{data[1].description}</QuestionDescription>
-        </QuestionCard>
-
-        <QuestionCard>
-          <QuestionNumber>{data[2].questionNumber}</QuestionNumber>
-          <QuestionText>{data[2].question}</QuestionText>
-          <Checkbox
-            type="checkbox"
-            id={data[2].questionNumber}
-            onChange={checkboxChange}
-            checked={checkedQuestions[data[2].questionNumber - 1]}
-          />
-          <QuestionDescription>{data[2].description}</QuestionDescription>
-        </QuestionCard>
-
-        <QuestionCard>
-          <QuestionNumber>{data[3].questionNumber}</QuestionNumber>
-          <QuestionText>{data[3].question}</QuestionText>
-          <Checkbox
-            type="checkbox"
-            id={data[3].questionNumber}
-            onChange={checkboxChange}
-            checked={checkedQuestions[data[3].questionNumber - 1]}
-          />
-          <QuestionDescription>{data[3].description}</QuestionDescription>
-        </QuestionCard>
-
-        <QuestionCard height="31rem">
-          <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
-          <QuestionText>{data[4].question}</QuestionText>
-          <Checkbox
-            type="checkbox"
-            id={data[4].questionNumber}
-            onChange={checkboxChange}
-            checked={checkedQuestions[data[4].questionNumber - 1]}
-          />
-
-          <QuestionDescription>{data[4].description}</QuestionDescription>
-        </QuestionCard>
-      </QuestionContainer>
-
-      {checkedItems.length >= QuestionnaireData[0].limit ? (
-        <NextButton
-          nextLink="/questionnaire"
-          nextButtonClickHandler={nextButtonClickHandler}
+    <Header>
+      We just need you to answer some questions to determine where to start:
+    </Header>
+    <Line />
+    <QuestionContainer>
+      <Paragraph>
+        Please check the box if your child is able to do the following:
+      </Paragraph>
+      <QuestionCard height="110px">
+        <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
+        <QuestionText>{data[0].question}</QuestionText>
+        <Checkbox
+          type="checkbox"
+          id={data[0].questionNumber}
+          onChange={checkboxChange}
+          checked={checkedQuestions[data[0].questionNumber - 1]}
         />
-      ) : (
-          <Popup modal trigger={<NextButton />}>
-            <PopupPage
-              description={LevelData[0].uncompletedMsg}
-              optionLink="/resources"
-              optionText="Our resources"
-              NextLink={LevelData[0].uncompletedAction}
-            />
-          </Popup>
-      )}
+        <QuestionDescription margin="-4.5% 6% 0% 10%">
+          {data[0].description}
+        </QuestionDescription>
+      </QuestionCard>
+
+      <QuestionCard height="141px">
+        <QuestionNumber>{data[1].questionNumber}</QuestionNumber>
+        <QuestionText>{data[1].question}</QuestionText>
+        <Checkbox
+          type="checkbox"
+          id={data[1].questionNumber}
+          onChange={checkboxChange}
+          checked={checkedQuestions[data[1].questionNumber - 1]}
+        />
+        <QuestionDescription margin="-3% 7% 0% 10%">
+          {data[1].description}
+        </QuestionDescription>
+      </QuestionCard>
+
+      <QuestionCard>
+        <QuestionNumber>{data[2].questionNumber}</QuestionNumber>
+        <QuestionText>{data[2].question}</QuestionText>
+        <Checkbox
+          type="checkbox"
+          id={data[2].questionNumber}
+          onChange={checkboxChange}
+          checked={checkedQuestions[data[2].questionNumber - 1]}
+        />
+        <QuestionDescription>{data[2].description}</QuestionDescription>
+      </QuestionCard>
+
+      <QuestionCard>
+        <QuestionNumber>{data[3].questionNumber}</QuestionNumber>
+        <QuestionText>{data[3].question}</QuestionText>
+        <Checkbox
+          type="checkbox"
+          id={data[3].questionNumber}
+          onChange={checkboxChange}
+          checked={checkedQuestions[data[3].questionNumber - 1]}
+        />
+        <QuestionDescription>{data[3].description}</QuestionDescription>
+      </QuestionCard>
+
+      <QuestionCard height="143px">
+        <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
+        <QuestionText>{data[4].question}</QuestionText>
+        <Checkbox
+          type="checkbox"
+          id={data[4].questionNumber}
+          onChange={checkboxChange}
+          checked={checkedQuestions[data[4].questionNumber - 1]}
+        />
+
+        <QuestionDescription margin="-1% 3% 2% 9%">
+          {data[4].description}
+        </QuestionDescription>
+      </QuestionCard>
+    </QuestionContainer>
+
+    {checkedItems.length >= QuestionnaireData[0].limit ? (
+      <NextButton
+        nextLink="/questionnaire"
+        nextButtonClickHandler={nextButtonClickHandler}
+      />
+    ) : (
+      <Popup modal trigger={<NextButton />}>
+        <PopupPage
+          description={LevelData[0].uncompletedMsg}
+          optionLink="/resources"
+          optionText="Our resources"
+          NextLink={LevelData[0].uncompletedAction}
+        />
+      </Popup>
+    )}
   </>
 );
 
