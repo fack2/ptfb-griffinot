@@ -2,68 +2,136 @@ import styled from 'styled-components';
 
 export const LevelDiv = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 7%;
+  border: 0.5px solid #a7a7a7;
+  border-radius: 6px;
+  @media (min-width: 1281px) {
+    border: 1.5px solid #a7a7a7;
+    margin-left: 4%;
+  }
+`;
+export const DivTitle = styled.div`
+  display: flex;
+  align-content: center;
+  margin-top: 7%;
+  margin-left: 1%;
+  padding-right: 8%;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 11%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: 18%;
+  }
+  @media (min-width: 1281px) {
+    margin-left: 18%;
+  }
+  @media (max-width: 480px){
+    padding-right: 22%;
+  }
+`;
+export const DivCircle = styled.div`
+  position: relative;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 4.9rem;
 `;
 
-export const CircleLevel = styled.div`
-  @media (min-width: 1281px) {
-    width: 12rem;
-    height: 12rem;
-    background: #ffce1c;
-    border-radius: 11rem;
-    z-index: 1;
-  }
-  width: 20rem;
-  height: 20rem;
-  background: #ffce1c;
-  border-radius: 11rem;
-  z-index: 1;
-`;
-
-export const ParagraphLevel = styled.p`
-  @media (min-width: 1281px) {
-    font-size: 2.5rem;
-    margin-top: 4rem;
-    font-weight: bolder;
-    color: #e8425c;
-  }
-  font-size: 3.6rem;
-  margin-top: 7.6rem;
-  font-weight: bolder;
+export const ParagraphLevel = styled.div`
+  font-size: 1.6rem;
   color: #e8425c;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const TitleLevel = styled.div`
-  @media (min-width: 1281px) {
-    width: 45rem;
-    height: 8rem;
-    background: #205c8b;
-    border: 1px solid #a0a0a0;
-    box-sizing: border-box;
-    border-radius: 82px;
-    margin-top: 2rem;
-    margin-left: -11rem;
-  }
-  width: 68rem;
-  height: 12.9rem;
-  background: #205c8b;
+  width: 93%;
+  height: 49px;
+  background: #175d8c;
   border: 1px solid #a0a0a0;
   box-sizing: border-box;
-  border-radius: 82px;
-  margin-top: 4.2rem;
-  margin-left: -9rem;
+  border-radius: 50px;
+  margin-top: 8%;
+  margin-left: -25%;
+  @media (max-width: 480px) {
+    width: 220%;
+    margin-left: -37%;
+    height: 50px;
+    margin-top: 7%;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 88%;
+    margin-left: -17%;
+    height: 50px;
+    margin-top: 7%;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 75%;
+    height: 62px;
+    border: 1px solid #a0a0a0;
+    margin-left: -13%;
+    margin-top: 3.5%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    height: 59px;
+    border: 1px solid #a0a0a0;
+    width: 70%;
+    margin-top: 4%;
+    margin-left: -13%;
+  }
+  @media (min-width: 1281px) {
+    height: 63px;
+    width: 67%;
+    margin-top: 3.5%;
+    margin-left: -10%;
+    border: 1px solid #a0a0a0;
+  }
 `;
 
 export const TitleParagraph = styled.p`
-  @media (min-width: 1281px) {
-    font-size: 2rem;
-    margin-left:7.9rem;
-    color: #ffffff;
-  }
-  font-size: 3.7rem;
-  margin-left: 3.9rem;
+  font-size: 1.3rem;
   color: #ffffff;
+  margin-left: 29%;
+  margin-top: 4.5%;
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.7rem;
+    margin-top: 4%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-left: 26%;
+    margin-top: 4.5%;
+  }
+  @media (min-width: 1281px) {
+    font-size: 1.9rem;
+    margin-top: 4%;
+    margin-left: 20%;
+  }
+`;
+export const DescriptionLevel = styled.p`
+  font-size: 1.4rem;
+  padding: 4%;
+  text-align: justify;
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.7rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 1281px) {
+    font-size: 1.9rem;
+  }
+`;
+export const CircleImage = styled.img`
+  height: 100px;
+  z-index: 1;
+  @media (max-width: 480px) {
+    height: 80px;
+    width: 50%;
+  }
 `;
