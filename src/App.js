@@ -11,7 +11,8 @@ import SensoryTraining from './Layout/ResourcesCategories/SensoryTraining';
 import Questionnaire from './Layout/Questionnaire';
 import Books from './Layout/Books';
 import Videos from './Layout/Videos';
-import SensoryTopics from './Layout/ResourcesCategories/SensoryTopics'
+import SensoryTopics from './Layout/ResourcesCategories/SensoryTopics';
+import SensoryIntroduction from './Layout/ResourcesCategories/SensoryIntroduction';
 import NotPageFound from './Layout/NotPageFound';
 import ContactUs from './Layout/ContactUs';
 
@@ -32,7 +33,12 @@ function App() {
           <Route exact path="/introductory-videos" component={Videos} />
           <Route exact path="/contact" component={ContactUs} />
           <Route exact path="/sensory-training" component={SensoryTraining} />
-          <Route exact path="/sensory-topics" component={SensoryTopics}/>
+          <Route exact path="/sensory-topics" component={SensoryTopics} />
+          <Route
+            exact
+            path="/sensory-introduction"
+            component={SensoryIntroduction}
+          />
           <Route component={NotPageFound} />
         </Switch>
       </Router>
