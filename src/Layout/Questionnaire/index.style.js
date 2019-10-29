@@ -26,9 +26,12 @@ export const Header = styled.h1`
     font-size: 2.65rem;
   }
 
-  /* Media Query for Large screens
+  /* Media Query for Large screens*/
   @media (min-width: 1281px) {
-  } */
+    text-align: center;
+    margin: 0% -1% 3.5% -4px;
+    font-size: 2.7rem;
+  }
 `;
 
 export const Line = styled.hr`
@@ -46,6 +49,10 @@ export const Line = styled.hr`
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     margin: 0% -2%;
+  }
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    margin: 0% -1.5%;
   }
 `;
 
@@ -69,6 +76,12 @@ export const Paragraph = styled.p`
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 2.12rem;
     margin: 2% 0 2% -4%;
+  }
+
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    font-size: 2rem;
+    margin: 2% 0 2% 8%;
   }
 `;
 
@@ -159,6 +172,13 @@ export const QuestionCard = styled.div`
     margin: 2% 1% 1% -3%;
     height: ${(props) => props.height4 || '90px'};
   }
+
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    padding: 4% 0% 0% 2.5%;
+    margin: 2% 12% 1% 8%;
+    height: ${(props) => props.height5 || '90px'};
+  }
 `;
 
 export const QuestionNumber = styled.span`
@@ -183,19 +203,14 @@ export const QuestionNumber = styled.span`
     font-size: 1.7rem;
   }
 
-  /*  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    height: 3rem;
-    width: 3rem;
-    line-height: 91%;
-    font-size: 2.1rem;
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    width: 21px;
+    height: 21px;
+    padding-top: 0.5%;
+    line-height: 123%;
+    font-size: 1.25rem;
   }
-  @media screen and (min-width: 1281px) {
-    height: 2rem;
-    width: 2.2rem;
-    line-height: 68%;
-    font-size: 1.9rem;
-    margin-top: 1rem;
-  } */
 `;
 
 export const QuestionText = styled.p`
@@ -213,19 +228,17 @@ export const QuestionText = styled.p`
 
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
-    margin: ${(props) => props.margin2 || '-0.2% 0 0 3%'};
+    margin: ${(props) => props.margin4 || '-0.2% 0 0 3%'};
     text-align: left;
     font-size: 1.8rem;
   }
-  /* @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 3rem;
+
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    margin: ${(props) => props.margin5 || '-0.2% 0 0 3%'};
+    text-align: left;
+    font-size: 1.8rem;
   }
-  @media screen and (min-width: 1281px) {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: -0.4rem 0 0 2rem;
-    padding: 0.9rem 0 0 0;
-  } */
 `;
 
 export const Checkbox = styled.input`
@@ -241,12 +254,12 @@ export const Checkbox = styled.input`
     height: 22px;
     margin: 0 -5% 0 2.5%;
   }
-  /*@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    width: 2.5rem;
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    width: 25px;
+    height: 22px;
+    margin: 0 -5% 0 2.5%;
   }
-  @media screen and (min-width: 1281px) {
-    width: 2.5rem;
-  } */
 `;
 
 export const QuestionDescription = styled.p`
@@ -271,16 +284,12 @@ export const QuestionDescription = styled.p`
     text-align: left;
     font-size: 1.5rem;
   }
-  /*@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 1.8rem;
-    margin: 0 0 2rem 2rem;
-    padding: 0 2rem 0 0;
+  /* Media Query for Large screens*/
+  @media (min-width: 1281px) {
+    margin: ${(props) => props.margin5 || '-0.5% 0 0 3%'};
+    text-align: left;
+    font-size: 1.4rem;
   }
-  @media screen and (min-width: 1281px) {
-    font-size: 1.9rem;
-    font-weight: 400;
-    margin: 0 8rem 3rem 2rem;
-  } */
 `;
 
 export const DivNextPrev = styled.div`
