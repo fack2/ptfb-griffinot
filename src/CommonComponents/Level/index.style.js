@@ -131,7 +131,7 @@ export const CircleImage = styled.img`
   height: 100px;
   z-index: 1;
   @media (max-width: 480px) {
-    height: 93px;
+    height: 80px;
     width: 50%;
   }
 `;
