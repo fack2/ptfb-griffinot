@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 90%;
-  height: 3%;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
 `;
 
 export const BookCard = styled.a`
@@ -15,50 +14,47 @@ export const BookCard = styled.a`
   flex-direction: column;
   text-decoration: none;
   color: var(--main-font-color);
-  width: 97%;
   margin-bottom: 10%;
-  /*
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
-    margin: 3rem 7rem 0rem 7rem;
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 93%;
   }
-  @media screen and (min-width: 1281px) {
-    margin: 3rem 30rem 0rem 30rem;
-  } */
 `;
 
 export const BookTitle = styled.span`
-  font-size: 1.6rem;
   color: #205c88;
   font-weight: 700;
   text-align: center;
   margin-top: 6%;
+  font-size: 1.5rem;
 
-  /*
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
-    padding: 1rem 1rem 0 1rem;
-    margin: 4rem 0 0 -6.5rem;
-    font-size: 2.4rem;
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.5rem;
   }
-  @media screen and (min-width: 1280px) {
-    margin: 4rem 0 0 15rem;
-    font-size: 2.4rem;
-  }*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.8rem;
+  }
+  @media (min-width: 1281px) {
+    font-size: 2rem;
+  }
 `;
+
 export const BookPrice = styled.span`
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   margin: 1% 0% 5%;
-
-  /*
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
-    font-size: 1.5rem;
-    padding: 1rem 1rem 0 1rem;
-    margin: 0 0 0 -6.5rem;
-  } */
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.9rem;
+  }
 `;
+
 export const BookImageContainer = styled.div`
-  width: 90%;
   margin: 3% 5%;
 `;
 
@@ -66,22 +62,41 @@ export const BookImage = styled.img`
   width: 25%;
   float: left;
   margin-right: 2%;
-  /*
-    @media screen and (min-width: 1024px) and (max-height: 1280px) {
-      margin: 5rem 8rem 5rem 5rem;
-    } */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 16%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 18%;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 18%;
+  }
+
+  @media (min-width: 1281px) {
+    width: 18%;
+  }
 `;
 
 export const BookDescription = styled.p`
   font-size: 1.3rem;
-  margin-right: 2%;
-  margin-top: -1%;
   text-align: justify;
-  /*
-  @media screen and (min-width: 1024px) and (max-height: 1280px) {
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-    padding: 0rem 2.5rem 0 0;
-    margin: 5rem 3rem 5rem -0.3rem;
-  } */
+  margin-bottom: 3%;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-top: 1%;
+  }
+
+  @media (min-width: 1281px) {
+    font-size: 1.8rem;
+    margin-top: 2%;
+  }
 `;
