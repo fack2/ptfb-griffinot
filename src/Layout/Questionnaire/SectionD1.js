@@ -79,7 +79,12 @@ const SectionD1 = ({
         <QuestionDescription>{data[18].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard height="110px" height3="96px" height4="110px">
+      <QuestionCard
+        height="110px"
+        height3="96px"
+        height4="110px"
+        height5="115px"
+      >
         <QuestionNumber>{data[19].questionNumber}</QuestionNumber>
         <QuestionText>{data[19].question}</QuestionText>
         <Checkbox
