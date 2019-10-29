@@ -17,7 +17,6 @@ export const DivTitle = styled.div`
   margin-top: 7%;
   margin-left: 1%;
   padding-right: 8%;
-
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: 11%;
   }
@@ -27,7 +26,9 @@ export const DivTitle = styled.div`
   @media (min-width: 1281px) {
     margin-left: 18%;
   }
-  
+  @media (max-width: 480px){
+    padding-right: 22%;
+  }
 `;
 export const DivCircle = styled.div`
   position: relative;
@@ -54,11 +55,10 @@ export const TitleLevel = styled.div`
   margin-top: 8%;
   margin-left: -25%;
   @media (max-width: 480px) {
-    width: 120%;
-    margin-left: -22%;
+    width: 220%;
+    margin-left: -37%;
     height: 50px;
     margin-top: 7%;
-
   }
   @media (min-width: 481px) and (max-width: 767px) {
     width: 88%;
@@ -128,11 +128,10 @@ export const DescriptionLevel = styled.p`
   }
 `;
 export const CircleImage = styled.img`
- height: 100px;
+  height: 100px;
   z-index: 1;
-@media (max-width: 480px) {
-  height: 93px;
-
-  width: 60%;
-}
+  @media (max-width: 480px) {
+    height: 93px;
+    width: 50%;
+  }
 `;
