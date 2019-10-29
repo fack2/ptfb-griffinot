@@ -7,9 +7,11 @@ const Levels = () => (
   <>
     <Title>Here are a courses for all level</Title>
     <Bodypage>
-      {levelData.map(({ levelScore, titleLevel, link }) => (
+      {levelData.map(({
+        levelScore, titleLevel, description, link,
+      }) => (
         <Link href={link}>
-          <Level levelScore={levelScore} titleLevel={titleLevel} />
+          <Level levelScore={levelScore} titleLevel={titleLevel} description={description} />
         </Link>
       ))}
     </Bodypage>

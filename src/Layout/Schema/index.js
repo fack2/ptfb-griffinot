@@ -74,7 +74,7 @@ class Schema extends React.Component {
           modal
           trigger={
             <NextText type="button">
-              Start <NextArrow alt="next-arrow" src={arrow} />
+              <NextArrow alt="next-arrow" src={arrow} />
             </NextText>
           }
           onClose={() => {
@@ -90,10 +90,10 @@ class Schema extends React.Component {
                       <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                     </Logo>
                   ) : (
-                    <Logo>
-                      <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-                    </Logo>
-                  )}
+                      <Logo>
+                        <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+                      </Logo>
+                    )}
 
                   <Container2>
                     {this.state.NoBtn ? (
@@ -102,10 +102,10 @@ class Schema extends React.Component {
                         Syndrome)
                       </PopUpDiv>
                     ) : (
-                      <PopUpDiv>
-                        1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
+                        <PopUpDiv>
+                          1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
                       </PopUpDiv>
-                    )}
+                      )}
 
                     <ContainerBtn>
                       {this.state.NoBtn ? (
@@ -118,15 +118,15 @@ class Schema extends React.Component {
                           )}
                         </Popup>
                       ) : (
-                        <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                          {() => (
-                            <PopupPage
-                              description="Sorry, our program is not suitable for your child."
-                              NextLink="/"
-                            />
-                          )}
-                        </Popup>
-                      )}
+                          <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
+                            {() => (
+                              <PopupPage
+                                description="Sorry, our program is not suitable for your child."
+                                NextLink="/"
+                              />
+                            )}
+                          </Popup>
+                        )}
 
                       {this.renderBtn()}
                       {this.state.NoBtn ? (
@@ -134,10 +134,10 @@ class Schema extends React.Component {
                           No
                         </OptionBtn>
                       ) : (
-                        <OptionBtn onClick={this.DisplayPop} type="button">
-                          No
+                          <OptionBtn onClick={this.DisplayPop} type="button">
+                            No
                         </OptionBtn>
-                      )}
+                        )}
                     </ContainerBtn>
                   </Container2>
                 </PopUpBox>
