@@ -118,7 +118,7 @@ const SectionA = ({
       </QuestionCard>
     </QuestionContainer>
 
-    {/* {checkedItems.length >= QuestionnaireData[0].limit ? (
+    {checkedItems.length >= QuestionnaireData[0].limit ? (
       <NextButton
         nextLink="/questionnaire"
         nextButtonClickHandler={nextButtonClickHandler}
@@ -132,7 +132,7 @@ const SectionA = ({
           NextLink={LevelData[0].uncompletedAction}
         />
       </Popup>
-    )} */}
+    )}
   </>
 );
 
