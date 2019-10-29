@@ -12,14 +12,22 @@ export const Header = styled.h1`
     margin: 0% 0% 3.5% 0;
     font-size: 1.5rem;
   }
-
-  /* @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 2.5rem;
-    margin: 7rem 4rem 4rem 4rem;
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    text-align: center;
+    margin: 0% 7% 3.5% -4px;
+    font-size: 1.8rem;
   }
-  @media screen and (min-width: 1281px) {
-    font-size: 2.7rem;
-    margin: 5rem 8rem 5rem 3rem;
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    text-align: center;
+    margin: 0% 7% 3.5% -4px;
+    font-size: 2.65rem;
+  }
+
+  /* Media Query for Large screens
+  @media (min-width: 1281px) {
   } */
 `;
 
@@ -31,10 +39,14 @@ export const Line = styled.hr`
     border-top: 1px solid var(--main-font-color);
     margin: 0% 0%;
   }
-
-  /* @media screen and (min-width: 1281px) {
-    margin: 1rem 24rem 1rem 19rem;
-  } */
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 0% 5% 0% 1.5%;
+  }
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin: 0% -2%;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -47,17 +59,17 @@ export const Paragraph = styled.p`
     margin: 2% 0 2% 3%;
     font-weight: bold;
   }
-  /* font-size: 3.5rem;
-  margin: 8rem 2rem 2rem 3rem;
-  font-weight: bold;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 2.5rem;
-    margin: 6rem 0 4rem 13.2rem;
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.7rem;
+    margin: 2% 0 2% 4%;
   }
-  @media screen and (min-width: 1281px) {
-    font-size: 2.3rem;
-    margin: 4rem 0 3rem 20rem;
-  } */
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 2.12rem;
+    margin: 2% 0 2% -4%;
+  }
 `;
 
 export const DivData = styled.div`
@@ -133,17 +145,20 @@ export const QuestionCard = styled.div`
     text-align: left;
     font-size: 1.24rem;
   }
-
-  /* border-radius: 2rem;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    width: 75rem;
-    margin: 3rem 0rem 1rem 13rem;
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 4% 0% 2% 2.5%;
+    margin: 2% 9% 1% 4%;
+    height: ${(props) => props.height3 || '78px'};
+    font-size: 1.24rem;
   }
-  @media screen and (min-width: 1281px) {
-    width: 83rem;
-    height: 18rem;
-    margin: 3rem 0rem 1rem 20rem;
-  } */
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    padding: 4% 0% 2% 2.5%;
+    margin: 2% 1% 1% -3%;
+    height: ${(props) => props.height4 || '90px'};
+  }
 `;
 
 export const QuestionNumber = styled.span`
@@ -158,6 +173,16 @@ export const QuestionNumber = styled.span`
   border-radius: 50%;
   text-align: center;
   padding: 0.5% 0.5% 0 0;
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 25px;
+    height: 25px;
+    padding-top: 0.5%;
+    line-height: 123%;
+    font-size: 1.7rem;
+  }
+
   /*  @media screen and (min-width: 1024px) and (max-width: 1280px) {
     height: 3rem;
     width: 3rem;
@@ -181,9 +206,16 @@ export const QuestionText = styled.p`
   flex-basis: 85%;
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
-    /* margin: ${(props) => props.margin2 || '0%'}; */
+    margin: ${(props) => props.margin2 || '-0.5% 0 0 3%'};
     text-align: left;
     font-size: 1.4rem;
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin: ${(props) => props.margin2 || '-0.2% 0 0 3%'};
+    text-align: left;
+    font-size: 1.8rem;
   }
   /* @media screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 3rem;
@@ -203,6 +235,12 @@ export const Checkbox = styled.input`
   border: 1px solid #787878;
   box-sizing: border-box;
   margin: 0 -5% 0 1.5%;
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 25px;
+    height: 22px;
+    margin: 0 -5% 0 2.5%;
+  }
   /*@media screen and (min-width: 1024px) and (max-width: 1280px) {
     width: 2.5rem;
   }
@@ -221,6 +259,17 @@ export const QuestionDescription = styled.p`
     margin: ${(props) => props.margin2 || '0%'};
     text-align: left;
     font-size: 1.2rem;
+  }
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: ${(props) => props.margin3 || '-0.5% 0 0 3%'};
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin: ${(props) => props.margin4 || '-0.5% 0 0 3%'};
+    text-align: left;
+    font-size: 1.5rem;
   }
   /*@media screen and (min-width: 1024px) and (max-width: 1280px) {
     font-size: 1.8rem;
