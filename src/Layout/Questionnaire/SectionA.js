@@ -34,7 +34,12 @@ const SectionA = ({
       <Paragraph>
         Please check the box if your child is able to do the following:
       </Paragraph>
-      <QuestionCard height="110px" height3="95px" height4="90x">
+      <QuestionCard
+        height="110px"
+        height3="95px"
+        height4="90px"
+        height5="110px"
+      >
         <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
         <QuestionText>{data[0].question}</QuestionText>
         <Checkbox
@@ -48,12 +53,18 @@ const SectionA = ({
           margin2="-6.5% 10% 0% 8%"
           margin3="-1.5% 6% 0% 7.5%"
           margin4="-1.8% 4% 0 7%"
+          margin5="-2.8% 4% 0 7.5%"
         >
           {data[0].description}
         </QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard height="141px" height3="125px" height4="90x">
+      <QuestionCard
+        height="141px"
+        height3="125px"
+        height4="90x"
+        height5="130px"
+      >
         <QuestionNumber>{data[1].questionNumber}</QuestionNumber>
         <QuestionText>{data[1].question}</QuestionText>
         <Checkbox
@@ -68,6 +79,7 @@ const SectionA = ({
           margin2="-6.5% 8% 0% 8%"
           margin3="-1.5% 6% 0% 7.5%"
           margin4="-2.5% 5% 0 8%"
+          margin5="-2.8% 5% 0 7.5%"
         >
           {data[1].description}
         </QuestionDescription>
@@ -97,7 +109,12 @@ const SectionA = ({
         <QuestionDescription>{data[3].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard height="143px" height3="113px" height4="90x">
+      <QuestionCard
+        height="143px"
+        height3="113px"
+        height4="90x"
+        height5="125px"
+      >
         <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
         <QuestionText>{data[4].question}</QuestionText>
         <Checkbox
@@ -112,6 +129,7 @@ const SectionA = ({
           margin2="-9.5% 7% 0% 8%"
           margin3="-1.5% 6% 0% 7.5%"
           margin4="-2.8% 7% 0 8%"
+          margin5="-2.8% 5% 0 7.5%"
         >
           {data[4].description}
         </QuestionDescription>
