@@ -12,7 +12,7 @@ export const Contact = styled.form`
 export const InputBox = styled.textarea`
   width: 96%;
   height: 35px;
-  border: 0.2rem solid #636363;
+  border: 0.1rem solid black;
   background: #fff;
   padding: 2.7%;
   font-size: 1.5rem;
@@ -20,12 +20,13 @@ export const InputBox = styled.textarea`
   border-radius: 1rem;
   margin-bottom: 0%;
   margin-top: 8%;
+  outline: none;
 `;
 
 export const InputMsg = styled.textarea`
   width: 97%;
   height: 160px;
-  border: 0.2rem solid #636363;
+  border: 0.1rem solid black;
   background: #fff;
   padding: 3%;
   font-weight: bold;
@@ -34,6 +35,7 @@ export const InputMsg = styled.textarea`
   resize: none;
   border-radius: 1rem;
   margin-top: 9%;
+  outline: none;
 `;
 
 export const Button = styled.button`
