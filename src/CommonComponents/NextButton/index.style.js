@@ -2,18 +2,15 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const DivNext = styled.div`
-  margin-top: 8rem;
-  margin-left: ${(props) => props.Margin || '80rem'};
-
+  display: flex;
+  flex-direction: row-reverse;
 `;
 
 export const NextBtn = styled(Link)`
-  font-size: 4rem;
-  height: 50rem;
-  color: var(--next-prev-button-color);
+  font-size: 1.9rem;
+  color: #e8425c;
   outline: none;
   text-decoration: none;
-  font-family: 'Bitter', serif;
-  padding-bottom: 6rem;
-  font-weight: bold;
+  margin-top: 4%;
+  padding-bottom:1%;
 `;
