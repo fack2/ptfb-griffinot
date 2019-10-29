@@ -15,7 +15,7 @@ import {
   Checkbox,
   QuestionContainer,
   Paragraph,
-  DivNextPrev
+  DivNextPrev,
 } from './index.style';
 import NextButton from '../../CommonComponents/NextButton';
 import PrevButton from '../../CommonComponents/PrevButton';
@@ -24,7 +24,7 @@ const SectionD1 = ({
   checkboxChange,
   nextButtonClickHandler,
   checkedQuestions,
-  checkedItems
+  checkedItems,
 }) => (
   <>
     <QuestionContainer>
@@ -79,7 +79,7 @@ const SectionD1 = ({
         <QuestionDescription>{data[18].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard height="26rem">
+      <QuestionCard height="110px">
         <QuestionNumber>{data[19].questionNumber}</QuestionNumber>
         <QuestionText>{data[19].question}</QuestionText>
         <Checkbox
@@ -121,7 +121,7 @@ SectionD1.propTypes = {
   checkboxChange: PropTypes.func.isRequired,
   nextButtonClickHandler: PropTypes.func.isRequired,
   checkedQuestions: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.bool]))
-    .isRequired
+    .isRequired,
 };
 
 export default SectionD1;
