@@ -1,30 +1,40 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const NavBar = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10%;
   justify-content: space-between;
-  @media screen and (min-width: 1281px) {
-    justify-content: space-around;
-  }
 `;
 
 export const Logo = styled.img`
-  width: 35rem;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    align-self: flex-start;
-    margin-left: 3rem;
+  margin-left: -12%;
+  height: 12vh;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 15vh;
+  }
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    height: 15vh;
   }
 `;
 
 export const Menu = styled.img`
-  width: 6rem;
-  margin: 7rem 4rem 0rem 46rem;
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    align-self: flex-end;
-    margin: 7rem 7rem 0rem 0rem;
+  margin-left: 2%;
+  height: 5vh;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 7vh;
   }
-  @media screen and (min-width: 1281px) {
-    margin: 7rem 10rem 0rem 26rem;
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    height: 7vh;
   }
+`;
+
+export const LogoMenuLink = styled(Link)`
+  display: flex;
 `;

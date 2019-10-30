@@ -3,145 +3,172 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display:flex;
   flex-direction:column;
-  justify-content:center;
+
 `;
 
 export const Title = styled.h1`
-  text-align:center;
-  font-size: 3.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #205c88;
+  margin-bottom: 7%;
 `;
 
 export const HorizontalLine = styled.hr`
-  width: 50rem;
-  border: 0.1rem solid #2D2323;
+  width: 100%;
+  border: 0.5px solid #2D2323;
   transform: rotate(180deg);
 `;
 
 export const Para1 = styled.p`
   font-size: 1.4rem;
-  color: #2e2e2e;
-  margin: 5rem 1rem 4rem 2rem;
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 2.5rem;
-    margin: 5rem 13rem 4rem 13rem;
-  }
-  @media (min-width:1281px) {
-    font-size: 2.2rem;
-    margin: 8rem 44rem 3rem 46rem;
-  }
+  color: black;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  text-align: justify;
 `;
 
 export const FineMotorImg = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  width: 88rem;
+  width: 100%;
   border: 0.1rem solid #2D2323;
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    width: 75rem;
-  }
-    @media (min-width:1281px) {
-      width: 60rem
-  }
+
 `;
 
 export const Para2 = styled.p`
   font-size: 1.4rem;
-  color: #2e2e2e;
-  margin: 5rem 1rem 4rem 2rem;
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 2.5rem;
-    margin: 5rem 13rem 4rem 13rem;
-  }
-    @media (min-width:1281px) {
-    font-size: 2.2rem;
-    margin: 8rem 44rem 3rem 46rem;
-  }
+  color: black;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  text-align: justify;
+
 `;
 
 export const NextText = styled.p`
-  font-size: 4rem;
-  margin-top: 2rem;
-  margin-left: 77rem;
-  color: #0F3654;
-  font-weight: 900;
-   @media (min-width: 1024px) and (max-width: 1280px) {
-    font-size: 3rem;
-    margin-left: 106rem;
-  }
-    @media (min-width:1281px) {
-    font-size: 2.5rem;
-    margin-left: 125rem;
-    }
 `;
 
 export const NextArrow = styled.img`
-  width: 3rem;
-  margin-left: 1.3rem;
-  @media (min-width:1281px) {
-    width: 2rem
-  }
+    width: 5%;
+    margin-left: 93%;
+    margin-bottom: 5%;
 `;
 
 
-export const BodyPage = styled.div`
-  background: #cfcfcf;
-  justify-content: center;
-`;
-
-export const PopUPCard = styled.div`
-  text-align: center;
-  display: flex;
-  height: 0.6rem;
-`;
-
-export const PopUpBox = styled.div`
-  width: ${(props) => props.Width || '82rem'};
-  height: ${(props) => props.Height || '100rem'};
-  background: #fffcfc;
-  border: 0.1rem solid #c4c4c4;
-  margin-left: -17.4rem;
-  margin-top: -38rem;`;
+// pop up style
 
 export const Logo = styled.div`
-  width: 82.5rem;
-  height: 34rem;
+  width: 100.5%;
+  height: 155px;
   background: ${(props) => props.Background || '#205c8b'};
-  margin-top: -1rem;
-  margin-left: -0.4rem;
+  margin-left: -0.5%;
+  margin-top: -2.5%;
 `;
 
 export const LogoImage = styled.img`
-  width: 45rem;
-  height: 41rem;
+  width: 53%;
+  height: 175px;
+  margin-left: 25%;
+  margin-top: -1%;
 `;
 
-export const Container2 = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 
 export const PopUpDiv = styled.span`
-  padding: 4.4rem;
-  font-size: 3.5rem;
-  text-align: left;
-  letter-spacing: 0.1rem;
-`;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 54%;
+  left: -27%;
+@media (max-width: 480px) {
+  left: -22%;
+}
 
-export const ContainerBtn = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15rem;
+@media (min-width: 481px) and (max-width: 767px) {
+  left: -15%
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  left: 4%
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  left: 2%
+}
+@media (min-width: 1281px) {
+  left: 6%
+}
 `;
 
 
 export const OptionBtn = styled.button`
-  border: 0.3rem #cecece solid;
+  border: 0.1rem #cecece solid;
   background-color: white;
   border-radius: 4rem;
-  width: 16rem;
-  height: 7rem;
-  font-size: 3.5rem;
+  width: 20%;
+  height: 30px;
+  font-size: 1.5rem;
   outline: none;
-  margin-left: 9rem;
-  
+  margin-left: 3%;
+  margin-top: -8%;
+
+@media (max-width: 480px) {
+  margin-top: -8%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  margin-top: -7%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  margin-top: -7%;
+  width: 13%;
+}
+@media (min-width: 1281px) {
+  margin-top: -5%;
+  width: 12%;
+}
+`;
+
+
+export const Text = styled.div`
+  height: 155px;
+  background: white;
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+`;
+
+export const BigDiv = styled.div`
+  width: 185%;
+  margin-left: -40%;
+  margin-bottom: -8%;
+
+@media (max-width: 480px) {
+  width: 165%;
+  margin-left: -33%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  width: 153%;
+  margin-left: -28%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    width: 106%;
+    margin-left: -2%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  width: 106%;
+  margin-left: -3%;
+}
+@media (min-width: 1281px) {
+    width: 103%;
+    margin-left: -1%;
+}
+`;
+
+
+export const BtnDiv = styled.div`
+  height: 33px;
+  background: white;
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+  display: flex;
+  justify-content: space-around;
 `;
