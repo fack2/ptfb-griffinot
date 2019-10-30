@@ -16,7 +16,6 @@ import levels from '../../assets/levels.png';
 import contactUS from '../../assets/contactus.png';
 import close from '../../assets/close.png';
 
-
 const Menu = ({ history }) => {
   const onClick = () => {
     history.go(-1);
@@ -37,39 +36,99 @@ const Menu = ({ history }) => {
             <Item>Home</Item>
           </StyledLink>
         </MenuItem>
-        <MenuItem marginTop="12rem">
+        <MenuItem margin="0% 7% 0% 13%" margin1="0% 7% 0% 8%">
           <Image
-            width="7.4rem"
-            height="7.4rem"
             alt="about us icon"
             src={aboutUs}
+            width="10%"
+            height="32px"
+            width1="7%"
+            margin="1%"
+            width2="6%"
+            height2="29px"
+            width3="5%"
+            height3="34px"
+            margin3="2% 0% 0% 5%"
           />
-          <StyledLink to="/about-us" margin="2rem">
-            <Item margin="2rem 0rem 4rem 7rem">About Us</Item>
+          <StyledLink
+            to="/about-us"
+            margin="1% 0% 0% 9%"
+            margin1="1% 0% 0% 4%"
+            margin2=" 3% 0% 0% 5%"
+            margin3=" 3% 0% 0% 5%"
+          >
+            <Item>About Us</Item>
           </StyledLink>
         </MenuItem>
-        <MenuItem>
+        <MenuItem margin="0% 7% 0% 15%" margin1="0% 7% 0% 8%">
           <Image
-            width="10rem"
-            height="10rem"
             alt="resources icon"
             src={resources}
+            width="14%"
+            height="44px"
+            width1="8%"
+            margin="1%"
+            width2="7%"
+            height2="42px"
+            margin2="0% 0% 0% 9%"
+            width3="7%"
+            height3="38px"
+            margin3="2% 0% 0% 5%"
           />
-          <StyledLink to="/resources" margin="3rem 2rem 0rem 1rem">
-            <Item margin="3rem 0rem 4rem 7rem">Resources</Item>
+          <StyledLink
+            to="/resources"
+            margin="3% 0% 0% 7%"
+            margin1="2% 0% 0% 4%"
+            margin2="2% 0% 0% 5%"
+            margin3="3% 0% 0% 3%"
+          >
+            <Item>Resources</Item>
           </StyledLink>
         </MenuItem>
-        <MenuItem>
-          <Image alt="level icon" src={levels} />
-          <StyledLink to="/levels">
-            <Item margin="3.7rem 0rem 4rem 7rem" fontSize="3.9rem">
-              Levels
-            </Item>
+        <MenuItem margin="0% 7% 0% 4%" margin1="0% 7% 0% 4%">
+          <Image
+            alt="level icon"
+            src={levels}
+            width="15%"
+            height="44px"
+            width1="9%"
+            margin="1%"
+            width2="9%"
+            height2="44px"
+            margin2="0% 0% 0% 3%"
+            width3="8%"
+            height3="41px"
+            margin3="2% 0% 0% 1%"
+          />
+          <StyledLink
+            to="/levels"
+            margin="3% 0% 0% 5%"
+            margin1="2% 0% 0% 3%"
+            margin2="2% 0% 0% 5%"
+            margin3="3% 0% 0% 2%"
+          >
+            <Item>Levels</Item>
           </StyledLink>
         </MenuItem>
-        <MenuItem>
-          <Image alt="contact us icon " src={contactUS} />
-          <StyledLink margin="5rem -1rem 0rem 2rem" to="/contact">
+        <MenuItem margin="0% 7% 0% 14%" margin1="0% 7% 0% 8%">
+          <Image
+            alt="contact us icon "
+            src={contactUS}
+            width1="10%"
+            margin="1%"
+            width2="9%"
+            height2="44px"
+            margin2="0% 0% 0% 8%"
+            width3="9%"
+            height3="41px"
+            margin3="2% 0% 0% 7%"
+          />
+          <StyledLink
+            to="/contact"
+            margin="6% 0% 0% 5%"
+            margin2="2% 0% 0% 3%"
+            margin3="3% 0% 0% 1%"
+          >
             <Item>Contact Us</Item>
           </StyledLink>
         </MenuItem>

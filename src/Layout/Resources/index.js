@@ -50,7 +50,6 @@ const Resources = ({ history }) => {
           />
         ))}
       </ResoursesContainer>
-      <PrevButton prevLink="/" marginLeft="2rem" marginTop="4rem" />
     </>
   );
 };
