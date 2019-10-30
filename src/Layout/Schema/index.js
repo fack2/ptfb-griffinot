@@ -18,7 +18,7 @@ import {
   OptionBtn,
   Text,
   BigDiv,
-  BtnDiv
+  BtnDiv,
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
@@ -68,36 +68,41 @@ class Schema extends React.Component {
           </Para2>
         </Container>
 
-        <Popup trigger={
-          <NextText type="button">
-            <NextArrow alt="next-arrow" src={arrow} />
-          </NextText>}
+        <Popup
+          trigger={
+            <NextText type="button">
+              <NextArrow alt="next-arrow" src={arrow} />
+            </NextText>
+          }
           onClose={() => {
             this.setState({ NoBtn: false });
-          }} modal>
+          }}
+          modal
+        >
           {() => (
-            <BigDiv >
+            <BigDiv>
               {this.state.NoBtn ? (
                 <Logo Background="#ABC1D3">
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                 </Logo>
               ) : (
-                  <Logo>
-                    <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-                  </Logo>
-                )}
+                <Logo>
+                  <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+                </Logo>
+              )}
 
               <Text>
                 {this.state.NoBtn ? (
                   <PopUpDiv>
-                    2. Does your child have a neurological or genetic condition?(e.g. CP, Down's
-                    Syndrome)
-                      </PopUpDiv>
+                    2. Does your child have a neurological or genetic condition which is causing
+                    their fine motor skill difficulties? (e.g. Cerebral Palsy, Brain Injury, Down's Syndrome, Prader-Willi, unnamed genetic condition)
+                  </PopUpDiv>
                 ) : (
-                    <PopUpDiv>
-                      1. Does your child have a degenerative condition?(e.g. MD, Rhetts)
-                      </PopUpDiv>
-                  )}
+                  <PopUpDiv>
+                    1. Does your child have a degenerative condition? (e.g. Muscular Dystrophy,
+                    Rhetts)
+                  </PopUpDiv>
+                )}
               </Text>
               <BtnDiv>
                 {this.state.NoBtn ? (
@@ -110,27 +115,26 @@ class Schema extends React.Component {
                     )}
                   </Popup>
                 ) : (
-                    <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                      {() => (
-                        <PopupPage
-                          description="Sorry, our program is not suitable for your child."
-                          NextLink="/"
-                        />
-                      )}
-                    </Popup>
-                  )}
-
+                  <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
+                    {() => (
+                      <PopupPage
+                        description="Sorry, our program is not suitable for your child."
+                        NextLink="/"
+                      />
+                    )}
+                  </Popup>
+                )}
 
                 {this.renderBtn()}
                 {this.state.NoBtn ? (
                   <OptionBtn onClick={this.setRedirect} type="button">
                     No
-                        </OptionBtn>
+                  </OptionBtn>
                 ) : (
-                    <OptionBtn onClick={this.DisplayPop} type="button">
-                      No
-                        </OptionBtn>
-                  )}
+                  <OptionBtn onClick={this.DisplayPop} type="button">
+                    No
+                  </OptionBtn>
+                )}
               </BtnDiv>
             </BigDiv>
           )}
