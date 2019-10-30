@@ -18,7 +18,7 @@ import {
 const PopupPage = ({
   description, optionText, optionLink, close,
 }) => (
-  <>
+    <>
       <BigDiv>
         <Close onClick={close}>
           &times;
@@ -36,8 +36,8 @@ const PopupPage = ({
           </ContainerBtn>
         </BtnDiv>
       </BigDiv>
-  </>
-);
+    </>
+  );
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
