@@ -19,10 +19,7 @@ import {
   Text,
   BigDiv,
   BtnDiv,
-<<<<<<< HEAD
   Close
-=======
->>>>>>> master
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
