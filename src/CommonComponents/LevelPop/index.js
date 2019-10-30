@@ -17,14 +17,18 @@ import {
   LevelDiv,
   TitleParagraph,
   ToLink,
+  Close,
 } from './index.style';
 
 const LevelPop = ({
-  description, NextLink, levelScore, No,
+  description, NextLink, levelScore, No, close,
 }) => (
-    <>
+  <>
       <BodyPage>
         <PopUPCard>
+          <Close onClick={close}>
+            &times;
+          </Close>
           <PopUpBox Height="110rem">
             <Logo>
               <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
@@ -54,8 +58,8 @@ const LevelPop = ({
           </PopUpBox>
         </PopUPCard>
       </BodyPage>
-    </>
-  );
+  </>
+);
 
 LevelPop.propTypes = {
   description: PropTypes.string.isRequired,
