@@ -78,6 +78,7 @@ export const PopUpDiv = styled.span`
 @media (max-width: 480px) {
   left: -23%;
   margin-right: -29%;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
