@@ -46,13 +46,16 @@ const Menu = ({ history }) => {
             margin="1%"
             width2="6%"
             height2="29px"
-            margin2="2% 1% 0% 9%"
+            width3="5%"
+            height3="34px"
+            margin3="2% 0% 0% 5%"
           />
           <StyledLink
             to="/about-us"
             margin="1% 0% 0% 9%"
             margin1="1% 0% 0% 4%"
             margin2=" 3% 0% 0% 5%"
+            margin3=" 3% 0% 0% 5%"
           >
             <Item>About Us</Item>
           </StyledLink>
@@ -68,12 +71,16 @@ const Menu = ({ history }) => {
             width2="7%"
             height2="42px"
             margin2="0% 0% 0% 9%"
+            width3="7%"
+            height3="38px"
+            margin3="2% 0% 0% 5%"
           />
           <StyledLink
             to="/resources"
             margin="3% 0% 0% 7%"
             margin1="2% 0% 0% 4%"
             margin2="2% 0% 0% 5%"
+            margin3="3% 0% 0% 3%"
           >
             <Item>Resources</Item>
           </StyledLink>
@@ -89,12 +96,16 @@ const Menu = ({ history }) => {
             width2="9%"
             height2="44px"
             margin2="0% 0% 0% 3%"
+            width3="8%"
+            height3="41px"
+            margin3="2% 0% 0% 1%"
           />
           <StyledLink
             to="/levels"
             margin="3% 0% 0% 5%"
             margin1="2% 0% 0% 3%"
             margin2="2% 0% 0% 5%"
+            margin3="3% 0% 0% 2%"
           >
             <Item>Levels</Item>
           </StyledLink>
@@ -108,8 +119,16 @@ const Menu = ({ history }) => {
             width2="9%"
             height2="44px"
             margin2="0% 0% 0% 8%"
+            width3="9%"
+            height3="41px"
+            margin3="2% 0% 0% 7%"
           />
-          <StyledLink to="/contact" margin="6% 0% 0% 5%" margin2='2% 0% 0% 3%'>
+          <StyledLink
+            to="/contact"
+            margin="6% 0% 0% 5%"
+            margin2="2% 0% 0% 3%"
+            margin3="3% 0% 0% 1%"
+          >
             <Item>Contact Us</Item>
           </StyledLink>
         </MenuItem>

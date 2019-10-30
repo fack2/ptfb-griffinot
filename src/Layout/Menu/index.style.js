@@ -21,6 +21,8 @@ export const MenuItem = styled.div`
     padding-top: 10%;
   };
   @media (min-width: 1281px){
+    margin: ${(props) => props.margin3 || '0% 7% 0% 2%'};
+
     padding-top: 10%;
 
   }
@@ -43,7 +45,7 @@ export const Image = styled.img`
     margin: ${(props) => props.margin2 || '0% 0% 0% 0%'};
   }
   @media (min-width: 1281px){
-    width: ${(props) => props.width3 || '11%'};
+    width: ${(props) => props.width3 || '10%'};
     height: ${(props) => props.height3 || '49px'};
     margin: ${(props) => props.margin3 || '0% 0% 0% 0%'};
   }
@@ -57,6 +59,10 @@ export const StyledLink = styled(Link)`
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
     margin: ${(props) => props.margin2 || '4% 0% 0% 3%'};
+  }
+  @media (min-width:1281px) {
+    margin: ${(props) => props.margin3 || '2% 0% 0% 3%'};
+
   }
 `;
 export const CloseDiv = styled.div`
