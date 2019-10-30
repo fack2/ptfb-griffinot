@@ -90,8 +90,9 @@ export const DivData = styled.div`
   margin: 2% 4% 0% 4%;
   flex-direction: column;
 
-  /* Media Query for low resolution  Tablets, Ipads */
+  /* Media Query for low resolution  Tablets, Ipads*/
   @media (min-width: 481px) and (max-width: 767px) {
+    margin: 2% 8% 0% 8%;
   }
 `;
 
