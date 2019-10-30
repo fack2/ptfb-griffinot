@@ -4,7 +4,10 @@ import Popup from 'reactjs-popup';
 import popUpImg from '../../assets/popup-logo.png';
 import PopupPage from '../../CommonComponents/PopupPage';
 import {
-  TitleOption, Option, DivData, LinkOption,
+  TitleOption,
+  Option,
+  DivData,
+  LinkOption,
   PopUPCard,
   PopUpBox,
   Logo,
@@ -24,15 +27,19 @@ import PrevButton from '../../CommonComponents/PrevButton';
 const Option3 = ({ nextButtonClickHandler }) => (
   <>
     <TitleOption>
-      What skill do you feel your child needs the most help with improving, at the moment?
+      What skill do you feel your child needs the most help with improving, at
+      the moment?
     </TitleOption>
-
 
     {/* 1 option */}
     <DivData>
       <Popup
         modal
-        trigger={<Option>I would like to help them to improve their pencil grasp</Option>}
+        trigger={(
+          <Option>
+            I would like to help them to improve their pencil grasp
+          </Option>
+        )}
       >
         <BodyPage>
           <PopUPCard>
@@ -46,25 +53,30 @@ const Option3 = ({ nextButtonClickHandler }) => (
                 </LevelIntro>
                 <LevelDiv>
                   <CircleLevel>
-                    <Para>  Supporting Pencil Grasp Development </Para>
+                    <Para> Supporting Pencil Grasp Development </Para>
                   </CircleLevel>
                 </LevelDiv>
                 <PopUpDiv FontSize="2rem">
-                  The Supporting Pencil Grasp Development Programme is specifically designed to help children improve their pencil grasp.  The programme consists of two warm ups, 14 fine motor activities and 14 worksheet tasks.  The activities focus on improving the hand dexterity required to hold a pencil.  The worksheets help with pencil control.
-
-                  By the end of the programme your child should be able to hold their pencil using an adequate grasp  This might be a tripod, modified tripod or quadruped grasp.  They should also have made improvements with their pencil control.
+                  The Supporting Pencil Grasp Development Programme is
+                  specifically designed to help children improve their pencil
+                  grasp. The programme consists of two warm ups, 14 fine motor
+                  activities and 14 worksheet tasks. The activities focus on
+                  improving the hand dexterity required to hold a pencil. The
+                  worksheets help with pencil control. By the end of the
+                  programme your child should be able to hold their pencil using
+                  an adequate grasp This might be a tripod, modified tripod or
+                  quadruped grasp. They should also have made improvements with
+                  their pencil control.
                 </PopUpDiv>
 
                 <ToLink href="https://griffinot.teachable.com/p/online-pencil-grasp-development-programme1">
                   Purchase programme
                 </ToLink>
-
               </Container2>
             </PopUpBox>
           </PopUPCard>
         </BodyPage>
       </Popup>
-
 
       {/* 2nd option  */}
       <LinkOption to="/questionnaire">
@@ -76,7 +88,11 @@ const Option3 = ({ nextButtonClickHandler }) => (
       {/* 3rd option */}
       <Popup
         modal
-        trigger={<Option>I would like to help them to improve their scissor skills..</Option>}
+        trigger={(
+          <Option>
+            I would like to help them to improve their scissor skills..
+          </Option>
+        )}
       >
         <PopupPage
           description="This programme will be launching in March 2020, please consider joining our mailing list for updates"
@@ -87,7 +103,10 @@ const Option3 = ({ nextButtonClickHandler }) => (
       </Popup>
     </DivData>
 
-    <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
+    <PrevButton
+      prevLink="/questionnaire"
+      nextButtonClickHandler={nextButtonClickHandler}
+    />
   </>
 );
 
