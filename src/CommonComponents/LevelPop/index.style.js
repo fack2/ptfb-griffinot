@@ -166,7 +166,7 @@ export const ToLink = styled.a`
   font-weight: bold;
   line-height: 20px;
   margin-left: 54%;
-  margin-top: 11%;
+  margin-top: 8%;
 @media (min-width: 481px) and (max-width: 767px) {
   margin-left: 54%;
   margin-top: 11%;
