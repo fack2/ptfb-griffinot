@@ -14,8 +14,7 @@ class Questionnaire extends Component {
     checkedQuestions: new Array(25).fill(false)
   };
 
-  checkboxChange = event => {
-    const { id } = event.target;
+  checkboxChange = id => {
     const { checkedQuestions } = this.state; //this array is for preserving the checked items while moving through the questionnaire sections
 
     let checkedItems = this.state.checkedItems; //Created a variable named checkedItems to change the array in the state using push method

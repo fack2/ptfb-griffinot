@@ -34,32 +34,35 @@ const SectionA = ({
       <Paragraph>
         Please check the box if your child is able to do the following:
       </Paragraph>
-      <QuestionCard
-        height="110px"
-        height3="95px"
-        height4="90px"
-        height5="110px"
-      >
-        <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
-        <QuestionText>{data[0].question}</QuestionText>
-        <Checkbox
-          type="checkbox"
+      <div>
+        <QuestionCard
           id={data[0].questionNumber}
-          onChange={checkboxChange}
-          checked={checkedQuestions[data[0].questionNumber - 1]}
-        />
-        <QuestionDescription
-          margin1="-4.5% 6% 0% 10%"
-          margin2="-6.5% 10% 0% 8%"
-          margin3="-1.5% 6% 0% 7.5%"
-          margin4="-1.8% 4% 0 7%"
-          margin5="-2.8% 4% 0 7.5%"
+          onClick={() => checkboxChange(data[0].questionNumber)}
+          height="110px"
+          height3="95px"
+          height4="90px"
+          height5="110px"
         >
-          {data[0].description}
-        </QuestionDescription>
-      </QuestionCard>
-
+          <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
+          <QuestionText>{data[0].question}</QuestionText>
+          <Checkbox
+            type="checkbox"
+            checked={checkedQuestions[data[0].questionNumber - 1]}
+          />
+          <QuestionDescription
+            margin1="-4.5% 6% 0% 10%"
+            margin2="-6.5% 10% 0% 8%"
+            margin3="-1.5% 6% 0% 7.5%"
+            margin4="-1.8% 4% 0 7%"
+            margin5="-2.8% 4% 0 7.5%"
+          >
+            {data[0].description}
+          </QuestionDescription>
+        </QuestionCard>
+      </div>
       <QuestionCard
+        id={data[1].questionNumber}
+        onClick={() => checkboxChange(data[1].questionNumber)}
         height="141px"
         height3="125px"
         height4="90x"
@@ -85,7 +88,10 @@ const SectionA = ({
         </QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[2].questionNumber}
+        onClick={() => checkboxChange(data[2].questionNumber)}
+      >
         <QuestionNumber>{data[2].questionNumber}</QuestionNumber>
         <QuestionText>{data[2].question}</QuestionText>
         <Checkbox
@@ -96,8 +102,10 @@ const SectionA = ({
         />
         <QuestionDescription>{data[2].description}</QuestionDescription>
       </QuestionCard>
-
-      <QuestionCard>
+      <QuestionCard
+        id={data[3].questionNumber}
+        onClick={() => checkboxChange(data[3].questionNumber)}
+      >
         <QuestionNumber>{data[3].questionNumber}</QuestionNumber>
         <QuestionText>{data[3].question}</QuestionText>
         <Checkbox
@@ -108,8 +116,9 @@ const SectionA = ({
         />
         <QuestionDescription>{data[3].description}</QuestionDescription>
       </QuestionCard>
-
       <QuestionCard
+        id={data[4].questionNumber}
+        onClick={() => checkboxChange(data[4].questionNumber)}
         height="143px"
         height3="113px"
         height4="90x"

@@ -31,7 +31,10 @@ const SectionD2 = ({
       <Paragraph>
         Please check the box if your child is able to do the following:
       </Paragraph>
-      <QuestionCard>
+      <QuestionCard
+        id={data[20].questionNumber}
+        onClick={() => checkboxChange(data[20].questionNumber)}
+      >
         <QuestionNumber>{data[20].questionNumber}</QuestionNumber>
         <QuestionText>{data[20].question}</QuestionText>
         <Checkbox
@@ -43,7 +46,11 @@ const SectionD2 = ({
         <QuestionDescription>{data[20].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard height="90px">
+      <QuestionCard
+        height="90px"
+        id={data[21].questionNumber}
+        onClick={() => checkboxChange(data[21].questionNumber)}
+      >
         <QuestionNumber>{data[21].questionNumber}</QuestionNumber>
         <QuestionText>{data[21].question}</QuestionText>
         <Checkbox
@@ -55,7 +62,10 @@ const SectionD2 = ({
         <QuestionDescription>{data[21].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[22].questionNumber}
+        onClick={() => checkboxChange(data[22].questionNumber)}
+      >
         <QuestionNumber>{data[22].questionNumber}</QuestionNumber>
         <QuestionText>{data[22].question}</QuestionText>
         <Checkbox
@@ -67,7 +77,10 @@ const SectionD2 = ({
         <QuestionDescription>{data[22].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[23].questionNumber}
+        onClick={() => checkboxChange(data[23].questionNumber)}
+      >
         <QuestionNumber>{data[23].questionNumber}</QuestionNumber>
         <QuestionText>{data[23].question}</QuestionText>
         <Checkbox
@@ -79,7 +92,10 @@ const SectionD2 = ({
         <QuestionDescription>{data[23].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[24].questionNumber}
+        onClick={() => checkboxChange(data[24].questionNumber)}
+      >
         <QuestionNumber>{data[24].questionNumber}</QuestionNumber>
         <QuestionText>{data[24].question}</QuestionText>
         <Checkbox
