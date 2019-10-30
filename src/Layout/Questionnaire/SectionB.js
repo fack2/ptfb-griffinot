@@ -98,12 +98,11 @@ const SectionB = ({
 
         {checkedItems.length >= QuestionnaireData[1].limit ? (
           <NextButton
-            marginTop="45%"
             nextLink="/questionnaire"
             nextButtonClickHandler={nextButtonClickHandler}
           />
         ) : (
-          <Popup modal trigger={<NextButton marginTop="45%" />}>
+          <Popup modal trigger={<NextButton/>}>
             <LevelPop
               levelScore={LevelData[1].LevelNo}
               description={LevelData[1].uncompletedMsg}
