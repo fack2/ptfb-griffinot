@@ -1,43 +1,44 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Resource from '../../CommonComponents/Resource';
 import PrevButton from '../../CommonComponents/PrevButton';
-import { TitleH, Container } from './index.style';
+import { PageTitle, ResoursesContainer } from './index.style';
 import data from '../../Data/resourceDate';
 
-let h;
-const onClick = (id, history) => {
+let resourceLink;
+const onClick = (id) => {
   switch (id) {
     case 1:
-      h.push('/introductory-videos');
+      resourceLink.push('/introductory-videos');
       break;
     case 2:
-      h.push('/sensory-training');
+      resourceLink.push('/sensory-training');
       break;
     case 3:
-      h.push('/sensory-introduction');
+      resourceLink.push('/sensory-introduction');
       break;
     case 4:
-      h.push('/sensory-topics');
+      resourceLink.push('/sensory-topics');
       break;
     case 5:
-      h.push('/sensory-equipment');
+      resourceLink.push('/sensory-equipment');
       break;
     case 6:
-      h.push('/books');
+      resourceLink.push('/books');
       break;
     case 7:
-      h.push('/fine-motor-skills');
+      resourceLink.push('/fine-motor-skills');
       break;
     default:
-      h.push('/pencil-grip-reviews');
+      resourceLink.push('/pencil-grip-reviews');
   }
 };
 const Resources = ({ history }) => {
-  h = history;
+  resourceLink = history;
   return (
     <>
-      <TitleH>Helpful resources</TitleH>
-      <Container>
+      <PageTitle>Helpful resources</PageTitle>
+      <ResoursesContainer>
         {data.map(({ id, picture, title }) => (
           <Resource
             key={id}
@@ -48,9 +49,14 @@ const Resources = ({ history }) => {
             onClick={() => onClick(id, history)}
           />
         ))}
-        <PrevButton prevLink="/" marginLeft="2rem" marginTop="4rem"/>
-      </Container>
+      </ResoursesContainer>
+      <PrevButton prevLink="/" marginLeft="2rem" marginTop="4rem" />
     </>
   );
 };
+
+Resources.propTypes = {
+  history: PropTypes.string.isRequired,
+};
+
 export default Resources;

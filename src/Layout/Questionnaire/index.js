@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import SectionA from './SectionA';
-import SectionB from './SectionB';
-import SectionC from './SectionC';
-import Option3 from './Option3';
-import SectionD1 from './SectionD1';
-import SectionD2 from './SectionD2';
-import QuestionnaireData from './QuestionnaireData';
+import React, { Component } from "react";
+import SectionA from "./SectionA";
+import SectionB from "./SectionB";
+import SectionC from "./SectionC";
+import Option3 from "./Option3";
+import SectionD1 from "./SectionD1";
+import SectionD2 from "./SectionD2";
+import QuestionnaireData from "./QuestionnaireData";
 
 class Questionnaire extends Component {
   state = {
@@ -31,7 +31,7 @@ class Questionnaire extends Component {
       //If the number of the question that is checked exists in the array remove it from it && return the checked state in the checkedQuestions array to false(this is for toggling the checkbox on and off) .
       checkedItems = checkedItems.filter(ele => ele !== id);
       checkedQuestions[id - 1] = false;
-      this.setState({ checkedItems, checkedQuestions }, () => { });
+      this.setState({ checkedItems, checkedQuestions }, () => {});
     }
     this.setState(prevState => ({
       checked: !prevState.checked,
@@ -43,14 +43,14 @@ class Questionnaire extends Component {
     const { name } = event.target;
     const { checkedItems, questionnaireSections } = this.state;
 
-    if (name === 'nextBtn') {
+    if (name === "nextBtn") {
       //we have a name attribute in the next & prev button components
       const sectionData = QuestionnaireData[questionnaireSections - 1];
       if (checkedItems.length >= sectionData.limit) {
         //if the checked items are equal to the limit of each section or more then move to the next section
         this.setState(
           { questionnaireSections: questionnaireSections + 1 },
-          () => { }
+          () => {}
         );
       } else {
         return <p>{sectionData.uncompletedMsg}</p>;

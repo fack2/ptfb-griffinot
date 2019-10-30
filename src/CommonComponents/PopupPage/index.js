@@ -3,45 +3,38 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import popUpImg from '../../assets/popup-logo.png';
 import {
-  PopUPCard,
-  PopUpBox,
   Logo,
   LogoImage,
-  BodyPage,
-  PopUpDiv,
   ContainerBtn,
-  Container2,
   TextBtn,
   LinkText,
+  PopUpDiv,
+  Text,
+  BigDiv,
+  BtnDiv,
 } from './index.style';
 
-const PopupPage = ({
-  description, optionText, optionLink, NextLink,
-}) => (
+const PopupPage = ({ description, optionText, optionLink }) => (
   <>
-      <BodyPage>
-        <PopUPCard>
-          <PopUpBox Height="80rem">
-            <Logo>
-              <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-            </Logo>
-            <Container2>
-              <PopUpDiv>{description}</PopUpDiv>
-              <LinkText href={optionLink}>{optionText}</LinkText>
-              <ContainerBtn>
-                <TextBtn to={NextLink}>I understand</TextBtn>
-              </ContainerBtn>
-            </Container2>
-          </PopUpBox>
-        </PopUPCard>
-      </BodyPage>
+    <BigDiv>
+      <Logo>
+        <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+      </Logo>
+      <Text>
+        <PopUpDiv>{description}</PopUpDiv>
+        <LinkText href={optionLink}>{optionText}</LinkText>
+      </Text>
+      <BtnDiv>
+        <ContainerBtn href="/questionnaire">
+          <TextBtn type="button">I understand</TextBtn>
+        </ContainerBtn>
+      </BtnDiv>
+    </BigDiv>
   </>
 );
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
-  NextLink: PropTypes.element.isRequired,
-  // eslint-disable-next-line react/require-default-props
   optionLink: PropTypes.element,
   optionText: PropTypes.string,
 };
