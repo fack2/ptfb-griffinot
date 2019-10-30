@@ -41,8 +41,6 @@ const PopupPage = ({
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
-  NextLink: PropTypes.element.isRequired,
-  // eslint-disable-next-line react/require-default-props
   optionLink: PropTypes.element,
   optionText: PropTypes.string,
 };
