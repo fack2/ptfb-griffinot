@@ -110,10 +110,10 @@ const Option3 = ({ nextButtonClickHandler }) => (
       marginLeft1="8%"
       marginLeft2="14%"
       marginTop="55%"
-      marginTop1="18%"
+      marginTop1="20%"
       marginLeft4="20%"
       marginTop4="29%"
-      marginLeft3="19%"
+      marginLeft3="14%"
       marginTop3="18%"
 
     />
