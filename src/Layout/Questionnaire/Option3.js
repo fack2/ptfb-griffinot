@@ -70,8 +70,8 @@ const Option3 = ({ nextButtonClickHandler }) => (
       </Popup>
 
       {/* 2nd option  */}
-      <Option name="nextBtn" onClick={nextButtonClickHandler}>
-        <LinkOption to="/questionnaire">
+      <Option onClick={nextButtonClickHandler}>
+        <LinkOption to="/questionnaire" name="nextBtn">
           I would like to help them to improve their general fine motor skills.
         </LinkOption>
       </Option>
@@ -102,7 +102,6 @@ const Option3 = ({ nextButtonClickHandler }) => (
       marginTop4="29%"
       marginLeft3="14%"
       marginTop3="18%"
-
     />
   </>
 );
