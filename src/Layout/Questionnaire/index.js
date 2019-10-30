@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import SectionA from './SectionA';
-import SectionB from './SectionB';
-import SectionC from './SectionC';
-import Option3 from './Option3';
-import SectionD1 from './SectionD1';
-import SectionD2 from './SectionD2';
-import QuestionnaireData from './QuestionnaireData';
+import React, { Component } from "react";
+import SectionA from "./SectionA";
+import SectionB from "./SectionB";
+import SectionC from "./SectionC";
+import Option3 from "./Option3";
+import SectionD1 from "./SectionD1";
+import SectionD2 from "./SectionD2";
+import QuestionnaireData from "./QuestionnaireData";
 
 class Questionnaire extends Component {
   state = {
@@ -43,7 +43,7 @@ class Questionnaire extends Component {
     const { name } = event.target;
     const { checkedItems, questionnaireSections } = this.state;
 
-    if (name === 'nextBtn') {
+    if (name === "nextBtn") {
       //we have a name attribute in the next & prev button components
       const sectionData = QuestionnaireData[questionnaireSections - 1];
       if (checkedItems.length >= sectionData.limit) {
