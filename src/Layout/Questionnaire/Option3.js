@@ -107,6 +107,10 @@ const Option3 = ({ nextButtonClickHandler }) => (
       prevLink="/questionnaire"
       nextButtonClickHandler={nextButtonClickHandler}
       marginTop="47%"
+      marginLeft="6%"
+      marginLeft1='14%'
+      marginLeft2='15%'
+
     />
   </>
 );
