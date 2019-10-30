@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavBar, Logo, Menu } from './index.style';
+import {
+  NavBar, Logo, Menu, LogoMenuLink,
+} from './index.style';
 import logo from '../../assets/logo.png';
 import menu from '../../assets/menu.png';
 
@@ -28,12 +30,12 @@ const Header = (props) => {
   return paths.includes(pathname) ? (
     <>
       <NavBar>
-        <a href="/">
+        <LogoMenuLink to="/">
           <Logo alt="logo" src={logo} />
-        </a>
-        <a href="/menu">
+        </LogoMenuLink>
+        <LogoMenuLink to="/menu">
           <Menu alt="menu" src={menu} {...props} />
-        </a>
+        </LogoMenuLink>
       </NavBar>
     </>
   ) : null;
