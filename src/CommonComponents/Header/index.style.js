@@ -11,14 +11,14 @@ export const NavBar = styled.div`
 
 export const Logo = styled.img`
   margin-left: -12%;
-  height: 13vh;
+  height: 11vh;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 10vh;
+    height: 12vh;
   }
 
   @media (min-width: 768px) and (max-width: 1280px) {
-    height: 11vh;
+    height: 13vh;
   }
   @media (min-width: 1281px) {
     height: 15vh;
@@ -30,14 +30,14 @@ export const Menu = styled.img`
   height: 5vh;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 10vh;
+    height: 6vh;
   }
 
   @media (min-width: 768px) and (max-width: 1280px) {
-    height: 6vh;
+    height: 5.5vh;
   }
   @media (min-width: 1281px) {
-    height: 5vh;
+    height: 6.3vh;
   }
 `;
 
