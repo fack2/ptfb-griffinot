@@ -90,7 +90,20 @@ const Option3 = ({ nextButtonClickHandler }) => (
       </Popup>
     </DivData>
 
-    <PrevButton prevLink="/questionnaire" nextButtonClickHandler={nextButtonClickHandler} />
+    <PrevButton
+      prevLink="/questionnaire"
+      nextButtonClickHandler={nextButtonClickHandler}
+      marginLeft="8%"
+      marginLeft1="8%"
+      marginLeft2="14%"
+      marginTop="55%"
+      marginTop1="20%"
+      marginLeft4="20%"
+      marginTop4="29%"
+      marginLeft3="14%"
+      marginTop3="18%"
+
+    />
   </>
 );
 

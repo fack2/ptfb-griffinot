@@ -97,14 +97,14 @@ const SectionD2 = ({
         />
 
         {checkedItems.length === QuestionnaireData[5].limit ? (
-          <Popup modal trigger={<NextButton Margin="55rem" />}>
+          <Popup modal trigger={<NextButton />}>
             <PopupPage
               description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
               NextLink="/"
             />
           </Popup>
         ) : (
-          <Popup modal trigger={<NextButton Margin="55rem" />}>
+          <Popup modal trigger={<NextButton />}>
             <LevelPop
               levelScore={LevelData[5].LevelNo}
               description={LevelData[5].uncompletedMsg}
