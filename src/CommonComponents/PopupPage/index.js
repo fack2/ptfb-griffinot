@@ -18,12 +18,11 @@ import {
 const PopupPage = ({
   description, optionText, optionLink, close,
 }) => (
-    <>
-      <Close onClick={close}>
-        &times;
-      </Close>
-
+  <>
       <BigDiv>
+        <Close onClick={close}>
+          &times;
+        </Close>
         <Logo>
           <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
         </Logo>
@@ -37,8 +36,8 @@ const PopupPage = ({
           </ContainerBtn>
         </BtnDiv>
       </BigDiv>
-    </>
-  );
+  </>
+);
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
