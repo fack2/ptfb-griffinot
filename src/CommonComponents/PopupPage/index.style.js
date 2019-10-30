@@ -43,13 +43,27 @@ export const PopUpDiv = styled.span`
 `;
 
 export const LinkText = styled.a`
-  padding: 2rem;
+  position: absolute;
+  top: 77%;
+  left: -22%;
   font-size: 1.5rem;
-  text-align: left;
   letter-spacing: 0.1rem;
-  color:var(--next-prev-button-color);
-  margin-top: -3rem;
+  color: var(--next-prev-button-color);
   text-decoration: none;
+  @media (min-width: 481px) and (max-width: 767px) {
+  left: -15%
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  left: 4%
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  left: 2%
+}
+@media (min-width: 1281px) {
+  left: 6%
+}
 `;
 
 export const ContainerBtn = styled.a`
