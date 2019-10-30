@@ -46,7 +46,7 @@ export const NextText = styled.p`
 `;
 
 export const NextArrow = styled.img`
-    width: 5%;
+    width: 7%;
     margin-left: 93%;
     margin-bottom: 5%;
 `;
