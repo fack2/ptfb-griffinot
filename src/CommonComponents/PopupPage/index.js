@@ -16,9 +16,9 @@ import {
 } from './index.style';
 
 const PopupPage = ({
-  description, optionText, optionLink, close,
+  description, optionText, optionLink, close, NextLink,
 }) => (
-    <>
+  <>
       <BigDiv>
         <Close onClick={close}>
           &times;
@@ -31,13 +31,13 @@ const PopupPage = ({
           <LinkText href={optionLink}>{optionText}</LinkText>
         </Text>
         <BtnDiv>
-          <ContainerBtn href="/">
+          <ContainerBtn href={NextLink}>
             <TextBtn type="button">I understand</TextBtn>
           </ContainerBtn>
         </BtnDiv>
       </BigDiv>
-    </>
-  );
+  </>
+);
 
 PopupPage.propTypes = {
   description: PropTypes.string.isRequired,
