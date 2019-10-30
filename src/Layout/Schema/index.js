@@ -106,8 +106,9 @@ class Schema extends React.Component {
               <BtnDiv>
                 {this.state.NoBtn ? (
                   <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                    {() => (
+                    {(close) => (
                       <PopupPage
+                        close={close}
                         description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme."
                         NextLink="/questionnaire"
                       />
@@ -115,8 +116,9 @@ class Schema extends React.Component {
                   </Popup>
                 ) : (
                     <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                      {() => (
+                      {(close) => (
                         <PopupPage
+                          close={close}
                           description="Sorry, our program is not suitable for your child."
                           NextLink="/"
                         />
