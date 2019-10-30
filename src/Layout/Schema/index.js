@@ -123,7 +123,6 @@ class Schema extends React.Component {
                     )}
                   </Popup>
                 ) : (
-<<<<<<< HEAD
                     <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
                       {(close) => (
                         <PopupPage
@@ -135,17 +134,6 @@ class Schema extends React.Component {
                     </Popup>
                   )}
 
-=======
-                  <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                    {() => (
-                      <PopupPage
-                        description="Sorry, our program is not suitable for your child."
-                        NextLink="/"
-                      />
-                    )}
-                  </Popup>
-                )}
->>>>>>> master
 
                 {this.renderBtn()}
                 {this.state.NoBtn ? (
