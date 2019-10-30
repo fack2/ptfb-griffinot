@@ -14,14 +14,14 @@ export const Logo = styled.img`
   height: 13vh;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 20vh;
+    height: 10vh;
   }
 
   @media (min-width: 768px) and (max-width: 1280px) {
-    height: 20vh;
+    height: 11vh;
   }
   @media (min-width: 1281px) {
-    height: 20vh;
+    height: 15vh;
   }
 `;
 
@@ -34,10 +34,10 @@ export const Menu = styled.img`
   }
 
   @media (min-width: 768px) and (max-width: 1280px) {
-    height: 7vh;
+    height: 6vh;
   }
   @media (min-width: 1281px) {
-    height: 7vh;
+    height: 5vh;
   }
 `;
 
