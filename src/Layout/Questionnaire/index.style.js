@@ -86,24 +86,23 @@ export const Paragraph = styled.p`
 `;
 
 export const DivData = styled.div`
-  /* display: flex;
-  margin-left: 6rem;
-  margin-top: 11rem;
+  display: flex;
+  margin: 2% 4% 0% 4%;
   flex-direction: column;
 
-  @media (min-width: 1000px) {
-    display: -webkit-flex;
-    text-align: -webkit-center;
-  } */
+  /* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) and (max-width: 767px) {
+  }
 `;
 
 export const TitleOption = styled.h1`
   /* @media (min-width: 1000px) {
     font-size: 2.4rem;
     text-align: center;
-  }
-  font-size: 3.8rem;
-  text-align: center; */
+  } */
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
 `;
 
 export const Option = styled.button`
@@ -116,23 +115,23 @@ export const Option = styled.button`
     font-size: 2.4rem;
     color: #000000;
     text-align: center;
-  }
+  } */
 
   display: flex;
   justify-content: center;
-  width: 85rem;
-  height: 18.5rem;
   background: #d6ebf7;
-  border-radius: 2.5rem;
-  margin-top: 8rem;
-  font-size: 3.7rem;
   color: #000000;
+  outline: none;
   text-align: center;
-  outline: none; */
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  height: 80px;
+  padding: 1% 5% 0% 5%;
+  margin: 10% -4.5% -2% -4.5%;
 `;
 
 export const LinkOption = styled(Link)`
-  /* text-decoration: none; */
+  text-decoration: none;
 `;
 
 export const QuestionContainer = styled.div`
