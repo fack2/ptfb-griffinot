@@ -18,7 +18,8 @@ import {
   OptionBtn,
   Text,
   BigDiv,
-  BtnDiv
+  BtnDiv,
+  Close
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
@@ -75,8 +76,11 @@ class Schema extends React.Component {
           onClose={() => {
             this.setState({ NoBtn: false });
           }} modal>
-          {() => (
+          {close => (
             <BigDiv >
+              <Close onClick={close}>
+                &times;
+              </Close>
               {this.state.NoBtn ? (
                 <Logo Background="#ABC1D3">
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
