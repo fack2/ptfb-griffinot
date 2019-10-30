@@ -92,32 +92,39 @@ export const DivData = styled.div`
 
   /* Media Query for low resolution  Tablets, Ipads*/
   @media (min-width: 481px) and (max-width: 767px) {
-    margin: 2% 8% 0% 8%;
+    margin: 2% 8%;
+  }
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 2% 8%;
+  }
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin: 2% 10%;
   }
 `;
 
 export const TitleOption = styled.h1`
-  /* @media (min-width: 1000px) {
-    font-size: 2.4rem;
-    text-align: center;
-  } */
   font-size: 1.7rem;
   text-align: center;
   font-weight: bold;
+
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0% 6%;
+  }
+
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    font-size: 2rem;
+    margin: -2% 11% -5% 11%;
+  }
 `;
 
 export const Option = styled.button`
-  /* @media (min-width: 1000px) {
-    width: 50rem;
-    height: 15rem;
-    background: #d6ebf7;
-    border-radius: 2.5rem;
-
-    font-size: 2.4rem;
-    color: #000000;
-    text-align: center;
-  } */
-
   display: flex;
   justify-content: center;
   background: #d6ebf7;
@@ -129,6 +136,22 @@ export const Option = styled.button`
   height: 80px;
   padding: 1% 5% 0% 5%;
   margin: 10% -4.5% -2% -4.5%;
+
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.9rem;
+    height: 80px;
+    padding: 1% 5% 0% 5%;
+    margin: 10% 4.5% -2% 4.5%;
+  }
+
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    font-size: 1.8rem;
+    height: 80px;
+    padding: 1% 5% 0% 5%;
+    margin: 10% 10.5% -2% 10.5%;
+  }
 `;
 
 export const LinkOption = styled(Link)`
