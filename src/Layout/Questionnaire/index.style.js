@@ -163,6 +163,7 @@ export const Option = styled.button`
 
 export const LinkOption = styled(Link)`
   text-decoration: none;
+  color: var(--main-font-color);
 `;
 
 export const QuestionContainer = styled.div`
