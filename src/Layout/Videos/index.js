@@ -1,7 +1,7 @@
 import React from 'react';
 import PrevButton from '../../CommonComponents/PrevButton';
 import data from '../../Data/videoData';
-import logo from '../../assets/video-logo.svg';
+import logo from '../../assets/video-logo.png';
 import {
   VideosContainer,
   IconTitleContainer,
@@ -11,25 +11,41 @@ import {
   VideoTitle,
 } from './index.style';
 
-const Videos = () => (
-  <>
-    <IconTitleContainer>
-      <VideoIcon src={logo} alt="video logo" />
-      <PageTitle>Introductory Videos</PageTitle>
-    </IconTitleContainer>
+const Videos = () => {
+  const changeWidth = () => {
+    const screenWidth = window.screen.width;
+    let width = '640px';
+    if (screenWidth < 480) {
+      width = '100%';
+    }
+    return width;
+  };
+  const changeHeight = () => {
+    const screenWidth = window.screen.width;
+    let height = '400px';
+    if (screenWidth < 480) {
+      height = '220px';
+    }
+    return height;
+  };
+  return (
+    <>
+      <IconTitleContainer>
+        <VideoIcon src={logo} alt="video logo" />
+        <PageTitle>Introductory Videos</PageTitle>
+      </IconTitleContainer>
 
-    <VideosContainer>
-      {data.map(({
-        id, video, title, height, width,
-      }) => (
-        <>
-          <VideoTitle>{title}</VideoTitle>
-          <VideoCard key={id} height={height} width={width} url={video} />
-        </>
-      ))}
-    </VideosContainer>
-    <PrevButton prevLink="/resources" />
-  </>
-);
+      <VideosContainer>
+        {data.map(({ id, video, title }) => (
+          <>
+            <VideoTitle>{title}</VideoTitle>
+            <VideoCard key={id} height={changeHeight()} width={changeWidth()} url={video} />
+          </>
+        ))}
+      </VideosContainer>
+      <PrevButton prevLink="/resources" />
+    </>
+  );
+};
 
 export default Videos;
