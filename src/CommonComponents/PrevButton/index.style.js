@@ -18,6 +18,7 @@ export const PrevBtn = styled(Link)`
   margin-left: 7%;
   @media (max-width: 480px){
     margin-left: 7%;
+    margin-top: ${(props) => props.marginTop || '0%'};
   }
   @media (min-width: 481px) and (max-width: 767px){
     margin-right: 6%;
