@@ -1,21 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  Container, Image, Title, CardItem,
-} from './index.style';
+import { Image, Title, ResourseCard } from './index.style';
 
 const Resource = ({
   id, picture, title, onClick,
 }) => (
-  <Container>
-    <CardItem key={id}>
-      <Image src={picture} />
-      <Title onClick={onClick} name={id}>
-        {title}
-      </Title>
-    </CardItem>
-  </Container>
+  <ResourseCard key={id} onClick={onClick}>
+    <Image src={picture} />
+    <Title>{title}</Title>
+  </ResourseCard>
 );
 
 Resource.propTypes = {

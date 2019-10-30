@@ -1,73 +1,136 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const BodyPage = styled.div`
-  background: #cfcfcf;
-  justify-content: center;
-`;
-
-export const PopUPCard = styled.div`
-  text-align: center;
-  display: flex;
-  height: 0.6rem;
-`;
-
-export const PopUpBox = styled.div`
-  width: ${props => props.Width || '82rem'};
-  height: ${props => props.Height || '100rem'};
-  background: #fffcfc;
-  border: 0.1rem solid #c4c4c4;
-  margin-left: -17.4rem;
-  margin-top: -38rem;
-`;
 
 export const Logo = styled.div`
-  width: 82.5rem;
-  height: 34rem;
-  background: ${props => props.Background || '#205c8b'};
-  margin-top: -1rem;
-  margin-left: -0.4rem;
+  width: 100.5%;
+  height: 155px;
+  background: #205c8b;
+  margin-left: -0.5%;
+  margin-top: -2.5%;
 `;
 
 export const LogoImage = styled.img`
-  width: 45rem;
-  height: 41rem;
+  width: 53%;
+  height: 175px;
+  margin-left: 25%;
+  margin-top: -1%;
 `;
 
-export const Container2 = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 
 export const PopUpDiv = styled.span`
-  padding: 4.4rem;
-  font-size: 3.5rem;
-  text-align: left;
-  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 54%;
+  left: -27%;
+@media (max-width: 480px) {
+  left: -22%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  left: -15%
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  left: 4%
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  left: 2%
+}
+@media (min-width: 1281px) {
+  left: 6%
+}
 `;
 
 export const LinkText = styled.a`
-  padding: 4.4rem;
-  font-size: 3.5rem;
+  padding: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   letter-spacing: 0.1rem;
-  color: var(--next-prev-button-color);
-  margin-top: -7rem;
+  color:var(--next-prev-button-color);
+  margin-top: -3rem;
   text-decoration: none;
 `;
 
-export const ContainerBtn = styled.div`
+export const ContainerBtn = styled.a`
   display: flex;
-  justify-content: space-around;
+  justify-content: space - around;
   margin-top: 15rem;
 `;
 
-export const TextBtn = styled(Link)`
-  position: fixed;
-  top: 116rem;
-  left: 60rem;
-  font-size: 4rem;
-  font-weight: bold;
+export const TextBtn = styled.button`
   color: var(--main-title-color);
   text-decoration: none;
+  outline: none;
+  background-color: white;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -24%;
+  top: 91%;
+@media (min-width: 768px) and (max-width: 1024px) {
+  right: 4%;
+  top: 93%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  right: 2%;
+  top: 98%;
+}
+@media (min-width: 1281px) {
+  right: 3%;
+  top: 101%;
+}
+`;
+
+export const Text = styled.div`
+  height: 155px;
+  background: white;
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+`;
+
+export const BigDiv = styled.div`
+  width: 185%;
+  margin-left: -40%;
+  margin-bottom: -8%;
+
+@media (max-width: 480px) {
+  width: 165%;
+  margin-left: -33%;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  width: 153%;
+  margin-left: -28%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    width: 106%;
+    margin-left: -2%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  width: 106%;
+  margin-left: -3%;
+}
+@media (min-width: 1281px) {
+    width: 103%;
+    margin-left: -1%;
+}
+`;
+
+
+export const BtnDiv = styled.div`
+  height: 33px;
+  background: white;
+  margin-left: -0.5%;
+  margin-top: -0.5%;
+  display: flex;
+  justify-content: space-around;
 `;
