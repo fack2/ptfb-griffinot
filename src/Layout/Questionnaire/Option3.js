@@ -28,50 +28,38 @@ import PrevButton from '../../CommonComponents/PrevButton';
 const Option3 = ({ nextButtonClickHandler, close }) => (
   <>
     <TitleOption>
-      What skill do you feel your child needs the most help with improving, at
-      the moment?
+      What skill do you feel your child needs the most help with improving, at the moment?
     </TitleOption>
 
     {/* 1 option */}
     <DivData>
       <Popup
         modal
-        trigger={(
-          <Option>
-            I would like to help them to improve their pencil grasp
-          </Option>
-        )}
+        trigger={<Option>I would like to help them to improve their pencil grasp</Option>}
       >
         {(close) => (
           <BodyPage>
             <PopUPCard>
-              <PopUpBox Height="81%">
-                <Close onClick={close}>
-                  &times;
-                </Close>
+              <PopUpBox>
                 <Logo>
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                 </Logo>
                 <Container2>
-                  <LevelIntro>
-                    The most appropriate programme for your child is:
-                  </LevelIntro>
+                  <LevelIntro>The most appropriate programme for your child is:</LevelIntro>
                   <LevelDiv>
                     <CircleLevel>
                       <Para> Supporting Pencil Grasp Development </Para>
                     </CircleLevel>
                   </LevelDiv>
                   <PopUpDiv FontSize="2rem">
-                    The Supporting Pencil Grasp Development Programme is
-                    specifically designed to help children improve their pencil
-                    grasp. The programme consists of two warm ups, 14 fine motor
-                    activities and 14 worksheet tasks. The activities focus on
-                    improving the hand dexterity required to hold a pencil. The
-                    worksheets help with pencil control. By the end of the
-                    programme your child should be able to hold their pencil using
-                    an adequate grasp This might be a tripod, modified tripod or
-                    quadruped grasp. They should also have made improvements with
-                    their pencil control.
+                    The Supporting Pencil Grasp Development Programme is specifically designed to help
+                    children improve their pencil grasp. The programme consists of two warm ups, 14
+                    fine motor activities and 14 worksheet tasks. The activities focus on improving
+                    the hand dexterity required to hold a pencil. The worksheets help with pencil
+                    control. By the end of the programme your child should be able to hold their
+                    pencil using an adequate grasp This might be a tripod, modified tripod or
+                    quadruped grasp. They should also have made improvements with their pencil
+                    control.
                   </PopUpDiv>
 
                   <ToLink href="https://griffinot.teachable.com/p/online-pencil-grasp-development-programme1">
@@ -85,20 +73,16 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
       </Popup>
 
       {/* 2nd option  */}
-      <LinkOption to="/questionnaire">
-        <Option name="nextBtn" onClick={nextButtonClickHandler}>
+      <Option onClick={nextButtonClickHandler}>
+        <LinkOption to="/questionnaire" name="nextBtn">
           I would like to help them to improve their general fine motor skills.
-        </Option>
-      </LinkOption>
+        </LinkOption>
+      </Option>
 
       {/* 3rd option */}
       <Popup
         modal
-        trigger={(
-          <Option>
-            I would like to help them to improve their scissor skills..
-          </Option>
-        )}
+        trigger={<Option>I would like to help them to improve their scissor skills..</Option>}
       >
         {(close) => (
           <PopupPage
@@ -115,7 +99,15 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
     <PrevButton
       prevLink="/questionnaire"
       nextButtonClickHandler={nextButtonClickHandler}
-      marginTop="47%"
+      marginLeft="8%"
+      marginLeft1="8%"
+      marginLeft2="14%"
+      marginTop="55%"
+      marginTop1="20%"
+      marginLeft4="20%"
+      marginTop4="29%"
+      marginLeft3="14%"
+      marginTop3="18%"
     />
   </>
 );

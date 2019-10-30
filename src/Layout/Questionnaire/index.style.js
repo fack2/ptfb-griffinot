@@ -163,6 +163,7 @@ export const Option = styled.button`
 
 export const LinkOption = styled(Link)`
   text-decoration: none;
+  color: var(--main-font-color);
 `;
 
 export const QuestionContainer = styled.div`
@@ -327,25 +328,26 @@ export const DivNextPrev = styled.div`
   justify-content: space-between;
   padding-right: 4%;
   margin-left: -4%;
+  padding-bottom: 3%;
   @media (min-width: 481px) and (max-width: 767px){
-    padding-right: 10%;
+    padding-right: 4%;
     margin-left: 3%;
     margin-top: 2%;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    padding-right: 10%;
+    padding-right: 5%;
     margin-left: 3%;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
     padding-right: 3%;
     margin-left: -3%;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   @media (min-width: 1281px) {
-    padding-right: 12%;
+    padding-right: 4%;
     margin-left: 8%;
-    margin-top: 5%;
+    margin-top: 3%;
   }
 `;
 
