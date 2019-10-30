@@ -506,10 +506,21 @@ export const Container2 = styled.div`
 export const PopUpDiv = styled.span`
   font-size: 1.3rem;
   margin-left: 5%;
-  margin-top: -3%;
+  margin-top: -12%;
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
+
+@media (min-width: 768px) and (max-width: 1024px){
+  margin-top: -4%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  margin-top: -4%;
+}
+  @media (min-width: 1281px) {
+  margin-top: -5%;
+}
 
 `;
 
@@ -517,64 +528,59 @@ export const ToLink = styled.a`
   color: var(--main-title-color);
   text-decoration: none;
   cursor: pointer;
-  position: absolute;
-  display: block;
-  padding: 1% 2%;
-  right: -32%;
-  top: 29rem;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 20px;
+  margin-left: 54%;
+  margin-top: 4%;
 @media (min-width: 481px) and (max-width: 767px) {
-  right: -26%;
-  top: 34rem;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  right: -9%;
-  top: 29rem;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  right: 0%;
-  top: 29rem;
+    margin-left: 65%;
+    margin-top: 8%;
 }
 @media (min-width: 1281px) {
-    right: 0%;
-    top: 20rem;
+  margin-left: 70%;
+  margin-top: 11%;
 }
 `;
 
 export const Close = styled.a`
   cursor: pointer;
   position: absolute;
-  display: block;
-  padding: 1% 2%;
-  right: -36%;
-  top: -28rem;
   font-size: 2.5rem;
   line-height: 20px;
+  margin-left: 78%;
+  margin-top: -4%;
 
 @media (min-width: 481px) and (max-width: 767px) {
-  right: -34%;
-  top: -26rem;
+  margin-left: 78%;
+  margin-top: -4%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  right: -16%;
-  top: -30.5rem;
+  margin-left: 60%;
+  margin-top: -4%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  right: -5%;
-  top: -30rem;
+    margin-left: 48%;
+    margin-top: -2%;
 }
+
 @media (min-width: 1281px) {
-    right: -5%;
-    top: -38rem;
+    margin-left: 49%;
+    margin-top: -2%;
 }
 `;
-
 export const Para = styled.p`
   font-size: 1.5rem;
   margin-top: 34%;

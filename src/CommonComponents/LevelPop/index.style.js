@@ -85,7 +85,7 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-  width: 35.5rem;
+  width: 185%;
   height: 51rem;
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
@@ -139,8 +139,8 @@ export const LogoImage = styled.img`
 }
 
 @media (min-width: 1281px) {
-  margin-top: -6%;
-  width: 36%;
+    margin-top: -3%;
+    width: 30%;
 }
 `;
 
@@ -162,60 +162,55 @@ export const ToLink = styled.a`
   color: var(--main-title-color);
   text-decoration: none;
   cursor: pointer;
-  position: absolute;
-  display: block;
-  padding: 1% 2%;
-  right: -26%;
-  top: 238%;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 20px;
+  margin-left: 54%;
+  margin-top: 11%;
 @media (min-width: 481px) and (max-width: 767px) {
-  right: -26%;
-  top: 264%;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  right: -2%;
-  top: 298%;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  right: 0%;
-  top: 207%;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 @media (min-width: 1281px) {
-  right: 0%;
-  top: 269%;
+  margin-left: 54%;
+  margin-top: 11%;
 }
 `;
 
 export const Close = styled.a`
   cursor: pointer;
   position: absolute;
-  display: block;
-  padding: 1% 2%;
-    right: -36%;
-    top: -264%;
   font-size: 2.5rem;
   line-height: 20px;
+    margin-left: 127%;
+    margin-top: -137%;
 
 @media (min-width: 481px) and (max-width: 767px) {
-  right: -33%;
-  top: -238%;
+    margin-left: 121%;
+    margin-top: -107%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  right: -7%;
-  top: -207%;
+    margin-left: 99%;
+    margin-top: -59%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  right: -5%;
-  top: -287%;
+    margin-left: 99%;
+    margin-top: -59%;
 }
 @media (min-width: 1281px) {
-  right: -5%;
-  top: -213%;
+    margin-left: 100%;
+    margin-top: -36%;
 }
 `;

@@ -41,6 +41,9 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
           <BodyPage>
             <PopUPCard>
               <PopUpBox>
+                <Close onClick={close}>
+                  &times;
+                </Close>
                 <Logo>
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                 </Logo>
