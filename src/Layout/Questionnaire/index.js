@@ -14,8 +14,7 @@ class Questionnaire extends Component {
     checkedQuestions: new Array(25).fill(false)
   };
 
-  checkboxChange = event => {
-    const { id } = event.target;
+  checkboxChange = id => {
     const { checkedQuestions } = this.state; //this array is for preserving the checked items while moving through the questionnaire sections
 
     let checkedItems = this.state.checkedItems; //Created a variable named checkedItems to change the array in the state using push method
@@ -25,7 +24,10 @@ class Questionnaire extends Component {
       this.state.checkedItems.push(id);
       checkedQuestions[id - 1] = true; //Array filled with 25 false values that represent the 25 questions' checked status, if the question is checked we set its false value to true.
       this.setState(
-        { checkedItems, checkedQuestions } //set the checkedItems array in the state to be equal to the variable checkedItems.(We can't push the items directly to the array using push inside the setState because push returns the length of the array not the values in it)
+        { checkedItems, checkedQuestions }, //set the checkedItems array in the state to be equal to the variable checkedItems.(We can't push the items directly to the array using push inside the setState because push returns the length of the array not the values in it)
+        () => {
+          console.log(this.state);
+        }
       );
     } else {
       //If the number of the question that is checked exists in the array remove it from it && return the checked state in the checkedQuestions array to false(this is for toggling the checkbox on and off) .
