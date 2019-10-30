@@ -145,6 +145,13 @@ export const Option = styled.button`
     margin: 10% 4.5% -2% 4.5%;
   }
 
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.5rem;
+    height: 78px;
+    padding: 1% 5% 0% 5%;
+    margin: 10% 10.5% -2% 10.5%;
+  }
   /* Media Query for Large screens */
   @media (min-width: 1281px) {
     font-size: 1.8rem;
