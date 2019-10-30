@@ -106,10 +106,15 @@ const Option3 = ({ nextButtonClickHandler }) => (
     <PrevButton
       prevLink="/questionnaire"
       nextButtonClickHandler={nextButtonClickHandler}
-      marginTop="47%"
-      marginLeft="6%"
-      marginLeft1='14%'
-      marginLeft2='15%'
+      marginLeft="8%"
+      marginLeft1="8%"
+      marginLeft2="14%"
+      marginTop="55%"
+      marginTop1="18%"
+      marginLeft4="20%"
+      marginTop4="29%"
+      marginLeft3="19%"
+      marginTop3="18%"
 
     />
   </>
