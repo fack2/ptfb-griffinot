@@ -6,7 +6,8 @@ const PrevButton = ({
   prevLink,
   nextButtonClickHandler,
   marginTop,
-  marginLeft,
+  marginTop1,
+  marginTop2,
 }) => (
   <>
     <DivPrev>
@@ -16,7 +17,8 @@ const PrevButton = ({
         name="prevBtn"
         onClick={nextButtonClickHandler}
         marginTop={marginTop}
-        marginLeft={marginLeft}
+        marginTop={marginTop1}
+        marginTop={marginTop2}
       >
         Prev
       </PrevBtn>

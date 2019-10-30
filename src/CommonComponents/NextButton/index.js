@@ -4,7 +4,7 @@ import { NextBtn, DivNext } from './index.style';
 
 const NextButton = (props) => (
   <>
-    <DivNext {...props}>
+    <DivNext {...props} >
       <NextBtn
         to={props.nextLink}
         type="primary"

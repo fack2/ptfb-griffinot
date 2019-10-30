@@ -34,11 +34,14 @@ export const PrevBtn = styled(Link)`
     margin-left: 20%;
     font-weight: 600;
     font-size: 1.7rem;
+    margin-top: ${(props) => props.marginTop1 || '0%'};
+
 
   }
   @media (min-width: 1281px) {
     margin-left: 18%;
     font-weight: 600;
     font-size: 1.7rem;
+    margin-top: ${(props) => props.marginTop2 || '30%'};
   }
 `;
