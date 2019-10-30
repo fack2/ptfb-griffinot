@@ -23,7 +23,8 @@ export const PopUpDiv = styled.span`
   top: 54%;
   left: -27%;
 @media (max-width: 480px) {
-  left: -22%;
+    left: -20%;
+    font-size: 1.3rem;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -45,8 +46,8 @@ export const PopUpDiv = styled.span`
 export const LinkText = styled.a`
   position: absolute;
   top: 77%;
-  left: -22%;
-  font-size: 1.5rem;
+  left: -20%;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
   color: var(--next-prev-button-color);
   text-decoration: none;
