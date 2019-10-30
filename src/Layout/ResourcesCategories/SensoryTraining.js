@@ -1,6 +1,8 @@
 import React from 'react';
 import categoryData from '../../Data/categoryData';
-import { TitleCategory, Container, BodyCategory, Link } from './index.style';
+import {
+ TitleCategory, Container, BodyCategory, Link 
+} from './index.style';
 import ResourcesCategory from '../../CommonComponents/ResourcesCategory';
 import PrevButton from '../../CommonComponents/PrevButton';
 
@@ -16,7 +18,7 @@ const SensoryTraining = () => (
         </Link>
       ))}
     </BodyCategory>
-    <PrevButton prevLink="/resources" marginTop="54rem" />
+    <PrevButton prevLink="/resources" marginTop="77%" />
   </>
 );
 export default SensoryTraining;

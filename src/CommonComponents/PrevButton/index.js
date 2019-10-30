@@ -5,17 +5,18 @@ import { PrevBtn, DivPrev } from './index.style';
 const PrevButton = ({
   prevLink,
   nextButtonClickHandler,
+  marginTop,
   marginLeft,
-  marginTop
 }) => (
   <>
-    <DivPrev marginTop={marginTop} marginLeft={marginLeft}>
+    <DivPrev>
       <PrevBtn
         to={prevLink}
-        type='primary'
-        name='prevBtn'
+        type="primary"
+        name="prevBtn"
         onClick={nextButtonClickHandler}
-        margin={marginTop}
+        marginTop={marginTop}
+        marginLeft={marginLeft}
       >
         Prev
       </PrevBtn>
@@ -25,7 +26,7 @@ const PrevButton = ({
 
 PrevButton.propTypes = {
   prevLink: PropTypes.string.isRequired,
-  nextButtonClickHandler: PropTypes.func.isRequired
+  nextButtonClickHandler: PropTypes.func.isRequired,
 };
 
 export default PrevButton;
