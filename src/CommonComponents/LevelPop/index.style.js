@@ -3,79 +3,79 @@ import styled from 'styled-components';
 export const LevelDiv = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 4.9rem;
 `;
 
 export const CircleLevel = styled.div`
-  @media (min-width: 1281px) {
-    width: 12rem;
-    height: 12rem;
-    background: #ffce1c;
-    border-radius: 11rem;
-    z-index: 1;
-  }
-    width: 15rem;
-    height: 15rem;
+  width: 20%;
+  height: 6rem;
+  margin-left: 2%;
   background: #ffce1c;
   border-radius: 11rem;
   z-index: 1;
+@media (min-width: 768px) and (max-width: 1024px) {
+  width: 15%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  width: 11%;
+}
+
+@media (min-width: 1281px) {
+  width: 9%;
+}
 `;
 
 export const ParagraphLevel = styled.p`
-  @media (min-width: 1281px) {
-    font-size: 2.5rem;
-    margin-top: 4rem;
-    font-weight: bolder;
-    color: #e8425c;
-  }
-  font-size: 3.3rem;
-  margin-top: 5.6rem;   
-  font-weight: bolder;
+  font-size: 1.4rem;
+  margin-top: 36%;
   color: #e8425c;
 `;
 
 export const TitleLevel = styled.div`
-  @media (min-width: 1281px) {
-    width: 45rem;
-    height: 8rem;
-    background: #205c8b;
-    border: 1px solid #a0a0a0;
-    box-sizing: border-box;
-    border-radius: 82px;
-    margin-top: 2rem;
-    margin-left: -11rem;
-  }
-  width: 68rem;
-  height: 10.9rem;
+  width: 38rem;
+  height: 3.9rem;
   background: #205c8b;
   border: 1px solid #a0a0a0;
   box-sizing: border-box;
   border-radius: 82px;
-  margin-top: 2.5rem;
-  margin-left: -9rem;
+  margin-top: 3.5%;
+  margin-left: -12%;
+  margin-right: 5%;
+@media (min-width: 1025px) and (max-width: 1280px) {
+  margin-top: 2.5%;
+  margin-left: -9%;
+}
+
+@media (min-width: 1281px) {
+  margin-top: 1.5%;
+  margin-left: -7%;
+}
 `;
 
 export const LevelIntro = styled.p`
-  font-size: 3.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-left: -43rem;
+  margin-left: -55%;
+  margin-top: 5%;
+  @media (min-width: 1281px) {
+    margin-left: -71%;
+}
 `;
 
 export const TitleParagraph = styled.p`
-  @media (min-width: 1281px) {
-    font-size: 2rem;
-    margin-left:7.9rem;
-    color: #ffffff;
-  }
-  font-size: 3.5rem;
-  margin-left: 0.9rem;
+  font-size: 1.5rem;
+  margin-left: 4%;
+  margin-top: 2%;
   color: #ffffff;
 `;
 
 export const BodyPage = styled.div`
   background: #cfcfcf;
   justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4.9rem;
 `;
 
 export const PopUPCard = styled.div`
@@ -85,24 +85,63 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-  width: ${(props) => props.Width || '82rem'};
-  height:115rem;
+  width: 35.5rem;
+  height: 51rem;
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
-  margin-left: -17.4rem;
-  margin-top: -45rem;`;
+  margin-left: -41%;
+  margin-top: -142%;
+
+@media (min-width: 481px) and (max-width: 767px) {
+    margin-left: -40%;
+    width: 176%;
+    margin-top: -110%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  margin-left: -6%;
+  width: 177%;
+  margin-top: -58%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: -2%;
+    width: 167rem;
+    margin-top: -58%;
+    margin-right: -4%;
+}
+@media (min-width: 1281px) {
+    margin-left: -2%;
+    width: 167rem;
+    margin-top: -34%;
+    margin-right: -4%;
+}
+`;
 
 export const Logo = styled.div`
-  width: 82.5rem;
-  height: 34rem;
+  width: 101%;
+  height: 155px;
   background: #205c8b;
-  margin-top: -1rem;
-  margin-left: -0.4rem;
+  margin-left: -0.5%;
+  margin-top: -2.5%;
 `;
 
 export const LogoImage = styled.img`
-  width: 45rem;
-  height: 41rem;
+  width: 47%;
+  margin-left: 4%;
+  margin-top: 1%;
+@media (min-width: 768px) and (max-width: 1024px) {
+  margin-top: -3%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+ margin-top: -8%;
+}
+
+@media (min-width: 1281px) {
+  margin-top: -6%;
+  width: 36%;
+}
 `;
 
 export const Container2 = styled.div`
@@ -111,21 +150,72 @@ export const Container2 = styled.div`
 `;
 
 export const PopUpDiv = styled.span`
-  font-size: 2.7rem;
-  text-align: left;
-  margin-left: 5rem;
-  margin-top: 3rem;
-  margin-right: 2rem;
+  font-size: 1.3rem;
+  margin-left: 5%;
+  margin-top: -3%;
+  text-align: justify;
+  margin-right: 5%;
   letter-spacing: 0.1rem;
 `;
 
 export const ToLink = styled.a`
   color: var(--main-title-color);
   text-decoration: none;
-  font-size: 3.9rem;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 1% 2%;
+  right: -26%;
+  top: 238%;
+  font-size: 1.6rem;
   font-weight: bold;
-  position: fixed;
-  top: 147rem;
-  left: 57rem;
+  line-height: 20px;
+@media (min-width: 481px) and (max-width: 767px) {
+  right: -26%;
+  top: 264%;
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  right: -2%;
+  top: 298%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  right: 0%;
+  top: 207%;
+}
+@media (min-width: 1281px) {
+  right: 0%;
+  top: 269%;
+}
+`;
+
+export const Close = styled.a`
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 1% 2%;
+    right: -36%;
+    top: -264%;
+  font-size: 2.5rem;
+  line-height: 20px;
+
+@media (min-width: 481px) and (max-width: 767px) {
+  right: -33%;
+  top: -238%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  right: -7%;
+  top: -207%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  right: -5%;
+  top: -287%;
+}
+@media (min-width: 1281px) {
+  right: -5%;
+  top: -213%;
+}
 `;
