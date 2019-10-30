@@ -31,7 +31,10 @@ const SectionD1 = ({
       <Paragraph>
         Please check the box if your child is able to do the following:
       </Paragraph>
-      <QuestionCard>
+      <QuestionCard
+        id={data[15].questionNumber}
+        onClick={() => checkboxChange(data[15].questionNumber)}
+      >
         <QuestionNumber>{data[15].questionNumber}</QuestionNumber>
         <QuestionText>{data[15].question}</QuestionText>
         <Checkbox
@@ -43,7 +46,10 @@ const SectionD1 = ({
         <QuestionDescription>{data[15].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[16].questionNumber}
+        onClick={() => checkboxChange(data[16].questionNumber)}
+      >
         <QuestionNumber>{data[16].questionNumber}</QuestionNumber>
         <QuestionText>{data[16].question}</QuestionText>
         <Checkbox
@@ -55,7 +61,10 @@ const SectionD1 = ({
         <QuestionDescription>{data[16].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[17].questionNumber}
+        onClick={() => checkboxChange(data[17].questionNumber)}
+      >
         <QuestionNumber>{data[17].questionNumber}</QuestionNumber>
         <QuestionText>{data[17].question}</QuestionText>
         <Checkbox
@@ -67,7 +76,10 @@ const SectionD1 = ({
         <QuestionDescription>{data[17].description}</QuestionDescription>
       </QuestionCard>
 
-      <QuestionCard>
+      <QuestionCard
+        id={data[18].questionNumber}
+        onClick={() => checkboxChange(data[18].questionNumber)}
+      >
         <QuestionNumber>{data[18].questionNumber}</QuestionNumber>
         <QuestionText>{data[18].question}</QuestionText>
         <Checkbox
@@ -80,6 +92,8 @@ const SectionD1 = ({
       </QuestionCard>
 
       <QuestionCard
+        id={data[19].questionNumber}
+        onClick={() => checkboxChange(data[19].questionNumber)}
         height="110px"
         height3="96px"
         height4="110px"
