@@ -58,11 +58,7 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
                     The Supporting Pencil Grasp Development Programme is specifically designed to help
                     children improve their pencil grasp. The programme consists of two warm ups, 14
                     fine motor activities and 14 worksheet tasks. The activities focus on improving
-                    the hand dexterity required to hold a pencil. The worksheets help with pencil
-                    control. By the end of the programme your child should be able to hold their
-                    pencil using an adequate grasp This might be a tripod, modified tripod or
-                    quadruped grasp. They should also have made improvements with their pencil
-                    control.
+                    the hand dexterity required to hold a pencil.
                   </PopUpDiv>
 
                   <ToLink href="https://griffinot.teachable.com/p/online-pencil-grasp-development-programme1">

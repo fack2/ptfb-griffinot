@@ -362,8 +362,8 @@ export const LevelDiv = styled.div`
 `;
 
 export const CircleLevel = styled.div`
-  width: 40%;
-  height: 140px;
+  width: 38%;
+  height: 142px;
   border: 0.5rem #8ac456 solid;
   border-radius: 54rem;
   z-index: 1;
@@ -438,13 +438,13 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-  width: 185.5%;
-  height: 63rem;
-  background: #fffcfc;
-  border: 0.1rem solid #c4c4c4;
-  margin-left: -41%;
-  margin-top: -156%;
-  margin-right: -40%;
+    width: 197.5%;
+    height: 56rem;
+    background: #fffcfc;
+    border: 0.1rem solid #c4c4c4;
+    margin-left: -46%;
+    margin-top: -156%;
+    margin-right: -46%;
 
 @media (min-width: 481px) and (max-width: 767px) {
     margin-left: -40%;
@@ -531,8 +531,8 @@ export const ToLink = styled.a`
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 20px;
-  margin-left: 54%;
-  margin-top: 4%;
+  margin-left: 46%;
+  margin-top: 9%;
 @media (min-width: 481px) and (max-width: 767px) {
   margin-left: 54%;
   margin-top: 11%;
