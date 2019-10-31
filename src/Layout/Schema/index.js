@@ -19,6 +19,7 @@ import {
   Text,
   BigDiv,
   BtnDiv,
+  Close
 } from './index.style';
 import FMSimg from '../../assets/FMS-schema.jpg';
 import arrow from '../../assets/right-arrow.png';
@@ -80,11 +81,12 @@ class Schema extends React.Component {
           }
           onClose={() => {
             this.setState({ NoBtn: false });
-          }}
-          modal
-        >
-          {() => (
-            <BigDiv>
+          }} modal>
+          {close => (
+            <BigDiv >
+              <Close onClick={close}>
+                &times;
+              </Close>
               {this.state.NoBtn ? (
                 <Logo Background="#ABC1D3">
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
@@ -112,23 +114,26 @@ class Schema extends React.Component {
               <BtnDiv>
                 {this.state.NoBtn ? (
                   <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                    {() => (
+                    {(close) => (
                       <PopupPage
+                        close={close}
                         description="Please note that your child’s rate of progress will likely be a slower and they may still need additional specialist support whilst using the programme."
                         NextLink="/questionnaire"
                       />
                     )}
                   </Popup>
                 ) : (
-                  <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
-                    {() => (
-                      <PopupPage
-                        description="Sorry, our program is not suitable for your child."
-                        NextLink="/"
-                      />
-                    )}
-                  </Popup>
-                )}
+                    <Popup modal trigger={<OptionBtn type="button">Yes</OptionBtn>}>
+                      {(close) => (
+                        <PopupPage
+                          close={close}
+                          description="Sorry, our program is not suitable for your child."
+                          NextLink="/"
+                        />
+                      )}
+                    </Popup>
+                  )}
+
 
                 {this.renderBtn()}
                 {this.state.NoBtn ? (

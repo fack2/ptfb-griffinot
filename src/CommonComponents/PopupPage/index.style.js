@@ -23,7 +23,8 @@ export const PopUpDiv = styled.span`
   top: 54%;
   left: -27%;
 @media (max-width: 480px) {
-  left: -22%;
+    left: -20%;
+    font-size: 1.3rem;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -43,13 +44,27 @@ export const PopUpDiv = styled.span`
 `;
 
 export const LinkText = styled.a`
-  padding: 2rem;
-  font-size: 1.5rem;
-  text-align: left;
+  position: absolute;
+  top: 77%;
+  left: -20%;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
-  color:var(--next-prev-button-color);
-  margin-top: -3rem;
+  color: var(--next-prev-button-color);
   text-decoration: none;
+  @media (min-width: 481px) and (max-width: 767px) {
+  left: -15%
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  left: 4%
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  left: 2%
+}
+@media (min-width: 1281px) {
+  left: 6%
+}
 `;
 
 export const ContainerBtn = styled.a`
@@ -71,7 +86,7 @@ export const TextBtn = styled.button`
   display: block;
   padding: 2px 5px;
   line-height: 20px;
-  right: -24%;
+  right: -18%;
   top: 91%;
 @media (min-width: 768px) and (max-width: 1024px) {
   right: 4%;
@@ -133,4 +148,34 @@ export const BtnDiv = styled.div`
   margin-top: -0.5%;
   display: flex;
   justify-content: space-around;
+`;
+
+
+export const Close = styled.a`
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 1% 2%;
+  right: -29%;
+  top: -2%;
+  font-size: 2.5rem;
+  line-height: 20px;
+
+@media (min-width: 481px) and (max-width: 767px) {
+  right: -23%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  right: -4%;
+  top: -3%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    right: -4%;
+    top: -6%;
+}
+@media (min-width: 1281px) {
+    right: -3%;
+    top: -7%;
+}
 `;

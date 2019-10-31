@@ -135,3 +135,18 @@ export const CircleImage = styled.img`
     width: 50%;
   }
 `;
+
+export const Button = styled.button`
+    border: none;
+    background: none;
+    margin-left: 78%;
+    padding-bottom: 3%;
+    font-size: 1.5rem;
+    color:var(--main-title-color);
+`;
+
+export const Link = styled.a`
+  color: #2d2323;
+  text-decoration: none;
+  outline: none;
+`;

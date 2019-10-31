@@ -27,4 +27,5 @@ export const Title = styled.h1`
 export const Link = styled.a`
   color: #2d2323;
   text-decoration: none;
+  outline:none;
 `;
