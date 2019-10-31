@@ -156,7 +156,7 @@ export const Container2 = styled.div`
 export const PopUpDiv = styled.span`
   font-size: 1.3rem;
   margin-left: 5%;
-  margin-top: -3%;
+     margin-top: -11%;
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
