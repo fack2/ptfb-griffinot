@@ -15,17 +15,26 @@ const Videos = () => {
   const changeWidth = () => {
     const screenWidth = window.screen.width;
     let width = '640px';
-    if (screenWidth < 480) {
+    if (screenWidth <= 480) {
       width = '100%';
+    } else if (screenWidth >= 481 && screenWidth <= 767) {
+      width = '100%';
+    } else if (screenWidth >= 768 && screenWidth <= 1025) {
+      width = '73%';
     }
     return width;
   };
   const changeHeight = () => {
     const screenWidth = window.screen.width;
     let height = '400px';
-    if (screenWidth < 480) {
+    if (screenWidth <= 480) {
       height = '220px';
+    } else if (screenWidth >= 481 && screenWidth <= 767) {
+      height = '281px';
+    } else if (screenWidth >= 768 && screenWidth <= 1025) {
+      height = '301px';
     }
+
     return height;
   };
   return (
@@ -39,11 +48,24 @@ const Videos = () => {
         {data.map(({ id, video, title }) => (
           <>
             <VideoTitle>{title}</VideoTitle>
-            <VideoCard key={id} height={changeHeight()} width={changeWidth()} url={video} />
+            <VideoCard
+              key={id}
+              height={changeHeight()}
+              width={changeWidth()}
+              url={video}
+            />
           </>
         ))}
       </VideosContainer>
-      <PrevButton prevLink="/resources" />
+      <PrevButton
+        prevLink="/resources"
+        marginLeft2="14%"
+        marginTop1="-27%"
+        marginTop4="-15%"
+        marginLeft4="15%"
+        marginLeft3="8%"
+        marginTop3="-15%"
+      />
     </>
   );
 };
