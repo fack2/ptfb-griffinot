@@ -11,6 +11,7 @@ export const IconTitleContainer = styled.div`
   }
 `;
 
+
 export const VideoIcon = styled.img`
   width: 7%;
   margin-right: 3%;
@@ -18,25 +19,29 @@ export const VideoIcon = styled.img`
   margin-top: -2%;
 
   @media (min-width: 481px) and (max-width: 767px) {
-    width: 8%;
-    height: 62px;
+    width: 6%;
+    height: 34px;
     margin-top: -2.5%;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    width: 5%;
-    height: 43px;
+    width: 4%;
+    height: 37px;
+    margin-left: 12%;
+
   }
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-    width: 6%;
-    margin-right: 3%;
-    height: 42px;
+    width: 5%;
+    margin-right: 4%;
+    height: 35px;
+    margin-left: 12%;
   }
   @media (min-width: 1281px) {
-    width: 6%;
-    height: 50px;
+    width: 4%;
+    height: 38px;
     margin-right: 2%;
+    margin-left: 5%;
   }
 `;
 
@@ -67,15 +72,18 @@ export const VideoTitle = styled.span`
   font-size: 1.5rem;
   color: var(--main-font-color);
   font-weight: 600;
+      align-self: flex-start;
   @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 2rem;
-  }
+    margin-left: 13%;
+      }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.9rem;
+    margin-left: 13%;
+      }
   @media (min-width: 1281px) {
-    font-size: 2.4rem;
-  }
+    font-size: 1.9rem;
+    margin-left: 7%;  }
 `;
 
 export const VideoCard = styled(ReactPlayer)`
