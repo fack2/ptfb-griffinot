@@ -18,6 +18,7 @@ import {
   TitleParagraph,
   ToLink,
   Close,
+  ReadMore,
 } from './index.style';
 
 const LevelPop = ({
@@ -47,7 +48,11 @@ const LevelPop = ({
                   <TitleParagraph>Fine Motor Skills Programme </TitleParagraph>
                 </TitleLevel>
               </LevelDiv>
-              <PopUpDiv FontSize="2rem">{description}</PopUpDiv>
+              <PopUpDiv FontSize="2rem">
+                {description}
+                {' '}
+                <ReadMore href="levels">...read more</ReadMore>
+              </PopUpDiv>
 
               <ToLink href={NextLink}>
                 Purchase Level

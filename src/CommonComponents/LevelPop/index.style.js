@@ -85,25 +85,25 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-  width: 185%;
-  height: 70vh;
-  background: #fffcfc;
-  border: 0.1rem solid #c4c4c4;
-  margin-left: -41%;
-  margin-top: -142%;
+    width: 185%;
+    height: 61vh;
+    background: #fffcfc;
+    border: 0.1rem solid #c4c4c4;
+    margin-left: -41%;
+    margin-top: -112%;
 
 @media (min-width: 481px) and (max-width: 767px) {
     margin-left: -40%;
     width: 176%;
     margin-top: -110%;
-    height: 62vh;
+    height: 50vh;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   margin-left: -6%;
   width: 177%;
   margin-top: -58%;
-    height: 58vh;
+    height: 53vh;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -111,14 +111,14 @@ export const PopUpBox = styled.div`
     width: 167rem;
     margin-top: -58%;
     margin-right: -4%;
-    height: 58vh;
+    height: 50vh;
 }
 @media (min-width: 1281px) {
     margin-left: -2%;
     width: 167rem;
     margin-top: -34%;
     margin-right: -4%;
-    height: 58vh;
+    height: 53vh;
 }
 `;
 
@@ -160,6 +160,20 @@ export const PopUpDiv = styled.span`
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
+@media (min-width: 481px) and (max-width: 767px) {
+  margin-top: -8%
+}
+  @media (min-width: 768px) and (max-width: 1024px) {
+   margin-top: -5%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+   margin-top: -4%;
+}
+
+@media (min-width: 1281px) {
+   margin-top: -5%;
+}
 `;
 
 export const ToLink = styled.a`
@@ -170,24 +184,24 @@ export const ToLink = styled.a`
   font-weight: bold;
   position: fixed;
     bottom: 23%;
-    left: 61%;
+    left: 58%;
 
 @media (min-width: 481px) and (max-width: 767px) {
-    bottom: 23%;
+    bottom: 37%;
     left: 61%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    bottom: 23%;
+    bottom: 28%;
     left: 59%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    bottom: 32%;
+    bottom: 38%;
     left: 61%;
 }
 @media (min-width: 1281px) {
-    bottom: 23%;
+bottom: 29%;
     left: 61%;
 }
 `;
@@ -198,7 +212,7 @@ export const Close = styled.a`
   font-size: 2.5rem;
   line-height: 20px;
     margin-left: 127%;
-    margin-top: -137%;
+    margin-top: -109%;
 
 @media (min-width: 481px) and (max-width: 767px) {
     margin-left: 121%;
@@ -218,4 +232,8 @@ export const Close = styled.a`
     margin-left: 100%;
     margin-top: -36%;
 }
+`;
+
+export const ReadMore = styled.a`
+text-decoration: none;
 `;
