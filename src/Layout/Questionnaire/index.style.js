@@ -379,8 +379,8 @@ export const CircleLevel = styled.div`
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  width: 36%;
-  height: 175px;
+    width: 27%;
+    height: 176px;
 }
 
 @media (min-width: 1281px) {
@@ -429,8 +429,6 @@ export const TitleParagraph = styled.p`
 export const BodyPage = styled.div`
   background: #cfcfcf;
   justify-content: center;
-  width:90%;
-  height:100vh;
 `;
 
 export const PopUPCard = styled.div`
@@ -441,7 +439,7 @@ export const PopUPCard = styled.div`
 
 export const PopUpBox = styled.div`
     width: 197.5%;
-    height: 56rem;
+    height: 80vh;
     background: #fffcfc;
     border: 0.1rem solid #c4c4c4;
     margin-left: -46%;
@@ -450,27 +448,29 @@ export const PopUpBox = styled.div`
 
 @media (min-width: 481px) and (max-width: 767px) {
     margin-left: -40%;
-    width: 176%;
-    margin-top: -110%;
+    height: 63vh;
+    margin-top: -114%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: -15%;
     margin-right: -16%;
     margin-top: -79%;
+    height: 68vh;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    margin-left: -2%;
-    width: 167rem;
-    margin-top: -58%;
-    margin-right: -4%;
+margin-left: -15%;
+    margin-right: -16%;
+    margin-top: -48%;
+    height: 68vh;
 }
 @media (min-width: 1281px) {
-    margin-left: -2%;
+margin-left: -2%;
     width: 167rem;
-    margin-top: -58%;
+    margin-top: -42%;
     margin-right: -4%;
+    height: 69vh;
 }
 `;
 
@@ -491,7 +491,8 @@ export const LogoImage = styled.img`
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
- margin-top: -8%;
+margin-top: -8%;
+    width: 39%;
 }
 
 @media (min-width: 1281px) {
@@ -512,6 +513,10 @@ export const PopUpDiv = styled.span`
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
+
+@media (min-width: 481px) and (max-width: 767px) {
+    margin-top: -7%;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
   margin-top: -4%;
@@ -536,8 +541,8 @@ export const ToLink = styled.a`
   margin-left: 46%;
   margin-top: 9%;
 @media (min-width: 481px) and (max-width: 767px) {
-  margin-left: 54%;
-  margin-top: 11%;
+    margin-left: 54%;
+    margin-top: 7%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

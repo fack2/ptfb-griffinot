@@ -18,6 +18,7 @@ import SensoryTopics from './Layout/ResourcesCategories/SensoryTopics';
 import SensoryIntroduction from './Layout/ResourcesCategories/SensoryIntroduction';
 import NotPageFound from './Layout/NotPageFound';
 import ContactUs from './Layout/ContactUs';
+import Option3 from './Layout/Questionnaire/Option3';
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
           <Route exact path="/fine-motor-skills" component={FineMotor} />
           <Route exact path="/sensory-equipment" component={SensoryEquiment} />
           <Route exact path="/sensory-topics" component={SensoryTopics} />
+          <Route exact path="/option" component={Option3} />
+
 
           <Route
             exact

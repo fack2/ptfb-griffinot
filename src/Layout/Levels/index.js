@@ -11,8 +11,8 @@ const Levels = () => (
         levelScore, titleLevel, description, link,
       }) => (
         <Link href={link}>
-          <Level levelScore={levelScore} titleLevel={titleLevel} description={description} />
-        </Link>
+            <Level levelScore={levelScore} titleLevel={titleLevel} description={description} />
+          </Link>
       ))}
     </Bodypage>
   </>
