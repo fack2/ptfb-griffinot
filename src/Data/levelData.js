@@ -31,6 +31,7 @@ const levelData = [
   },
   {
     levelScore: 'Coming soon',
+    link: null,
     titleLevel: 'Scissors Skills Programme ',
   },
 ];
