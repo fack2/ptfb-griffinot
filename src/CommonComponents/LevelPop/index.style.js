@@ -86,7 +86,7 @@ export const PopUPCard = styled.div`
 
 export const PopUpBox = styled.div`
   width: 185%;
-  height: 51rem;
+  height: 70vh;
   background: #fffcfc;
   border: 0.1rem solid #c4c4c4;
   margin-left: -41%;
@@ -96,12 +96,14 @@ export const PopUpBox = styled.div`
     margin-left: -40%;
     width: 176%;
     margin-top: -110%;
+    height: 62vh;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   margin-left: -6%;
   width: 177%;
   margin-top: -58%;
+    height: 58vh;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -109,12 +111,14 @@ export const PopUpBox = styled.div`
     width: 167rem;
     margin-top: -58%;
     margin-right: -4%;
+    height: 58vh;
 }
 @media (min-width: 1281px) {
     margin-left: -2%;
     width: 167rem;
     margin-top: -34%;
     margin-right: -4%;
+    height: 58vh;
 }
 `;
 
@@ -167,6 +171,7 @@ export const ToLink = styled.a`
   position: fixed;
     bottom: 23%;
     left: 61%;
+
 @media (min-width: 481px) and (max-width: 767px) {
     bottom: 23%;
     left: 61%;
@@ -174,11 +179,11 @@ export const ToLink = styled.a`
 
 @media (min-width: 768px) and (max-width: 1024px) {
     bottom: 23%;
-    left: 61%;
+    left: 59%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    bottom:28%;
+    bottom: 32%;
     left: 61%;
 }
 @media (min-width: 1281px) {

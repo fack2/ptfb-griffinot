@@ -429,6 +429,8 @@ export const TitleParagraph = styled.p`
 export const BodyPage = styled.div`
   background: #cfcfcf;
   justify-content: center;
+  width:90%;
+  height:100vh;
 `;
 
 export const PopUPCard = styled.div`
