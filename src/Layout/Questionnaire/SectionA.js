@@ -38,10 +38,6 @@ const SectionA = ({
         <QuestionCard
           id={data[0].questionNumber}
           onClick={() => checkboxChange(data[0].questionNumber)}
-          height="110px"
-          height3="95px"
-          height4="90px"
-          height5="110px"
         >
           <QuestionNumber>{data[0].questionNumber}</QuestionNumber>
           <QuestionText>{data[0].question}</QuestionText>
@@ -49,24 +45,12 @@ const SectionA = ({
             type="checkbox"
             checked={checkedQuestions[data[0].questionNumber - 1]}
           />
-          <QuestionDescription
-            margin1="-4.5% 6% 0% 10%"
-            margin2="-6.5% 10% 0% 8%"
-            margin3="-1.5% 6% 0% 7.5%"
-            margin4="-1.8% 4% 0 7%"
-            margin5="-2.8% 4% 0 7.5%"
-          >
-            {data[0].description}
-          </QuestionDescription>
+          <QuestionDescription>{data[0].description}</QuestionDescription>
         </QuestionCard>
       </div>
       <QuestionCard
         id={data[1].questionNumber}
         onClick={() => checkboxChange(data[1].questionNumber)}
-        height="141px"
-        height3="125px"
-        height4="90x"
-        height5="130px"
       >
         <QuestionNumber>{data[1].questionNumber}</QuestionNumber>
         <QuestionText>{data[1].question}</QuestionText>
@@ -77,15 +61,7 @@ const SectionA = ({
           checked={checkedQuestions[data[1].questionNumber - 1]}
         />
 
-        <QuestionDescription
-          margin1="-3% 7% 0% 10%"
-          margin2="-6.5% 8% 0% 8%"
-          margin3="-1.5% 6% 0% 7.5%"
-          margin4="-2.5% 5% 0 8%"
-          margin5="-2.8% 5% 0 7.5%"
-        >
-          {data[1].description}
-        </QuestionDescription>
+        <QuestionDescription>{data[1].description}</QuestionDescription>
       </QuestionCard>
 
       <QuestionCard
@@ -119,10 +95,6 @@ const SectionA = ({
       <QuestionCard
         id={data[4].questionNumber}
         onClick={() => checkboxChange(data[4].questionNumber)}
-        height="143px"
-        height3="113px"
-        height4="90x"
-        height5="125px"
       >
         <QuestionNumber>{data[4].questionNumber}</QuestionNumber>
         <QuestionText>{data[4].question}</QuestionText>
@@ -133,15 +105,7 @@ const SectionA = ({
           checked={checkedQuestions[data[4].questionNumber - 1]}
         />
 
-        <QuestionDescription
-          margin1="-1% 3% 2% 9%"
-          margin2="-9.5% 7% 0% 8%"
-          margin3="-1.5% 6% 0% 7.5%"
-          margin4="-2.8% 7% 0 8%"
-          margin5="-2.8% 5% 0 7.5%"
-        >
-          {data[4].description}
-        </QuestionDescription>
+        <QuestionDescription>{data[4].description}</QuestionDescription>
       </QuestionCard>
     </QuestionContainer>
 
