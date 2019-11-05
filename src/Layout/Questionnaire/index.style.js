@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Header = styled.h1`
   text-align: center;
@@ -224,7 +224,13 @@ export const QuestionNumber = styled.span`
   border-radius: 50%;
   text-align: center;
   padding: 0.5% 0.5% 0 0;
-
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 22px;
+    height: 22px;
+    line-height: 115%;
+    font-size: 1.3rem;
+  }
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     width: 25px;
@@ -300,24 +306,24 @@ export const QuestionDescription = styled.p`
   color: #2d2323;
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
-    margin: ${(props) => props.margin2 || '0%'};
+    margin: 0.3% 6% 3.2% 8%;
     text-align: left;
     font-size: 1.2rem;
   }
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin: -0.5% 0 0 3%;
+    margin: 0.3% 9% 2% 6%;
   }
 
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
-    margin: -0.5% 0 0 3%;
+    margin: 0.5% 5% 3% 7.5%;
     text-align: left;
     font-size: 1.5rem;
   }
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
-    margin: -0.5% 0 0 3%;
+    margin: 0.5% 7% 3% 6.9%;
     text-align: left;
     font-size: 1.4rem;
   }
