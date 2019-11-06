@@ -123,14 +123,7 @@ const Menu = ({ history }) => {
             height3="41px"
             margin3="2% 0% 0% 7%"
           />
-          <StyledLink
-            to="/contact"
-            margin="6% 0% 0% 5%"
-            margin2="2% 0% 0% 3%"
-            margin3="3% 0% 0% 1%"
-          >
-            <Item>Contact Us</Item>
-          </StyledLink>
+          <a href="mailto:training@griffinot.com">Contact Us</a>
         </MenuItem>
       </Container>
     </>
