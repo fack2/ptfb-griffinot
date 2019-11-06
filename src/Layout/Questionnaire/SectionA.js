@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
-import LevelData from './QuestionnaireData';
 import PopupPage from '../../CommonComponents/PopupPage';
 import data from '../../Data/questionnareData';
 import QuestionnaireData from './QuestionnaireData';
@@ -33,10 +32,10 @@ const SectionA = ({
         {(close) => (
           <PopupPage
             close={close}
-            description={LevelData[0].uncompletedMsg}
+            description={QuestionnaireData[0].uncompletedMsg}
             optionLink="/resources"
             optionText="Our resources"
-            NextLink={LevelData[0].uncompletedAction}
+            NextLink={QuestionnaireData[0].uncompletedAction}
           />
         )}
       </Popup>
