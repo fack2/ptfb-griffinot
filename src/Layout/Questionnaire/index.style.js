@@ -5,7 +5,7 @@ export const Header = styled.h1`
   text-align: center;
   margin: 0% 0% 3.5% 0;
   font-size: 1.5rem;
-  /* Media Query for low resolution  Tablets, Ipads */
+  /* Media Query for low resolution Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
     text-align: center;
     margin: 0% 0% 3.5% 0;
@@ -57,7 +57,7 @@ export const Paragraph = styled.p`
   font-size: 1.5rem;
   margin: 4% 0 3% 0%;
   font-weight: bold;
-  /* Media Query for low resolution  Tablets, Ipads */
+  /* Media Query for low resolution Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 1.4rem;
     margin: 2% 0 2% 3%;
@@ -84,7 +84,7 @@ export const DivData = styled.div`
   display: flex;
   margin: 2% 4% 0% 4%;
   flex-direction: column;
-  /* Media Query for low resolution  Tablets, Ipads*/
+  /* Media Query for low resolution Tablets, Ipads*/
   @media (min-width: 481px) and (max-width: 767px) {
     margin: 2% 8%;
   }
