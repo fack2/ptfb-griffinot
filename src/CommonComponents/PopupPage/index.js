@@ -12,24 +12,30 @@ import {
   Text,
   BigDiv,
   BtnDiv,
+  Close,
 } from './index.style';
 
-const PopupPage = ({ description, optionText, optionLink }) => (
+const PopupPage = ({
+  description, optionText, optionLink, close, NextLink,
+}) => (
   <>
-    <BigDiv>
-      <Logo>
-        <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-      </Logo>
-      <Text>
-        <PopUpDiv>{description}</PopUpDiv>
-        <LinkText href={optionLink}>{optionText}</LinkText>
-      </Text>
-      <BtnDiv>
-        <ContainerBtn href="/questionnaire">
-          <TextBtn type="button">I understand</TextBtn>
-        </ContainerBtn>
-      </BtnDiv>
-    </BigDiv>
+      <BigDiv>
+        <Close onClick={close}>
+          &times;
+        </Close>
+        <Logo>
+          <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+        </Logo>
+        <Text>
+          <PopUpDiv>{description}</PopUpDiv>
+          <LinkText href={optionLink}>{optionText}</LinkText>
+        </Text>
+        <BtnDiv>
+          <ContainerBtn href={NextLink}>
+            <TextBtn type="button">I understand</TextBtn>
+          </ContainerBtn>
+        </BtnDiv>
+      </BigDiv>
   </>
 );
 

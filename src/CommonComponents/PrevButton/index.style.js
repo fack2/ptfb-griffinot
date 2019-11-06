@@ -36,7 +36,7 @@ export const PrevBtn = styled(Link)`
   -webkit-text-decoration: none;
   text-decoration: none;
   @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   @media (min-width: 1281px) {

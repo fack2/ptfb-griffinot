@@ -1,12 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-indent */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
 import LevelPop from '../../CommonComponents/LevelPop';
-import LevelData from './QuestionnaireData';
-import data from '../../Data/questionnareData';
 import QuestionnaireData from './QuestionnaireData';
+import data from '../../Data/questionnareData';
 import {
   QuestionCard,
   QuestionText,
@@ -118,12 +115,15 @@ const SectionD1 = ({
           />
         ) : (
           <Popup modal trigger={<NextButton />}>
-            <LevelPop
-              levelScore={LevelData[4].LevelNo}
-              description={LevelData[4].uncompletedMsg}
-              NextLink={LevelData[4].uncompletedAction}
-              No={LevelData[4].LevelNo}
-            />
+            {(close) => (
+              <LevelPop
+                close={close}
+                levelScore={QuestionnaireData[4].LevelNo}
+                description={QuestionnaireData[4].uncompletedMsg}
+                NextLink={QuestionnaireData[4].uncompletedAction}
+                No={QuestionnaireData[4].LevelNo}
+              />
+            )}
           </Popup>
         )}
       </DivNextPrev>

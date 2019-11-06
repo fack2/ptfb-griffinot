@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-indent */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Popup from 'reactjs-popup';
@@ -116,12 +115,15 @@ const SectionA = ({
       />
     ) : (
       <Popup modal trigger={<NextButton />}>
-        <PopupPage
-          description={LevelData[0].uncompletedMsg}
-          optionLink="/resources"
-          optionText="Our resources"
-          NextLink={LevelData[0].uncompletedAction}
-        />
+        {(close) => (
+          <PopupPage
+            close={close}
+            description={LevelData[0].uncompletedMsg}
+            optionLink="/resources"
+            optionText="Our resources"
+            NextLink={LevelData[0].uncompletedAction}
+          />
+        )}
       </Popup>
     )}
   </>

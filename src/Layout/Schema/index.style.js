@@ -76,7 +76,9 @@ export const PopUpDiv = styled.span`
   top: 54%;
   left: -27%;
 @media (max-width: 480px) {
-  left: -22%;
+  left: -23%;
+  margin-right: -29%;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -171,4 +173,34 @@ export const BtnDiv = styled.div`
   margin-top: -0.5%;
   display: flex;
   justify-content: space-around;
+`;
+
+
+export const Close = styled.a`
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 1% 2%;
+  right: -29%;
+  top: -2%;
+  font-size: 2.5rem;
+  line-height: 20px;
+
+@media (min-width: 481px) and (max-width: 767px) {
+  right: -23%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  right: -4%;
+  top: -3%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    right: -4%;
+    top: -6%;
+}
+@media (min-width: 1281px) {
+    right: -3%;
+    top: -7%;
+}
 `;
