@@ -5,9 +5,9 @@ export const QuestionCard = styled.div`
   border: 0.5px solid #928e8e;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: ${(props) => props.height || '78px'};
-  padding: 5% 2% 0 2%;
-  margin: 2.5% 2% 3.5% -5%;
+  height: auto;
+  padding: 5% 4% 0 2%;
+  margin: 5.5% 0% 5.5% 0%;
   display: flex;
   flex-wrap: wrap;
   /* Media Query for low resolution  Tablets, Ipads */
@@ -20,22 +20,20 @@ export const QuestionCard = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     padding: 4% 0% 2% 2.5%;
     margin: 2% 9% 1% 4%;
-    height: ${(props) => props.height3 || '78px'};
+    height: auto;
     font-size: 1.24rem;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     padding: 4% 0% 2% 2.5%;
     margin: 2% 1% 1% -3%;
-    height: ${(props) => props.height4 || '90px'};
+    height: auto;
   }
-
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
     padding: 4% 0% 0% 2.5%;
     margin: 2% 12% 1% 8%;
-    height: ${(props) => props.height5 || '90px'};
+    height: auto;
   }
 `;
 
@@ -51,7 +49,13 @@ export const QuestionNumber = styled.span`
   border-radius: 50%;
   text-align: center;
   padding: 0.5% 0.5% 0 0;
-
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 22px;
+    height: 22px;
+    line-height: 124%;
+    font-size: 1.3rem;
+  }
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     width: 25px;
@@ -60,7 +64,6 @@ export const QuestionNumber = styled.span`
     line-height: 123%;
     font-size: 1.7rem;
   }
-
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
     width: 21px;
@@ -79,21 +82,19 @@ export const QuestionText = styled.p`
   flex-basis: 85%;
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
-    margin: ${(props) => props.margin2 || '-0.5% 0 0 3%'};
+    margin: -0.5% 0 0 3%;
     text-align: left;
     font-size: 1.4rem;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
-    margin: ${(props) => props.margin4 || '-0.2% 0 0 3%'};
+    margin: -0.2% 0 0 3%;
     text-align: left;
     font-size: 1.8rem;
   }
-
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
-    margin: ${(props) => props.margin5 || '-0.2% 0 0 3%'};
+    margin: -0.2% 0 0 3%;
     text-align: left;
     font-size: 1.8rem;
   }
@@ -121,30 +122,29 @@ export const Checkbox = styled.input`
 `;
 
 export const QuestionDescription = styled.p`
-  margin: ${(props) => props.margin1 || '0%'};
+  margin: 0.8% 5% 3.5% 8%;
   font-weight: 600;
   font-size: 1.3rem;
   color: #2d2323;
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
-    margin: ${(props) => props.margin2 || '0%'};
+    margin: 0.3% 6% 3.2% 8%;
     text-align: left;
     font-size: 1.2rem;
   }
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin: ${(props) => props.margin3 || '-0.5% 0 0 3%'};
+    margin: 0.3% 9% 2% 6%;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
-    margin: ${(props) => props.margin4 || '-0.5% 0 0 3%'};
+    margin: 0.5% 5% 3% 7.5%;
     text-align: left;
     font-size: 1.5rem;
   }
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
-    margin: ${(props) => props.margin5 || '-0.5% 0 0 3%'};
+    margin: 0.5% 7% 3% 6.9%;
     text-align: left;
     font-size: 1.4rem;
   }
