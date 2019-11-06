@@ -5,7 +5,6 @@ export const Header = styled.h1`
   text-align: center;
   margin: 0% 0% 3.5% 0;
   font-size: 1.5rem;
-
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
     text-align: center;
@@ -18,14 +17,12 @@ export const Header = styled.h1`
     margin: 0% 7% 3.5% -4px;
     font-size: 1.8rem;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     text-align: center;
     margin: 0% 7% 3.5% -4px;
     font-size: 2.65rem;
   }
-
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
     text-align: center;
@@ -71,13 +68,11 @@ export const Paragraph = styled.p`
     font-size: 1.7rem;
     margin: 2% 0 2% 4%;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 2.12rem;
     margin: 2% 0 2% -4%;
   }
-
   /* Media Query for Large screens*/
   @media (min-width: 1281px) {
     font-size: 2rem;
@@ -89,7 +84,6 @@ export const DivData = styled.div`
   display: flex;
   margin: 2% 4% 0% 4%;
   flex-direction: column;
-
   /* Media Query for low resolution  Tablets, Ipads*/
   @media (min-width: 481px) and (max-width: 767px) {
     margin: 2% 8%;
@@ -108,7 +102,6 @@ export const TitleOption = styled.h1`
   font-size: 1.7rem;
   text-align: center;
   font-weight: bold;
-
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 2rem;
@@ -116,7 +109,6 @@ export const TitleOption = styled.h1`
     font-weight: bold;
     margin: 0% 6%;
   }
-
   /* Media Query for Large screens */
   @media (min-width: 1281px) {
     font-size: 2rem;
@@ -136,7 +128,6 @@ export const Option = styled.button`
   height: 80px;
   padding: 1% 5% 0% 5%;
   margin: 10% -4.5% -2% -4.5%;
-
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 1.9rem;
@@ -144,7 +135,6 @@ export const Option = styled.button`
     padding: 1% 5% 0% 5%;
     margin: 10% 4.5% -2% 4.5%;
   }
-
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 1.5rem;
@@ -173,14 +163,13 @@ export const QuestionContainer = styled.div`
   justify-content: center;
 `;
 
-
 export const DivNextPrev = styled.div`
   display: flex;
   justify-content: space-between;
   padding-right: 4%;
   margin-left: -4%;
   padding-bottom: 3%;
-  @media (min-width: 481px) and (max-width: 767px){
+  @media (min-width: 481px) and (max-width: 767px) {
     padding-right: 4%;
     margin-left: 3%;
     margin-top: 2%;
@@ -202,7 +191,6 @@ export const DivNextPrev = styled.div`
   }
 `;
 
-
 // pop up style
 
 export const LevelDiv = styled.div`
@@ -219,25 +207,22 @@ export const CircleLevel = styled.div`
   border-radius: 54rem;
   z-index: 1;
   margin-top: -3%;
-@media (min-width: 481px) and (max-width: 767px) {
-  width: 38%;
-  height: 144px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  width: 37%;
-  height: 166px;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 38%;
+    height: 144px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 37%;
+    height: 166px;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
     width: 27%;
     height: 176px;
-}
-
-@media (min-width: 1281px) {
+  }
+  @media (min-width: 1281px) {
     width: 27%;
     height: 169px;
-}
+  }
 `;
 
 export const ParagraphLevel = styled.p`
@@ -253,21 +238,18 @@ export const LevelIntro = styled.p`
   margin-top: 5%;
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: -26%;
-}
+  }
   @media (min-width: 1281px) {
     margin-left: -71%;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
     margin-left: -30%;
-}
-
-@media (min-width: 1281px) {
+  }
+  @media (min-width: 1281px) {
     margin-left: -47%;
     margin-top: 1%;
     margin-bottom: 3%;
-}
-
+  }
 `;
 
 export const TitleParagraph = styled.p`
@@ -289,40 +271,37 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-    width: 197.5%;
-    height: 82vh;
-    background: #fffcfc;
-    border: 0.1rem solid #c4c4c4;
-    margin-left: -46%;
-    margin-top: -156%;
-    margin-right: -46%;
-
-@media (min-width: 481px) and (max-width: 767px) {
+  width: 197.5%;
+  height: 82vh;
+  background: #fffcfc;
+  border: 0.1rem solid #c4c4c4;
+  margin-left: -46%;
+  margin-top: -156%;
+  margin-right: -46%;
+  @media (min-width: 481px) and (max-width: 767px) {
     margin-left: -40%;
     height: 63vh;
     margin-top: -114%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
     margin-left: -15%;
     margin-right: -16%;
     margin-top: -79%;
     height: 64vh;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-margin-left: -15%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-left: -15%;
     margin-right: -16%;
     margin-top: -48%;
     height: 68vh;
-}
-@media (min-width: 1281px) {
-margin-left: -2%;
+  }
+  @media (min-width: 1281px) {
+    margin-left: -2%;
     width: 167rem;
     margin-top: -42%;
     margin-right: -4%;
     height: 69vh;
-}
+  }
 `;
 
 export const Logo = styled.div`
@@ -337,19 +316,17 @@ export const LogoImage = styled.img`
   width: 47%;
   margin-left: 4%;
   margin-top: 1%;
-@media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: -6%;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-margin-top: -8%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-top: -8%;
     width: 39%;
-}
-
-@media (min-width: 1281px) {
-  margin-top: -6%;
-  width: 36%;
-}
+  }
+  @media (min-width: 1281px) {
+    margin-top: -6%;
+    width: 36%;
+  }
 `;
 
 export const Container2 = styled.div`
@@ -364,22 +341,18 @@ export const PopUpDiv = styled.span`
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
-
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     margin-top: -7%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px){
-  margin-top: -4%;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  margin-top: -4%;
-}
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: -4%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-top: -4%;
+  }
   @media (min-width: 1281px) {
-  margin-top: -5%;
-}
-
+    margin-top: -5%;
+  }
 `;
 
 export const ToLink = styled.a`
@@ -391,24 +364,22 @@ export const ToLink = styled.a`
   line-height: 20px;
   margin-left: 46%;
   margin-top: 2%;
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     margin-left: 54%;
     margin-top: 7%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  margin-left: 54%;
-  margin-top: 4%;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 54%;
+    margin-top: 4%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
     margin-left: 65%;
     margin-top: 8%;
-}
-@media (min-width: 1281px) {
-  margin-left: 70%;
-  margin-top: 11%;
-}
+  }
+  @media (min-width: 1281px) {
+    margin-left: 70%;
+    margin-top: 11%;
+  }
 `;
 
 export const Close = styled.a`
@@ -418,26 +389,22 @@ export const Close = styled.a`
   line-height: 20px;
   margin-left: 78%;
   margin-top: -4%;
-
-@media (min-width: 481px) and (max-width: 767px) {
-  margin-left: 78%;
-  margin-top: -4%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  margin-left: 60%;
-  margin-top: -4%;
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 481px) and (max-width: 767px) {
+    margin-left: 78%;
+    margin-top: -4%;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 60%;
+    margin-top: -4%;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
     margin-left: 48%;
     margin-top: -2%;
-}
-
-@media (min-width: 1281px) {
+  }
+  @media (min-width: 1281px) {
     margin-left: 49%;
     margin-top: -2%;
-}
+  }
 `;
 export const Para = styled.p`
   font-size: 1.5rem;
