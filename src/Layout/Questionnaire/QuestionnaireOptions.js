@@ -4,7 +4,6 @@ import Popup from 'reactjs-popup';
 import popUpImg from '../../assets/popup-logo.png';
 import PopupPage from '../../CommonComponents/PopupPage';
 import {
-  TitleOption,
   Option,
   DivData,
   LinkOption,
@@ -23,14 +22,8 @@ import {
   Close,
 } from './index.style';
 
-import PrevButton from '../../CommonComponents/PrevButton';
-
-const Option3 = ({ nextButtonClickHandler, close }) => (
+const QuestionnaireOptions = ({ nextButtonClickHandler, close }) => (
   <>
-    <TitleOption>
-      What skill do you feel your child needs the most help with improving, at the moment?
-    </TitleOption>
-
     {/* 1 option */}
     <DivData>
       <Popup
@@ -41,9 +34,7 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
           <BodyPage>
             <PopUPCard>
               <PopUpBox>
-                <Close onClick={close}>
-                  &times;
-                </Close>
+                <Close onClick={close}>&times;</Close>
                 <Logo>
                   <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
                 </Logo>
@@ -55,10 +46,10 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
                     </CircleLevel>
                   </LevelDiv>
                   <PopUpDiv FontSize="2rem">
-                    The Supporting Pencil Grasp Development Programme is specifically designed to help
-                    children improve their pencil grasp. The programme consists of two warm ups, 14
-                    fine motor activities and 14 worksheet tasks. The activities focus on improving
-                    the hand dexterity required to hold a pencil.
+                    The Supporting Pencil Grasp Development Programme is specifically designed to
+                    help children improve their pencil grasp. The programme consists of two warm
+                    ups, 14 fine motor activities and 14 worksheet tasks. The activities focus on
+                    improving the hand dexterity required to hold a pencil.
                   </PopUpDiv>
 
                   <ToLink href="https://griffinot.teachable.com/p/online-pencil-grasp-development-programme1">
@@ -94,24 +85,10 @@ const Option3 = ({ nextButtonClickHandler, close }) => (
         )}
       </Popup>
     </DivData>
-
-    <PrevButton
-      prevLink="/questionnaire"
-      nextButtonClickHandler={nextButtonClickHandler}
-      marginLeft="8%"
-      marginLeft1="8%"
-      marginLeft2="14%"
-      marginTop="55%"
-      marginTop1="20%"
-      marginLeft4="20%"
-      marginTop4="29%"
-      marginLeft3="14%"
-      marginTop3="18%"
-    />
   </>
 );
 
-Option3.propTypes = {
+QuestionnaireOptions.propTypes = {
   nextButtonClickHandler: PropTypes.func.isRequired,
 };
-export default Option3;
+export default QuestionnaireOptions;
