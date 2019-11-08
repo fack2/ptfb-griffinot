@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Header = styled.h1`
+export const PageTitle = styled.h1`
+  font-size: 1.7rem;
   text-align: center;
+  font-weight: bold;
   margin: 0% 0% 3.5% 0;
-  font-size: 1.5rem;
   /* Media Query for low resolution Tablets, Ipads */
   @media (min-width: 481px) and (max-width: 767px) {
     text-align: center;
@@ -98,7 +99,7 @@ export const DivData = styled.div`
   }
 `;
 
-export const TitleOption = styled.h1`
+export const OptionTitle = styled.h1`
   font-size: 1.7rem;
   text-align: center;
   font-weight: bold;
@@ -154,13 +155,6 @@ export const Option = styled.button`
 export const LinkOption = styled(Link)`
   text-decoration: none;
   color: var(--main-font-color);
-`;
-
-export const QuestionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 3% -3% 0 4%;
-  justify-content: center;
 `;
 
 export const DivNextPrev = styled.div`
