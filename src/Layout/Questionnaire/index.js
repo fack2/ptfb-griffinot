@@ -7,6 +7,7 @@ import NextButton from '../../CommonComponents/NextButton';
 import PrevButton from '../../CommonComponents/PrevButton';
 import PopupPage from '../../CommonComponents/PopupPage';
 import Popup from 'reactjs-popup';
+import LevelPop from './../../CommonComponents/LevelPop/index';
 
 export default class Questionnaire extends Component {
   state = {
@@ -91,10 +92,34 @@ export default class Questionnaire extends Component {
         {/* Rendering the next button based on the section's number */}
         {questionnaireSection !== QuesetionnaireSectionsData[3].section ? (
           checkedItems.length >= sectionData.limit ? (
-            <NextButton
-              nextLink="/questionnaire"
-              nextButtonClickHandler={this.nextButtonClickHandler}
-            />
+            checkedItems.length === QuesetionnaireSectionsData[5].limit ? (
+              <Popup modal trigger={<NextButton />}>
+                {(close) => (
+                  <PopupPage
+                    close={close}
+                    description="Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills."
+                    NextLink="/"
+                  />
+                )}
+              </Popup>
+            ) : (
+              <NextButton
+                nextLink="/questionnaire"
+                nextButtonClickHandler={this.nextButtonClickHandler}
+              />
+            )
+          ) : questionnaireSection >= QuesetionnaireSectionsData[1].section ? (
+            <Popup modal trigger={<NextButton />}>
+              {(close) => (
+                <LevelPop
+                  close={close}
+                  levelScore={sectionData.LevelNo}
+                  description={sectionData.uncompletedMsg}
+                  NextLink={sectionData.uncompletedAction}
+                  No={sectionData.LevelNo}
+                />
+              )}
+            </Popup>
           ) : (
             <Popup modal trigger={<NextButton />}>
               {(close) => (
