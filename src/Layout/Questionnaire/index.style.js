@@ -157,7 +157,7 @@ export const LinkOption = styled(Link)`
   color: var(--main-font-color);
 `;
 
-export const DivNextPrev = styled.div`
+export const NextPrevDiv = styled.div`
   display: flex;
   justify-content: space-between;
   padding-right: 4%;
