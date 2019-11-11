@@ -10,7 +10,7 @@ const QuesetionnaireSectionsData = [
   },
   {
     section: 2,
-    LevelNo: 1,
+    levelNo: 1,
     limit: 10,
     sliceFromQuestion: 5,
     sliceToQuestion: 10,
@@ -20,7 +20,7 @@ const QuesetionnaireSectionsData = [
   },
   {
     section: 3,
-    LevelNo: 2,
+    levelNo: 2,
     limit: 15,
     sliceFromQuestion: 10,
     sliceToQuestion: 15,
@@ -33,14 +33,14 @@ const QuesetionnaireSectionsData = [
     limit: 15,
     sliceFromQuestion: null,
     sliceToQuestion: null,
-    LevelNo: null,
+    levelNo: null,
     uncompletedMsg: '',
     uncompletedAction: '',
   },
   {
     section: 5,
     limit: 20,
-    LevelNo: 3,
+    levelNo: 3,
     sliceFromQuestion: 15,
     sliceToQuestion: 20,
     uncompletedMsg:
@@ -52,7 +52,7 @@ const QuesetionnaireSectionsData = [
     limit: 25,
     sliceFromQuestion: 20,
     sliceToQuestion: 25,
-    LevelNo: 4,
+    levelNo: 4,
     uncompletedMsg:
       'Level 4 is the final stage of our programme.  It includes education videos, four warm ups and 32 activities for you to complete with your child.',
     uncompletedAction: 'https://griffinot.teachable.com/p/fine-motor-skill-development-4',
