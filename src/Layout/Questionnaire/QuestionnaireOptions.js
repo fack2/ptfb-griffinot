@@ -64,7 +64,7 @@ const QuestionnaireOptions = ({ nextButtonClickHandler, close }) => (
 
       {/* 2nd option  */}
       <Option onClick={nextButtonClickHandler}>
-        <LinkOption to="/questionnaire" name="nextBtn">
+        <LinkOption to="/questionnaire" name="motorSkills">
           I would like to help them to improve their general fine motor skills.
         </LinkOption>
       </Option>
