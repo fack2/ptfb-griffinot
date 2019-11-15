@@ -1,4 +1,5 @@
 import React from 'react';
+import data from '../../Data/questionsData';
 import {
   QuestionCard,
   QuestionText,
@@ -7,15 +8,18 @@ import {
   Checkbox,
 } from './index.style';
 
-const Question = ({ checkboxChange, checkedQuestions, data }) => data.map((QuestionsData, index, dataArray) => (
+const Question = ({
+  checkedQuestions, checkboxChange, sliceFromQuestion, sliceToQuestion,
+}) => data.slice(sliceFromQuestion, sliceToQuestion).map((QuestionsData, index, slicedArray) => (
   <QuestionCard
     id={QuestionsData.questionNumber}
+    key={QuestionsData.questionNumber}
     onClick={() => checkboxChange(QuestionsData.questionNumber)}
   >
-    <QuestionNumber>{QuestionsData.questionNumber}</QuestionNumber>
-    <QuestionText>{QuestionsData.question}</QuestionText>
-    <Checkbox type="checkbox" checked={checkedQuestions[dataArray[index].questionNumber - 1]} />
-    <QuestionDescription>{QuestionsData.description}</QuestionDescription>
+    <QuestionNumber>{ QuestionsData.questionNumber }</QuestionNumber>
+    <QuestionText>{ QuestionsData.question }</QuestionText>
+    <Checkbox type="checkbox" checked={checkedQuestions[slicedArray[index].questionNumber - 1]} />
+    <QuestionDescription>{ QuestionsData.description }</QuestionDescription>
   </QuestionCard>
 ));
 

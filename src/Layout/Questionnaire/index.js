@@ -1,133 +1,172 @@
-import React, { Component } from "react";
-import SectionA from "./SectionA";
-import SectionB from "./SectionB";
-import SectionC from "./SectionC";
-import Option3 from "./Option3";
-import SectionD1 from "./SectionD1";
-import SectionD2 from "./SectionD2";
-import QuestionnaireData from "./QuestionnaireData";
+import React, { Component } from 'react';
+import QuesetionnaireSectionsData from '../../Data/questionnaireSectionsData';
+import QuesetionnaireSection from './../../CommonComponents/QuestionnaireSection';
+import QuestionnaireOptions from './QuestionnaireOptions';
+import {
+  PageTitle,
+  Paragraph,
+  Line,
+  OptionTitle,
+  NextPrevDiv
+} from './index.style';
+import NextButton from '../../CommonComponents/NextButton';
+import PrevButton from '../../CommonComponents/PrevButton';
+import PopupPage from '../../CommonComponents/PopupPage';
+import Popup from 'reactjs-popup';
+import LevelPop from './../../CommonComponents/LevelPop/index';
 
-class Questionnaire extends Component {
+export default class Questionnaire extends Component {
   state = {
-    checkedItems: [],
-    questionnaireSections: 1,
+    questionnaireSection: 1,
     checkedQuestions: new Array(25).fill(false)
   };
 
   checkboxChange = id => {
-    const { checkedQuestions } = this.state; //this array is for preserving the checked items while moving through the questionnaire sections
-
-    let checkedItems = this.state.checkedItems; //Created a variable named checkedItems to change the array in the state using push method
-
-    //If the number of the question that is checked does't exist in the array push it to it.
-    if (!checkedItems.find(ele => ele === id)) {
-      this.state.checkedItems.push(id);
-      checkedQuestions[id - 1] = true; //Array filled with 25 false values that represent the 25 questions' checked status, if the question is checked we set its false value to true.
-      this.setState(
-        { checkedItems, checkedQuestions } //set the checkedItems array in the state to be equal to the variable checkedItems.(We can't push the items directly to the array using push inside the setState because push returns the length of the array not the values in it)
-      );
-    } else {
-      //If the number of the question that is checked exists in the array remove it from it && return the checked state in the checkedQuestions array to false(this is for toggling the checkbox on and off) .
-      checkedItems = checkedItems.filter(ele => ele !== id);
-      checkedQuestions[id - 1] = false;
-      this.setState({ checkedItems, checkedQuestions }, () => {});
-    }
-    this.setState(prevState => ({
-      checked: !prevState.checked,
-      questionNumber: id
-    }));
+    // an array of 25 false values representing the value of the attribute checked in the checkboxes, that I loop over to change/toggle their state according to the id of the each box.
+    let { checkedQuestions } = this.state;
+    checkedQuestions = checkedQuestions.map((ele, index) => {
+      if (index === id - 1) {
+        ele = !ele;
+        return ele;
+      } else {
+        return ele;
+      }
+    });
+    this.setState({ checkedQuestions });
   };
 
   nextButtonClickHandler = event => {
     const { name } = event.target;
-    const { checkedItems, questionnaireSections } = this.state;
+    const { questionnaireSection } = this.state;
+    //we have a name attribute in the next & prev & general motor skills buttons.
+    if (name === 'nextBtn' || name === 'motorSkills') {
+      const sectionData = QuesetionnaireSectionsData[questionnaireSection - 1];
+      // An array that takes the current checkedQuestions state and slices the number of items needed for each question, then filters them to check how many of them are true so we can render each section according to that array's result.
+      const answeredQuestions = this.state.checkedQuestions
+        .slice(0, sectionData.limit)
+        .filter(ele => ele === true);
 
-    if (name === "nextBtn") {
-      //we have a name attribute in the next & prev button components
-      const sectionData = QuestionnaireData[questionnaireSections - 1];
-      if (checkedItems.length >= sectionData.limit) {
-        //if the checked items are equal to the limit of each section or more then move to the next section
-        this.setState(
-          { questionnaireSections: questionnaireSections + 1 },
-          () => {}
-        );
+      //if the answeredQuestions array's length is equal to the limit of each section then move to the next section
+      if (answeredQuestions.length === sectionData.limit) {
+        this.setState({ questionnaireSection: questionnaireSection + 1 });
       } else {
-        return <p>{sectionData.uncompletedMsg}</p>;
+        return;
       }
     } else {
+      //if the button clicked is not next button then move to the prev section
       this.setState({
-        questionnaireSections: questionnaireSections - 1 //if the button clicked is not next button then move to the prev section
+        questionnaireSection: questionnaireSection - 1
       });
     }
   };
 
-  changeQuestionnaireSections = () => {
-    const {
-      questionnaireSections,
-      checkedItems,
-      checkedQuestions
-    } = this.state;
-    switch (questionnaireSections) {
-      case 1:
-        return (
-          <SectionA
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-      case 2:
-        return (
-          <SectionB
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-      case 3:
-        return (
-          <SectionC
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-      case 4:
-        return (
-          <Option3
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-      case 5:
-        return (
-          <SectionD1
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-      case 6:
-        return (
-          <SectionD2
-            checkboxChange={this.checkboxChange}
-            nextButtonClickHandler={this.nextButtonClickHandler}
-            checkedItems={checkedItems}
-            checkedQuestions={checkedQuestions}
-          />
-        );
-    }
-  };
-
   render() {
-    return this.changeQuestionnaireSections();
+    const { questionnaireSection, checkedQuestions } = this.state;
+    const sectionData = QuesetionnaireSectionsData[questionnaireSection - 1];
+
+    // An array that takes the current checkedQuestions state and slices the number of items needed for each question, then filters them to check how many of them are true so we can render each section according to that array's result.
+    const answeredQuestions = this.state.checkedQuestions
+      .slice(0, sectionData.limit)
+      .filter(ele => ele === true);
+
+    return (
+      <>
+        {/* Rendering the page's titles based on the section's number */}
+        {questionnaireSection === QuesetionnaireSectionsData[0].section ? (
+          <>
+            <PageTitle>
+              We just need you to answer some questions to determine where to
+              start:
+            </PageTitle>
+            <Line />
+            <Paragraph>
+              Please check the box if your child is able to do the following:
+            </Paragraph>
+          </>
+        ) : questionnaireSection === QuesetionnaireSectionsData[3].section ? (
+          <OptionTitle>
+            We just need you to answer some questions to determine where to
+            start:
+          </OptionTitle>
+        ) : (
+          <Paragraph>
+            Please check the box if your child is able to do the following:
+          </Paragraph>
+        )}
+
+        {/* Switching between questionnaire sections and option section based on qestions, if there are queestions the QuesetionnaireSection component and if not we render the option section */}
+        {(sectionData.sliceFromQuestion && sectionData.sliceToQuestion) !==
+        null ? (
+          <QuesetionnaireSection
+            checkboxChange={this.checkboxChange}
+            checkedQuestions={checkedQuestions}
+            sectionData={sectionData}
+          />
+        ) : (
+          <QuestionnaireOptions
+            nextButtonClickHandler={this.nextButtonClickHandler}
+          />
+        )}
+
+        <NextPrevDiv>
+          {/* Rendering the prev button based on the section's number */}
+          {questionnaireSection ===
+          QuesetionnaireSectionsData[0].section ? null : (
+            <PrevButton
+              prevLink='/questionnaire'
+              nextButtonClickHandler={this.nextButtonClickHandler}
+            />
+          )}
+
+          {/* Rendering the next button based on the section's number */}
+          {questionnaireSection !== QuesetionnaireSectionsData[3].section ? (
+            answeredQuestions.length === sectionData.limit ? (
+              answeredQuestions.length ===
+              QuesetionnaireSectionsData[5].limit ? (
+                <Popup modal trigger={<NextButton />}>
+                  {close => (
+                    <PopupPage
+                      close={close}
+                      description='Our programme will be too simple for your child and we would not recommend it.  It is likely your child doesn’t need extra support with developing their fine motor skills.'
+                      NextLink='/'
+                    />
+                  )}
+                </Popup>
+              ) : (
+                <NextButton
+                  nextLink='/questionnaire'
+                  nextButtonClickHandler={this.nextButtonClickHandler}
+                />
+              )
+            ) : questionnaireSection >=
+              QuesetionnaireSectionsData[1].section ? (
+              <Popup modal trigger={<NextButton />}>
+                {close => (
+                  <LevelPop
+                    close={close}
+                    levelScore={sectionData.levelNo}
+                    description={sectionData.uncompletedMsg}
+                    NextLink={sectionData.uncompletedAction}
+                    levelNo={sectionData.levelNo}
+                  />
+                )}
+              </Popup>
+            ) : (
+              <Popup modal trigger={<NextButton />}>
+                {close => (
+                  <PopupPage
+                    close={close}
+                    description={sectionData.uncompletedMsg}
+                    optionLink='/resources'
+                    optionText='Our resources'
+                    NextLink={sectionData.uncompletedAction}
+                  />
+                )}
+              </Popup>
+            )
+          ) : null}
+        </NextPrevDiv>
+      </>
+    );
   }
 }
-
-export default Questionnaire;
