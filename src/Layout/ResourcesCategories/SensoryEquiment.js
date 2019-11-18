@@ -20,15 +20,7 @@ const SensoryEquiment = () => (
     </BodyCategory>
     <PrevButton
       prevLink="/resources"
-      marginTop="33%"
-      marginLeft="6%"
-      marginLeft1="6%"
-      marginLeft2="14%"
-      marginTop1="5%"
-      marginLeft4="14%"
-      marginTop4="7%"
-      marginLeft3="19%"
-      marginTop3="-5%"
+   
     />
   </>
 );

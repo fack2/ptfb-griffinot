@@ -62,7 +62,6 @@ export const PageTitle = styled.h1`
 
 export const VideosContainer = styled.div`
   margin-top: 10%;
-  margin-bottom: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -123,7 +123,7 @@ export default class Questionnaire extends Component {
             answeredQuestions.length === sectionData.limit ? (
               answeredQuestions.length ===
               QuesetionnaireSectionsData[5].limit ? (
-                <Popup modal trigger={<NextButton />}>
+                <Popup modal trigger={<NextButton/>}>
                   {close => (
                     <PopupPage
                       close={close}

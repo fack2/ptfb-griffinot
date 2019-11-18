@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 export const DivNext = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  margin-top: ${(props) => props.marginTop || '2%'};
-  padding-bottom: 2%;
-  @media (min-width: 481px) and (max-width: 767px) {
+  margin: auto;
+  padding-left: 90%;
+  /* margin-top: ${(props) => props.marginTop || '2%'};
+  padding-bottom: 2%; */
+  /* @media (min-width: 481px) and (max-width: 767px) {
     padding-right: 7%;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -14,7 +16,7 @@ export const DivNext = styled.div`
   }
   @media (min-width: 1281px) {
     padding-right: 10%;
-  }
+  } */
 `;
 
 export const NextBtn = styled(Link)`
@@ -22,7 +24,7 @@ export const NextBtn = styled(Link)`
   color: #e8425c;
   outline: none;
   text-decoration: none;
-  @media (min-width: 768px) and (max-width: 1024px) {
+  /* @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 2rem;
     font-weight: 600;
   }
@@ -37,5 +39,5 @@ export const NextBtn = styled(Link)`
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 1.7rem;
     font-weight: 600;
-  }
+  } */
 `;

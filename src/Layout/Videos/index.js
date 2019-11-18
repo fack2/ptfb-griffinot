@@ -59,12 +59,6 @@ const Videos = () => {
       </VideosContainer>
       <PrevButton
         prevLink="/resources"
-        marginLeft2="14%"
-        marginTop1="-27%"
-        marginTop4="-15%"
-        marginLeft4="15%"
-        marginLeft3="8%"
-        marginTop3="-15%"
       />
     </>
   );

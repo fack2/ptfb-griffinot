@@ -21,14 +21,7 @@ const SensoryIntroduction = () => (
 
     <PrevButton
       prevLink="/resources"
-      marginLeft="6%"
-      marginLeft1="6%"
-      marginLeft2="14%"
-      marginTop1="-2%"
-      marginLeft4="14%"
-      marginTop4="-2%"
-      marginLeft3="19%"
-      marginTop3="-5%"
+  
     />
   </>
 );
