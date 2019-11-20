@@ -34,7 +34,9 @@ Making this website to best support parents in supporting their children, they c
 ```
 
 - Install node modules:
-  npm i
+  ````
+      npm i
+  ````
 - Run this to start the website:
 
         npm start
