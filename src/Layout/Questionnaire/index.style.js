@@ -163,34 +163,9 @@ export const NextPrevDiv = styled.div`
   padding-right: 14%;
   margin: auto;
   padding-top: 6%;
-
-  /* padding-right: 4%;
-  margin-left: -4%;
-  padding-bottom: 3%; */
-  /* @media (min-width: 481px) and (max-width: 767px) {
-    padding-right: 4%;
-    margin-left: 3%;
-    margin-top: 2%;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    padding-right: 5%;
-    margin-left: 3%;
-    margin-top: 3%;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    padding-right: 3%;
-    margin-left: -3%;
-    margin-top: 3%;
-  }
-  @media (min-width: 1281px) {
-    padding-right: 4%;
-    margin-left: 8%;
-    margin-top: 3%;
-  } */
 `;
 
 // pop up style
-
 export const LevelDiv = styled.div`
   display: flex;
   justify-content: center;
