@@ -20,15 +20,7 @@ const FineMotor = () => (
     </BodyCategory>
     <PrevButton
       prevLink="/resources"
-      marginTop="60%"
-      marginLeft="7%"
-      marginLeft1="6%"
-      marginLeft2="14%"
-      marginTop1="14%"
-      marginLeft4="14%"
-      marginTop4="27%"
-      marginLeft3="19%"
-      marginTop3="8%"
+     
     />
   </>
 );

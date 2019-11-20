@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NextBtn, DivNext } from './index.style';
 
-const NextButton = (props) => (
+const NextButton = (props, paddingLeft) => (
   <>
-    <DivNext {...props} >
+    <DivNext {...props} paddingLeft={paddingLeft}>
       <NextBtn
         to={props.nextLink}
         type="primary"

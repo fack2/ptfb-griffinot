@@ -20,15 +20,6 @@ const PencilGrip = () => (
     </BodyCategory>
     <PrevButton
       prevLink="/resources"
-      marginTop="-2%"
-      marginLeft="6%"
-      marginLeft1="6%"
-      marginLeft2="14%"
-      marginTop1="-3%"
-      marginLeft4="14%"
-      marginTop4="-3%"
-      marginLeft3="19%"
-      marginTop3="-5%"
     />
   </>
 );
