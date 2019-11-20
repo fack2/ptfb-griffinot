@@ -53,6 +53,7 @@ export const ResourceLink = styled.p`
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 1.5rem;
     margin-left: 31%;
+    text-align:center;
   }
   @media (min-width: 1281px) {
     font-size: 1.5rem;
