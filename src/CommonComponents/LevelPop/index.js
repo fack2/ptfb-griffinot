@@ -22,47 +22,48 @@ import {
 } from './index.style';
 
 const LevelPop = ({
-  description, NextLink, levelScore, No, close,
+  description, NextLink, levelScore, levelNo, close,
 }) => (
   <>
-      <BodyPage>
-        <PopUPCard>
-          <Close onClick={close}>
+    <BodyPage>
+      <PopUPCard>
+        <Close onClick={close}>
             &times;
-          </Close>
-          <PopUpBox Height="110rem">
-            <Logo>
-              <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
-            </Logo>
-            <Container2>
-              <LevelIntro>Your child’s level is:</LevelIntro>
-              <LevelDiv>
-                <CircleLevel>
-                  <ParagraphLevel>
+        </Close>
+        <PopUpBox Height="110rem">
+          <Logo>
+            <LogoImage src={popUpImg} alt="a kid holding a kite logo" />
+          </Logo>
+
+          <Container2>
+            <LevelIntro>Your child’s level is:</LevelIntro>
+            <LevelDiv>
+
+              <CircleLevel>
+                <ParagraphLevel>
                     Level
-                    {levelScore}
-                  </ParagraphLevel>
-                </CircleLevel>
+                  {levelScore}
+                </ParagraphLevel>
+              </CircleLevel>
 
-                <TitleLevel>
-                  <TitleParagraph>Fine Motor Skills Programme </TitleParagraph>
-                </TitleLevel>
-              </LevelDiv>
-              <PopUpDiv FontSize="2rem">
-                {description}
-                {' '}
-                <ReadMore href="levels">...read more</ReadMore>
-              </PopUpDiv>
+              <TitleLevel>
+                <TitleParagraph>Fine Motor Skills Programme </TitleParagraph>
+              </TitleLevel>
+            </LevelDiv>
 
-              <ToLink href={NextLink}>
+            <PopUpDiv FontSize="2rem">
+              {description}
+              <ReadMore href="levels">...read more</ReadMore>
+            </PopUpDiv>
+
+            <ToLink href={NextLink}>
                 Purchase Level
-                {No}
-              </ToLink>
-
-            </Container2>
-          </PopUpBox>
-        </PopUPCard>
-      </BodyPage>
+              {levelNo}
+            </ToLink>
+          </Container2>
+        </PopUpBox>
+      </PopUPCard>
+    </BodyPage>
   </>
 );
 
@@ -70,7 +71,7 @@ LevelPop.propTypes = {
   description: PropTypes.string.isRequired,
   NextLink: PropTypes.element.isRequired,
   levelScore: PropTypes.string.isRequired,
-  No: PropTypes.string.isRequired,
+  levelNo: PropTypes.string.isRequired,
 };
 
 export default LevelPop;

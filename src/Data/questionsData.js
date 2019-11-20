@@ -3,13 +3,13 @@ const data = [
     questionNumber: 1,
     question: 'Is the child over 18 months old?',
     description:
-			'Or, if the child has developmental delays or was more than 8 weeks premature, are they at a cognitive age of 18 months ?',
+      'Or, if the child has developmental delays or was more than 8 weeks premature, are they at a cognitive age of 18 months ?',
   },
   {
     questionNumber: 2,
     question: 'Can the child sit up independently?',
     description:
-			'For children with neurological conditions, such as cerebral palsy, the programme maybe suitable if they are able to sit upright in supported seating and provided they have independent control over their arms and hands.',
+      'For children with neurological conditions, such as cerebral palsy, the programme maybe suitable if they are able to sit upright in supported seating and provided they have independent control over their arms and hands.',
   },
   {
     questionNumber: 3,
@@ -25,7 +25,7 @@ const data = [
     questionNumber: 5,
     question: 'Is the child showing an interest in fine motor activities?',
     description:
-			'For example, are they trying to scribble with a marker? Do they interact with cause and effect toys? Do they join in with messy play activities, like sand and water play?',
+      'For example, are they trying to scribble with a marker? Do they interact with cause and effect toys? Do they join in with messy play activities, like sand and water play?',
   },
   {
     questionNumber: 6,
@@ -65,7 +65,7 @@ const data = [
   {
     questionNumber: 13,
     question:
-			'Can the child fold a piece of paper in half? (It doesn’t matter if the edges are not alighned)',
+      'Can the child fold a piece of paper in half? (It doesn’t matter if the edges are not alighned)',
     description: null,
   },
   {
@@ -101,7 +101,7 @@ const data = [
   {
     questionNumber: 20,
     question:
-			'Can the child cut up soft food (e.g. sausage, potato) using their knife and fork together, with their index finger positioned on the top of the fork?',
+      'Can the child cut up soft food (e.g. sausage, potato) using their knife and fork together, with their index finger positioned on the top of the fork?',
     description: null,
   },
   {
@@ -112,7 +112,7 @@ const data = [
   {
     questionNumber: 22,
     question:
-			'Can the child fold a small origami pattern with at least four folds accurately (e.g. paper plane)?',
+      'Can the child fold a small origami pattern with at least four folds accurately (e.g. paper plane)?',
     description: null,
   },
   {
