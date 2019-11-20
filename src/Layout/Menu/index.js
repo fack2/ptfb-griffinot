@@ -8,6 +8,7 @@ import {
   ImageClose,
   ButtonClose,
   CloseDiv,
+  Contect,
 } from './index.style';
 import home from '../../assets/home.png';
 import aboutUs from '../../assets/aboutus.png';
@@ -123,7 +124,7 @@ const Menu = ({ history }) => {
             height3="41px"
             margin3="2% 0% 0% 7%"
           />
-          <a href="mailto:training@griffinot.com">Contact Us</a>
+          <Contect href="mailto:training@griffinot.com">Contact Us</Contect>
         </MenuItem>
       </Container>
     </>
