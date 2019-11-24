@@ -26,9 +26,7 @@ export const DivTitle = styled.div`
   @media (min-width: 1281px) {
     margin-left: 18%;
   }
-  @media (max-width: 480px) {
-    /* padding-right: 22%; */
-  }
+
 `;
 export const DivCircle = styled.div`
   position: relative;
