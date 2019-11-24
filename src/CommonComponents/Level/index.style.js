@@ -136,14 +136,6 @@ export const CircleImage = styled.img`
 `;
 
 export const Button = styled.button`
-<<<<<<< Updated upstream
-    border: none;
-    background: none;
-    margin-left: 78%;
-    padding-bottom: 3%;
-    font-size: 1.5rem;
-    color:var(--main-title-color);
-=======
   border: none;
   border-radius: 17px;
   margin-left: 60%;
@@ -154,7 +146,6 @@ export const Button = styled.button`
   font-weight: bold;
   color: #ffff;
   background-color: var(--main-component-color);
->>>>>>> Stashed changes
 `;
 
 export const Link = styled.a`
