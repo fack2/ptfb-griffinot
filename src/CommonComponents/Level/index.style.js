@@ -135,7 +135,7 @@ export const CircleImage = styled.img`
 
 export const Button = styled.button`
     border: none;
-    border-radius: 17px;
+    border-radius: 36px;
     margin-left: 60%;
     margin-bottom: 3%;
     padding-bottom: 3%;
