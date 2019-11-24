@@ -26,9 +26,7 @@ export const DivTitle = styled.div`
   @media (min-width: 1281px) {
     margin-left: 18%;
   }
-  @media (max-width: 480px){
-    padding-right: 22%;
-  }
+
 `;
 export const DivCircle = styled.div`
   position: relative;
@@ -55,10 +53,9 @@ export const TitleLevel = styled.div`
   margin-top: 8%;
   margin-left: -25%;
   @media (max-width: 480px) {
-    width: 220%;
-    margin-left: -37%;
-    height: 50px;
-    margin-top: 7%;
+    width: 300%;
+    height: 45px;
+    margin-top: 5%;
   }
   @media (min-width: 481px) and (max-width: 767px) {
     width: 88%;
@@ -131,8 +128,8 @@ export const CircleImage = styled.img`
   height: 100px;
   z-index: 1;
   @media (max-width: 480px) {
-    height: 80px;
-    width: 50%;
+    height: 72px;
+    width: 53%;
   }
 `;
 
