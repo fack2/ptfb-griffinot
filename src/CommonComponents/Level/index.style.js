@@ -26,8 +26,8 @@ export const DivTitle = styled.div`
   @media (min-width: 1281px) {
     margin-left: 18%;
   }
-  @media (max-width: 480px){
-    padding-right: 22%;
+  @media (max-width: 480px) {
+    /* padding-right: 22%; */
   }
 `;
 export const DivCircle = styled.div`
@@ -55,10 +55,9 @@ export const TitleLevel = styled.div`
   margin-top: 8%;
   margin-left: -25%;
   @media (max-width: 480px) {
-    width: 220%;
-    margin-left: -37%;
-    height: 50px;
-    margin-top: 7%;
+    width: 300%;
+    height: 45px;
+    margin-top: 5%;
   }
   @media (min-width: 481px) and (max-width: 767px) {
     width: 88%;
@@ -131,18 +130,31 @@ export const CircleImage = styled.img`
   height: 100px;
   z-index: 1;
   @media (max-width: 480px) {
-    height: 80px;
-    width: 50%;
+    height: 72px;
+    width: 53%;
   }
 `;
 
 export const Button = styled.button`
+<<<<<<< Updated upstream
     border: none;
     background: none;
     margin-left: 78%;
     padding-bottom: 3%;
     font-size: 1.5rem;
     color:var(--main-title-color);
+=======
+  border: none;
+  border-radius: 17px;
+  margin-left: 60%;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  padding: 3%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffff;
+  background-color: var(--main-component-color);
+>>>>>>> Stashed changes
 `;
 
 export const Link = styled.a`
