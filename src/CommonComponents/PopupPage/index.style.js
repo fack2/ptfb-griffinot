@@ -160,6 +160,7 @@ export const Close = styled.a`
   top: -2%;
   font-size: 2.5rem;
   line-height: 20px;
+  color: white;
 
 @media (min-width: 481px) and (max-width: 767px) {
   right: -23%;
