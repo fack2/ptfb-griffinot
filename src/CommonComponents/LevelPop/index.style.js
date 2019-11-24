@@ -85,40 +85,40 @@ export const PopUPCard = styled.div`
 `;
 
 export const PopUpBox = styled.div`
-    width: 185%;
-    height: 61vh;
-    background: #fffcfc;
-    border: 0.1rem solid #c4c4c4;
-    margin-left: -41%;
-    margin-top: -112%;
+  width: 185%;
+  height: 59vh;
+  background: #fffcfc;
+  border: 0.1rem solid #c4c4c4;
+  margin-left: -41%;
+  margin-top: -112%;
 
 @media (min-width: 481px) and (max-width: 767px) {
-    margin-left: -40%;
-    width: 176%;
-    margin-top: -110%;
-    height: 50vh;
+  margin-left: -40%;
+  width: 176%;
+  margin-top: -110%;
+  height: 50vh;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   margin-left: -6%;
   width: 177%;
   margin-top: -58%;
-    height: 53vh;
+  height: 53vh;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    margin-left: -2%;
-    width: 167rem;
-    margin-top: -58%;
-    margin-right: -4%;
-    height: 50vh;
+  margin-left: -2%;
+  width: 167rem;
+  margin-top: -58%;
+  margin-right: -4%;
+  height: 50vh;
 }
 @media (min-width: 1281px) {
-    margin-left: -2%;
-    width: 167rem;
-    margin-top: -34%;
-    margin-right: -4%;
-    height: 53vh;
+  margin-left: -2%;
+  width: 167rem;
+  margin-top: -34%;
+  margin-right: -4%;
+  height: 53vh;
 }
 `;
 
@@ -143,8 +143,8 @@ export const LogoImage = styled.img`
 }
 
 @media (min-width: 1281px) {
-    margin-top: -3%;
-    width: 30%;
+  margin-top: -3%;
+  width: 30%;
 }
 `;
 
@@ -156,7 +156,7 @@ export const Container2 = styled.div`
 export const PopUpDiv = styled.span`
   font-size: 1.3rem;
   margin-left: 5%;
-     margin-top: -11%;
+  margin-top: -7%;
   text-align: justify;
   margin-right: 5%;
   letter-spacing: 0.1rem;
@@ -183,26 +183,26 @@ export const ToLink = styled.a`
   font-size: 1.6rem;
   font-weight: bold;
   position: fixed;
-    bottom: 23%;
-    left: 58%;
+  bottom: 27%;
+  left: 58%;
 
 @media (min-width: 481px) and (max-width: 767px) {
-    bottom: 37%;
-    left: 61%;
+  bottom: 37%;
+  left: 61%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    bottom: 28%;
-    left: 59%;
+  bottom: 28%;
+  left: 59%;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    bottom: 38%;
-    left: 61%;
+  bottom: 38%;
+  left: 61%;
 }
 @media (min-width: 1281px) {
-bottom: 29%;
-    left: 61%;
+  bottom: 29%;
+  left: 61%;
 }
 `;
 
@@ -211,8 +211,9 @@ export const Close = styled.a`
   position: absolute;
   font-size: 2.5rem;
   line-height: 20px;
-    margin-left: 127%;
-    margin-top: -109%;
+  margin-left: 127%;
+  margin-top: -109%;
+  color: white;
 
 @media (min-width: 481px) and (max-width: 767px) {
     margin-left: 121%;
